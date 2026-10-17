@@ -1,15 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-16T06:03:18Z",
+  "last_analyzed": "2026-10-17T22:30:11Z",
   "quality_score": 3,
-  "assessment": "Concise, internally consistent snapshot (60/90 buy/sell ratio checks out, volume and price rule match the stated RALLYING bar) with a pool link for verification, but no timestamp or data source and no analysis beyond a status label.",
+  "assessment": "Specific, internally consistent snapshot (buy/sell ratio 133/43 = 3.09 checks out, 7d and 24h moves are stated), but it is terse, has no timestamp or data source, and leaves the slide-trigger logic and 'Whales: 9' unexplained.",
   "flags": [],
-  "avg_score": 3.83,
+  "avg_score": 3.8,
   "history": [
-    {
-      "date": "2026-09-16",
-      "score": 4
-    },
     {
       "date": "2026-09-17",
       "score": 4
@@ -144,6 +140,12 @@
       "date": "2026-10-16",
       "score": 3,
       "ts": "2026-10-16T06:03:18Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-17",
+      "score": 3,
+      "ts": "2026-10-17T22:30:11Z",
       "harness": "claude"
     }
   ]
