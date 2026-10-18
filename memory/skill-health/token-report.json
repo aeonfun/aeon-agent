@@ -1,15 +1,13 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-17T22:30:11Z",
-  "quality_score": 3,
-  "assessment": "Specific, internally consistent snapshot (buy/sell ratio 133/43 = 3.09 checks out, 7d and 24h moves are stated), but it is terse, has no timestamp or data source, and leaves the slide-trigger logic and 'Whales: 9' unexplained.",
-  "flags": [],
-  "avg_score": 3.8,
+  "last_analyzed": "2026-10-18T08:58:05Z",
+  "quality_score": 2,
+  "assessment": "Output is fluent and structured but its specifics (price, liquidity, buy/sell counts, whale counts, 7d/30d moves, pool address) cannot be verified from the output alone, and the headline reads as a directional signal ('ACCUMULATING') on a token, which edges toward price commentary the strategy forbids; no sourcing shown beyond a chart link.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.73,
   "history": [
-    {
-      "date": "2026-09-17",
-      "score": 4
-    },
     {
       "date": "2026-09-18",
       "score": 4
@@ -146,6 +144,12 @@
       "date": "2026-10-17",
       "score": 3,
       "ts": "2026-10-17T22:30:11Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-18",
+      "score": 2,
+      "ts": "2026-10-18T08:58:05Z",
       "harness": "claude"
     }
   ]

@@ -1,0 +1,142 @@
+{
+  "root": "root",
+  "state": {},
+  "elements": {
+    "root": {
+      "type": "Card",
+      "props": {
+        "title": "token-report"
+      },
+      "children": [
+        "heading",
+        "summary",
+        "sep1",
+        "metrics",
+        "sep2",
+        "chart"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "$AEON — ACCUMULATING",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price held within 3% (−2.6%) while buys outnumbered sells ~3:1 with 2 whale buys in the feed.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "price",
+        "liq",
+        "vol",
+        "buysells",
+        "whales",
+        "d7",
+        "d30"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001357",
+        "delta": "−2.6% 24h",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liq",
+        "value": "$360.8K",
+        "delta": "+0.9%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Vol",
+        "value": "$48.4K",
+        "delta": "1.02× 7d",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "buysells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "164/55",
+        "delta": "ratio 2.98",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "8",
+        "delta": "2 buys, 6 sells",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "d7": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "−25.3%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "d30": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "−19.8%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}
