@@ -65,3 +65,16 @@ Older entries rotated out of MEMORY.md's Recent Digests table.
 | 2026-07-22 | tweet-digest | framework positioning |
 | 2026-07-18 | tweet-digest | minitor dashboard demo |
 | 2026-07-17 | tweet-digest | ADK launch, Grok 4.5 support, 60-day changelog article, vuln-scanner on SpaceXAI, community shoutout |
+| 2026-09-25 | tweet-digest | TWEET_DIGEST_OK - only a same-day RT (bytedance/TikTok bug-report thread), excluded |
+| 2026-09-26 | tweet-digest | TWEET_DIGEST_OK - zero net-new, second cycle running |
+| 2026-09-27 | tweet-digest | Weekly Recap (09-18→09-27 thread) |
+| 2026-09-28 | tweet-digest | TWEET_DIGEST_OK - only a same-day RT |
+| 2026-09-29 | tweet-digest | Shipped (Hook #8 opt-in game), Narrative ("is OpenAI copying us") |
+| 2026-09-30 | tweet-digest | Skill Drop (feedback-builder), Content (skill packs post), Narrative (OpenAI renamed agent "Dots"), Growth (upvote push) |
+| 2026-10-01 | tweet-digest | Shipped (Arc Studio spotlight, skills-catalog article, OpenAI "dots" comparison) |
+| 2026-10-02 | tweet-digest | Shipped (smart-contract audit dashboard QT), Weekly Recap (Sept 27→Oct 2) |
+| 2026-10-03 | tweet-digest | TWEET_DIGEST_OK - 0 net-new (2 RTs excluded) |
+| 2026-10-04 | tweet-digest | Shipped - Security (hook + audit capability), 1 net-new, written flat per GH #234 |
+| 2026-10-08 | tweet-digest | First run after 10-04→10-07 CI-hang streak - Aeon Connect launch, ComboBreaker hook, community congrats |
+| 2026-10-09 | tweet-digest | Skill Drop (Higgsfield), New Hooks (BuyerWins), Narrative (ownership/decentralization) |
+| 2026-10-10 | tweet-digest | TWEET_DIGEST_OK - no activity |
