@@ -1,15 +1,14 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-17T18:01:01Z",
-  "quality_score": 3,
-  "assessment": "Clean, correctly reasoned no-op: it reports the fetch, the date window, and the retweet and empty-tweet exclusions, and sends nothing, as the no-change rule requires. It is thin on substance and can't be verified from the output alone.",
-  "flags": [],
-  "avg_score": 3.27,
+  "last_analyzed": "2026-10-18T18:37:37Z",
+  "quality_score": 2,
+  "assessment": "Single-item digest that restates one tweet with no context, source verification, or follow-up on the Maigret scanner claim; the specific security assertion and status link cannot be verified from the output.",
+  "flags": [
+    "unverifiable_claim",
+    "low_quality"
+  ],
+  "avg_score": 3.2,
   "history": [
-    {
-      "date": "2026-09-15",
-      "score": 4
-    },
     {
       "date": "2026-09-16",
       "score": 3
@@ -144,6 +143,12 @@
       "date": "2026-10-17",
       "score": 3,
       "ts": "2026-10-17T18:01:01Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-18",
+      "score": 2,
+      "ts": "2026-10-18T18:37:37Z",
       "harness": "claude"
     }
   ]
