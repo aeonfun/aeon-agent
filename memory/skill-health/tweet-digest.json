@@ -1,18 +1,13 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-18T18:37:37Z",
+  "last_analyzed": "2026-10-21T00:38:26Z",
   "quality_score": 2,
-  "assessment": "Single-item digest that restates one tweet with no context, source verification, or follow-up on the Maigret scanner claim; the specific security assertion and status link cannot be verified from the output.",
+  "assessment": "Terse bullet list of tweet links with no sourcing or context; the third-party security claims (OpenCodex crash, nanobot gateway RCE, Maigret report code execution) and the 17k+ star figure are stated as fact without verifiable detail, and security findings on other projects fall outside the strategy's stay-in-lane rule.",
   "flags": [
-    "unverifiable_claim",
-    "low_quality"
+    "unverifiable_claim"
   ],
-  "avg_score": 3.2,
+  "avg_score": 3.17,
   "history": [
-    {
-      "date": "2026-09-16",
-      "score": 3
-    },
     {
       "date": "2026-09-17",
       "score": 3
@@ -149,6 +144,12 @@
       "date": "2026-10-18",
       "score": 2,
       "ts": "2026-10-18T18:37:37Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-21",
+      "score": 2,
+      "ts": "2026-10-21T00:38:26Z",
       "harness": "claude"
     }
   ]

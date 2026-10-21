@@ -1,0 +1,185 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest — 2026-10-21"
+      },
+      "children": [
+        "h_security",
+        "item_1",
+        "item_2",
+        "item_3",
+        "sep_1",
+        "h_framework",
+        "item_4",
+        "item_5"
+      ]
+    },
+    "h_security": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Security scanner findings",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet_1",
+        "link_1"
+      ]
+    },
+    "tweet_1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "x.com/aeonframework",
+        "text": "Scanner found that a single malformed response could exhaust memory and crash @claudeebum's OpenCodex (17k+ stars)"
+      },
+      "children": []
+    },
+    "link_1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2112494032513298593"
+      },
+      "children": []
+    },
+    "item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet_2",
+        "link_2"
+      ]
+    },
+    "tweet_2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "x.com/aeonframework",
+        "text": "Scanner found that a web page you visit could hijack nanobot's local gateway and run shell commands"
+      },
+      "children": []
+    },
+    "link_2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2112134713221787826"
+      },
+      "children": []
+    },
+    "item_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet_3",
+        "link_3"
+      ]
+    },
+    "tweet_3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "x.com/aeonframework",
+        "text": "Scanner found that a target's own profile text could execute as code when you open Maigret's generated report"
+      },
+      "children": []
+    },
+    "link_3": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2111716378780783098"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_framework": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Framework shipping",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "item_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet_4",
+        "link_4"
+      ]
+    },
+    "tweet_4": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "x.com/aeonframework",
+        "text": "The aeon MCP is live, making the framework and its skills easier to use (quoting Aaron: already listed on VSCode, OpenClaw and more)"
+      },
+      "children": []
+    },
+    "link_4": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2112486774660358389"
+      },
+      "children": []
+    },
+    "item_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet_5",
+        "link_5"
+      ]
+    },
+    "tweet_5": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "x.com/aeonframework",
+        "text": "Self-healing agents set Aeon apart from other agent frameworks; full article linked in comments"
+      },
+      "children": []
+    },
+    "link_5": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2112181087120265677"
+      },
+      "children": []
+    }
+  }
+}
