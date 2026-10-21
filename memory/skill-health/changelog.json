@@ -1,12 +1,12 @@
 {
   "skill": "changelog",
-  "last_analyzed": "2026-10-12T08:23:31Z",
+  "last_analyzed": "2026-10-21T00:38:57Z",
   "quality_score": 2,
-  "assessment": "Ran but produced unverifiable specifics; work is draft/incomplete and lacks substantive detail.",
+  "assessment": "Output is a two-line pointer to a draft PR with a changelog title; no changelog content, PR list, or substance is shown, so the work cannot be verified or used by a reader.",
   "flags": [
-    "unverifiable_claim"
+    "empty_output"
   ],
-  "avg_score": 3.69,
+  "avg_score": 3.57,
   "history": [
     {
       "date": "2026-07-27",
@@ -62,6 +62,12 @@
       "date": "2026-10-12",
       "score": 2,
       "ts": "2026-10-12T08:23:31Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-21",
+      "score": 2,
+      "ts": "2026-10-21T00:38:57Z",
       "harness": "claude"
     }
   ]

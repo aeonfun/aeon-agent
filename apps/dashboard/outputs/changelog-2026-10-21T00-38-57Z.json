@@ -1,0 +1,72 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Changelog (push-to) - 2026-10-21"
+      },
+      "children": [
+        "stack"
+      ]
+    },
+    "stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo",
+        "count",
+        "sep",
+        "entry",
+        "pr",
+        "prBadge"
+      ]
+    },
+    "repo": {
+      "type": "Text",
+      "props": {
+        "text": "aeonfun/aeon -> aeonfun/aeon-website",
+        "variant": "body"
+      }
+    },
+    "count": {
+      "type": "Text",
+      "props": {
+        "text": "5 new PRs -> changelog entry \"Hosted MCP plugin and docs sync\"",
+        "variant": "lead"
+      }
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "entry": {
+      "type": "Heading",
+      "props": {
+        "text": "Hosted MCP plugin and docs sync",
+        "level": "h3"
+      }
+    },
+    "pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Draft PR: Hosted MCP plugin and docs sync",
+        "href": "https://github.com/aeonfun/aeon-website/pull/679",
+        "source": "aeonfun/aeon-website"
+      }
+    },
+    "prBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "draft PR",
+        "variant": "outline"
+      }
+    }
+  }
+}
