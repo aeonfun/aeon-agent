@@ -1,7 +1,0 @@
-query {
-  repository(owner: "aeonfun", name: "aeon") {
-    pullRequests(states: MERGED) {
-      totalCount
-    }
-  }
-}
