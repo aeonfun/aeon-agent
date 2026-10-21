@@ -1,4 +1,5 @@
 *Holdings — aeon*
 
-14.93B · 14.93% of supply
-7d +169.64M (+1.15%) · 30d +462.18M (+3.19%)
+15.04B · 15.04% of supply
+7d +113.31M (+0.76%) · 30d +479.21M (+3.29%)
+_Balances: public RPC. Supply: GeckoTerminal. Growth: own snapshots (7d vs 2026-10-12). 2026-10-21_
