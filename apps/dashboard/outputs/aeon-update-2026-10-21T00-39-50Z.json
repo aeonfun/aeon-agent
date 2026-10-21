@@ -1,0 +1,189 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "aeon-update — 2026-10-21"
+      },
+      "children": [
+        "main"
+      ]
+    },
+    "main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sync_row",
+        "stats_row",
+        "applied",
+        "sep1",
+        "hl_heading",
+        "hl_1",
+        "hl_2",
+        "hl_3",
+        "hl_4",
+        "sep2",
+        "manual_heading",
+        "manual_row",
+        "manual_alert"
+      ]
+    },
+    "sync_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "sync_text",
+        "pr_link"
+      ]
+    },
+    "sync_text": {
+      "type": "Text",
+      "props": {
+        "text": "Synced 13 upstream commits →",
+        "variant": "body"
+      }
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/aeonfun/aeon-agent/pull/273",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/273"
+      }
+    },
+    "stats_row": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_commits",
+        "stat_files"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Upstream commits synced",
+        "value": "13"
+      }
+    },
+    "stat_files": {
+      "type": "Stat",
+      "props": {
+        "label": "Files applied cleanly",
+        "value": "41"
+      }
+    },
+    "applied": {
+      "type": "Text",
+      "props": {
+        "text": "Applied 41 files cleanly (workflow aeon.yml auto-merged 3-way).",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "hl_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Highlights",
+        "level": "h3"
+      }
+    },
+    "hl_1": {
+      "type": "Text",
+      "props": {
+        "text": "onchain-monitor on Robinhood Chain",
+        "variant": "body"
+      }
+    },
+    "hl_2": {
+      "type": "Text",
+      "props": {
+        "text": "plugin 0.2.0 hosted MCP",
+        "variant": "body"
+      }
+    },
+    "hl_3": {
+      "type": "Text",
+      "props": {
+        "text": "validate-config flags misspelled skill keys",
+        "variant": "body"
+      }
+    },
+    "hl_4": {
+      "type": "Text",
+      "props": {
+        "text": "gateway plan-limit fallback fix",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "manual_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Manual",
+        "level": "h3"
+      }
+    },
+    "manual_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_changelog",
+        "badge_langfuse_doc",
+        "badge_langfuse_otel"
+      ]
+    },
+    "badge_changelog": {
+      "type": "Badge",
+      "props": {
+        "text": "CHANGELOG.md",
+        "variant": "outline"
+      }
+    },
+    "badge_langfuse_doc": {
+      "type": "Badge",
+      "props": {
+        "text": "docs/langfuse.md",
+        "variant": "outline"
+      }
+    },
+    "badge_langfuse_otel": {
+      "type": "Badge",
+      "props": {
+        "text": "langfuse/otel unit (held together)",
+        "variant": "outline"
+      }
+    },
+    "manual_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Manual updates required",
+        "message": "CHANGELOG.md, docs/langfuse.md, langfuse/otel unit (held together).",
+        "type": "warning"
+      }
+    }
+  }
+}
