@@ -1,17 +1,13 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-18T08:58:05Z",
+  "last_analyzed": "2026-10-21T10:28:16Z",
   "quality_score": 2,
-  "assessment": "Output is fluent and structured but its specifics (price, liquidity, buy/sell counts, whale counts, 7d/30d moves, pool address) cannot be verified from the output alone, and the headline reads as a directional signal ('ACCUMULATING') on a token, which edges toward price commentary the strategy forbids; no sourcing shown beyond a chart link.",
+  "assessment": "Terse token-data snapshot with no cited source, timestamp, or shown method; the causal claim that the move was driven by a ~$4.9K buy cluster is asserted without evidence, and the BREAKOUT framing leans toward hype.",
   "flags": [
     "unverifiable_claim"
   ],
-  "avg_score": 3.73,
+  "avg_score": 3.67,
   "history": [
-    {
-      "date": "2026-09-18",
-      "score": 4
-    },
     {
       "date": "2026-09-19",
       "score": 4
@@ -150,6 +146,12 @@
       "date": "2026-10-18",
       "score": 2,
       "ts": "2026-10-18T08:58:05Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-21",
+      "score": 2,
+      "ts": "2026-10-21T10:28:16Z",
       "harness": "claude"
     }
   ]
