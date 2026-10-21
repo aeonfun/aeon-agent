@@ -1,0 +1,951 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse"
+      },
+      "children": [
+        "main"
+      ]
+    },
+    "main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "h-date",
+        "badge-steady",
+        "summary-table",
+        "sep-1",
+        "aeon-section",
+        "sep-2",
+        "soul-section",
+        "sep-3",
+        "opendia-section",
+        "sep-4",
+        "minitor-section",
+        "sep-5",
+        "source-section"
+      ]
+    },
+    "h-date": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Pulse — 2026-10-21",
+        "level": "h2"
+      }
+    },
+    "badge-steady": {
+      "type": "Badge",
+      "props": {
+        "text": "STEADY",
+        "variant": "default"
+      }
+    },
+    "summary-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repo",
+          "Stars",
+          "Forks",
+          "Rel",
+          "Verdict"
+        ],
+        "rows": [
+          [
+            "aeon",
+            "778 (+7)",
+            "291 (+11)",
+            "—",
+            "STEADY"
+          ],
+          [
+            "soul.md",
+            "698 (+10)",
+            "76 (+1)",
+            "—",
+            "STEADY"
+          ],
+          [
+            "opendia",
+            "1930 (+3)",
+            "160 (—)",
+            "—",
+            "STEADY"
+          ],
+          [
+            "minitor",
+            "20 (+3)",
+            "4 (—)",
+            "—",
+            "STEADY"
+          ]
+        ]
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "aeon-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aeon-h",
+        "aeon-status",
+        "aeon-meta",
+        "aeon-new-hdr",
+        "aeon-card-lak",
+        "aeon-other-hdr",
+        "aeon-other-sg",
+        "aeon-forks-hdr",
+        "aeon-card-sentinel",
+        "aeon-card-repoken",
+        "aeon-card-arag",
+        "aeon-card-anvesaka",
+        "aeon-fork-xiao",
+        "aeon-fork-fgg",
+        "aeon-fork-noprof-hdr",
+        "aeon-fork-noprof"
+      ]
+    },
+    "aeon-h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/aeon",
+        "level": "h3"
+      }
+    },
+    "aeon-status": {
+      "type": "Badge",
+      "props": {
+        "text": "STEADY",
+        "variant": "default"
+      }
+    },
+    "aeon-meta": {
+      "type": "Text",
+      "props": {
+        "text": "avg4w ≈ 7, 6 star events in window",
+        "variant": "muted"
+      }
+    },
+    "aeon-new-hdr": {
+      "type": "Text",
+      "props": {
+        "text": "Notable new stargazers (enriched 1 of 6):",
+        "variant": "body"
+      }
+    },
+    "aeon-card-lak": {
+      "type": "Card",
+      "props": {
+        "title": "Lakshman Turlapati"
+      },
+      "children": [
+        "lak-link",
+        "lak-info",
+        "lak-web",
+        "lak-x",
+        "lak-quote"
+      ]
+    },
+    "lak-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/LakshmanTurlapati",
+        "href": "https://github.com/LakshmanTurlapati"
+      }
+    },
+    "lak-info": {
+      "type": "Text",
+      "props": {
+        "text": "Lakshman Turlapati · 📍 Texas · 🏢 Voyza · 105 repos · 54 followers",
+        "variant": "body"
+      }
+    },
+    "lak-web": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 parzival.live",
+        "href": "https://parzival.live"
+      }
+    },
+    "lak-x": {
+      "type": "Text",
+      "props": {
+        "text": "🐦 @parzival1213",
+        "variant": "caption"
+      }
+    },
+    "lak-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Debugging.\"",
+        "variant": "lead"
+      }
+    },
+    "aeon-other-hdr": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "body"
+      }
+    },
+    "aeon-other-sg": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sg-darcos",
+        "sg-sentinelhood",
+        "sg-b40",
+        "sg-fsarrot",
+        "sg-normful"
+      ]
+    },
+    "sg-darcos": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/DarcosNetwork",
+        "href": "https://github.com/DarcosNetwork"
+      }
+    },
+    "sg-sentinelhood": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/sentinelhood",
+        "href": "https://github.com/sentinelhood"
+      }
+    },
+    "sg-b40": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/b40150650-design",
+        "href": "https://github.com/b40150650-design"
+      }
+    },
+    "sg-fsarrot": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/fsarrot",
+        "href": "https://github.com/fsarrot"
+      }
+    },
+    "sg-normful": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/normful",
+        "href": "https://github.com/normful"
+      }
+    },
+    "aeon-forks-hdr": {
+      "type": "Text",
+      "props": {
+        "text": "New forks (9, enriched 8):",
+        "variant": "body"
+      }
+    },
+    "aeon-card-sentinel": {
+      "type": "Card",
+      "props": {
+        "title": "Sentinel"
+      },
+      "children": [
+        "sen-link",
+        "sen-web",
+        "sen-x",
+        "sen-quote"
+      ]
+    },
+    "sen-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/sentinelhood",
+        "href": "https://github.com/sentinelhood"
+      }
+    },
+    "sen-web": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 sentinelhood.com",
+        "href": "https://sentinelhood.com"
+      }
+    },
+    "sen-x": {
+      "type": "Text",
+      "props": {
+        "text": "🐦 @sentinelhood",
+        "variant": "caption"
+      }
+    },
+    "sen-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Read-only, block-stamped reader for Robinhood Chain (4663). Keyless Aeon skill. Never signs, never asks for keys.\"",
+        "variant": "lead"
+      }
+    },
+    "aeon-card-repoken": {
+      "type": "Card",
+      "props": {
+        "title": "Repoken"
+      },
+      "children": [
+        "rep-link",
+        "rep-repos",
+        "rep-web",
+        "rep-x",
+        "rep-quote"
+      ]
+    },
+    "rep-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/repoken",
+        "href": "https://github.com/repoken"
+      }
+    },
+    "rep-repos": {
+      "type": "Text",
+      "props": {
+        "text": "3 repos",
+        "variant": "caption"
+      }
+    },
+    "rep-web": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 repoken.fun",
+        "href": "https://repoken.fun"
+      }
+    },
+    "rep-x": {
+      "type": "Text",
+      "props": {
+        "text": "🐦 @repokendotfun",
+        "variant": "caption"
+      }
+    },
+    "rep-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Repoken pulls metadata straight from your repo, then deploys a token via the PONS factory. No contracts to write, no long forms to fill.\"",
+        "variant": "lead"
+      }
+    },
+    "aeon-card-arag": {
+      "type": "Card",
+      "props": {
+        "title": "Arag Agrawal"
+      },
+      "children": [
+        "arag-link",
+        "arag-info",
+        "arag-web",
+        "arag-quote"
+      ]
+    },
+    "arag-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/AragAgg",
+        "href": "https://github.com/AragAgg"
+      }
+    },
+    "arag-info": {
+      "type": "Text",
+      "props": {
+        "text": "📍 India · 55 repos",
+        "variant": "body"
+      }
+    },
+    "arag-web": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 arag.me",
+        "href": "https://arag.me"
+      }
+    },
+    "arag-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"wtf?\"",
+        "variant": "lead"
+      }
+    },
+    "aeon-card-anvesaka": {
+      "type": "Card",
+      "props": {
+        "title": "AL Pois`on"
+      },
+      "children": [
+        "anv-link",
+        "anv-info",
+        "anv-quote"
+      ]
+    },
+    "anv-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/0xAnvesaka",
+        "href": "https://github.com/0xAnvesaka"
+      }
+    },
+    "anv-info": {
+      "type": "Text",
+      "props": {
+        "text": "11 repos",
+        "variant": "caption"
+      }
+    },
+    "anv-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"smart contract researcher\"",
+        "variant": "lead"
+      }
+    },
+    "aeon-fork-xiao": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "xiao-link",
+        "xiao-info"
+      ]
+    },
+    "xiao-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/xiaozz8",
+        "href": "https://github.com/xiaozz8"
+      }
+    },
+    "xiao-info": {
+      "type": "Text",
+      "props": {
+        "text": "11 repos",
+        "variant": "caption"
+      }
+    },
+    "aeon-fork-fgg": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "fgg-link",
+        "fgg-info"
+      ]
+    },
+    "fgg-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/FggDarkOnee420",
+        "href": "https://github.com/FggDarkOnee420"
+      }
+    },
+    "fgg-info": {
+      "type": "Text",
+      "props": {
+        "text": "3 repos",
+        "variant": "caption"
+      }
+    },
+    "aeon-fork-noprof-hdr": {
+      "type": "Text",
+      "props": {
+        "text": "New accounts (no profile):",
+        "variant": "muted"
+      }
+    },
+    "aeon-fork-noprof": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "np-moose",
+        "np-00288",
+        "np-merv"
+      ]
+    },
+    "np-moose": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/moosebizlab",
+        "href": "https://github.com/moosebizlab"
+      }
+    },
+    "np-00288": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/00288",
+        "href": "https://github.com/00288"
+      }
+    },
+    "np-merv": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/mervwtf",
+        "href": "https://github.com/mervwtf"
+      }
+    },
+    "soul-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "soul-h",
+        "soul-status",
+        "soul-meta",
+        "soul-new-hdr",
+        "soul-card-leo",
+        "soul-other-hdr",
+        "soul-other-sg",
+        "soul-forks-hdr",
+        "soul-card-data-path"
+      ]
+    },
+    "soul-h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/soul.md",
+        "level": "h3"
+      }
+    },
+    "soul-status": {
+      "type": "Badge",
+      "props": {
+        "text": "STEADY",
+        "variant": "default"
+      }
+    },
+    "soul-meta": {
+      "type": "Text",
+      "props": {
+        "text": "avg4w ≈ 7",
+        "variant": "muted"
+      }
+    },
+    "soul-new-hdr": {
+      "type": "Text",
+      "props": {
+        "text": "Notable new stargazers (enriched 2 of 10):",
+        "variant": "body"
+      }
+    },
+    "soul-card-leo": {
+      "type": "Card",
+      "props": {
+        "title": "Leo Dang"
+      },
+      "children": [
+        "leo-link",
+        "leo-info",
+        "leo-web",
+        "leo-quote"
+      ]
+    },
+    "leo-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/amazingnerd",
+        "href": "https://github.com/amazingnerd"
+      }
+    },
+    "leo-info": {
+      "type": "Text",
+      "props": {
+        "text": "73 repos",
+        "variant": "caption"
+      }
+    },
+    "leo-web": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 uiskill.com",
+        "href": "https://uiskill.com"
+      }
+    },
+    "leo-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Design Engineer with a love for art, animation, and 3D.\"",
+        "variant": "lead"
+      }
+    },
+    "soul-other-hdr": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "body"
+      }
+    },
+    "soul-other-sg": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ss-1",
+        "ss-2",
+        "ss-3",
+        "ss-4",
+        "ss-5",
+        "ss-6",
+        "ss-7",
+        "ss-8",
+        "ss-9",
+        "ss-10"
+      ]
+    },
+    "ss-1": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/afer00t",
+        "href": "https://github.com/afer00t"
+      }
+    },
+    "ss-2": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/sistemwms-shc",
+        "href": "https://github.com/sistemwms-shc"
+      }
+    },
+    "ss-3": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/joeho0706",
+        "href": "https://github.com/joeho0706"
+      }
+    },
+    "ss-4": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Oniolove",
+        "href": "https://github.com/Oniolove"
+      }
+    },
+    "ss-5": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/DarcosNetwork",
+        "href": "https://github.com/DarcosNetwork"
+      }
+    },
+    "ss-6": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/ojemario",
+        "href": "https://github.com/ojemario"
+      }
+    },
+    "ss-7": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Sicaduj",
+        "href": "https://github.com/Sicaduj"
+      }
+    },
+    "ss-8": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/iinsirql",
+        "href": "https://github.com/iinsirql"
+      }
+    },
+    "ss-9": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/rebehzat",
+        "href": "https://github.com/rebehzat"
+      }
+    },
+    "ss-10": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/ducpa1912",
+        "href": "https://github.com/ducpa1912"
+      }
+    },
+    "soul-forks-hdr": {
+      "type": "Text",
+      "props": {
+        "text": "New forks:",
+        "variant": "body"
+      }
+    },
+    "soul-card-data-path": {
+      "type": "Card",
+      "props": {
+        "title": "data-path-9"
+      },
+      "children": [
+        "dp-link",
+        "dp-info",
+        "dp-web",
+        "dp-quote"
+      ]
+    },
+    "dp-link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/data-path-9",
+        "href": "https://github.com/data-path-9"
+      }
+    },
+    "dp-info": {
+      "type": "Text",
+      "props": {
+        "text": "268 repos",
+        "variant": "caption"
+      }
+    },
+    "dp-web": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 github.com/azalith-9",
+        "href": "https://github.com/azalith-9"
+      }
+    },
+    "dp-quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Welcome to my Digital Library of Alexandria for all things AI.\"",
+        "variant": "lead"
+      }
+    },
+    "opendia-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "op-h",
+        "op-status",
+        "op-other-hdr",
+        "op-sg"
+      ]
+    },
+    "op-h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/opendia",
+        "level": "h3"
+      }
+    },
+    "op-status": {
+      "type": "Badge",
+      "props": {
+        "text": "STEADY",
+        "variant": "default"
+      }
+    },
+    "op-other-hdr": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "body"
+      }
+    },
+    "op-sg": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "op-1",
+        "op-2",
+        "op-3",
+        "op-4",
+        "op-5",
+        "op-6"
+      ]
+    },
+    "op-1": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/amazingnerd",
+        "href": "https://github.com/amazingnerd"
+      }
+    },
+    "op-2": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Oniolove",
+        "href": "https://github.com/Oniolove"
+      }
+    },
+    "op-3": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/DarcosNetwork",
+        "href": "https://github.com/DarcosNetwork"
+      }
+    },
+    "op-4": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/SolgateK26",
+        "href": "https://github.com/SolgateK26"
+      }
+    },
+    "op-5": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/ibrahim91015",
+        "href": "https://github.com/ibrahim91015"
+      }
+    },
+    "op-6": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/paulmartinezreunion",
+        "href": "https://github.com/paulmartinezreunion"
+      }
+    },
+    "minitor-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "mi-h",
+        "mi-status",
+        "mi-other-hdr",
+        "mi-sg"
+      ]
+    },
+    "mi-h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/minitor",
+        "level": "h3"
+      }
+    },
+    "mi-status": {
+      "type": "Badge",
+      "props": {
+        "text": "STEADY",
+        "variant": "default"
+      }
+    },
+    "mi-other-hdr": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "body"
+      }
+    },
+    "mi-sg": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "mi-1",
+        "mi-2"
+      ]
+    },
+    "mi-1": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Oniolove",
+        "href": "https://github.com/Oniolove"
+      }
+    },
+    "mi-2": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/DarcosNetwork",
+        "href": "https://github.com/DarcosNetwork"
+      }
+    },
+    "source-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "src-text",
+        "src-alert-1",
+        "src-alert-2"
+      ]
+    },
+    "src-text": {
+      "type": "Text",
+      "props": {
+        "text": "Source: events",
+        "variant": "caption"
+      }
+    },
+    "src-alert-1": {
+      "type": "Alert",
+      "props": {
+        "title": "Note",
+        "message": "sentinelhood forked + starred aeon and ships an Aeon skill.",
+        "type": "info"
+      }
+    },
+    "src-alert-2": {
+      "type": "Alert",
+      "props": {
+        "title": "Possible star-farming pattern",
+        "message": "DarcosNetwork and Oniolove starred 3–4 repos in sequence (possible star-farming pattern).",
+        "type": "warning"
+      }
+    }
+  }
+}
