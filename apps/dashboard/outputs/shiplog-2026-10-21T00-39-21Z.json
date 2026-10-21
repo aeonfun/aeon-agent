@@ -1,0 +1,330 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "aeon shiplog",
+        "description": "aeon shiplog ⭐ oct 12 → oct 21"
+      },
+      "children": [
+        "stats",
+        "sep1",
+        "bytes_heading",
+        "bytes_stack",
+        "sep2",
+        "traction_heading",
+        "traction_stack",
+        "sep3",
+        "source_stack"
+      ]
+    },
+    "stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_prs",
+        "stat_commits"
+      ]
+    },
+    "stat_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "PRs merged on the repo",
+        "value": "55"
+      },
+      "children": []
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits",
+        "value": "55"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "bytes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "the bytes",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "bytes_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6"
+      ]
+    },
+    "b1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "b1_a",
+        "b1_link",
+        "b1_b"
+      ]
+    },
+    "b1_a": {
+      "type": "Text",
+      "props": {
+        "text": "aeon MCP server, hosted: add",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b1_link": {
+      "type": "Link",
+      "props": {
+        "label": "aeon.fun/connect/mcp",
+        "href": "https://aeon.fun/connect/mcp"
+      },
+      "children": []
+    },
+    "b1_b": {
+      "type": "Text",
+      "props": {
+        "text": "to ChatGPT, Claude or Cursor, sign in with GitHub, run your skills from there. @aeonframework",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "b2_badge",
+        "b2_text"
+      ]
+    },
+    "b2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "langfuse overhaul",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "b2_text": {
+      "type": "Text",
+      "props": {
+        "text": "cost per skill, run quality scores, error classes on every trace",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "b3_badge",
+        "b3_t1",
+        "b3_t2",
+        "b3_t3"
+      ]
+    },
+    "b3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "hardening",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "b3_t1": {
+      "type": "Text",
+      "props": {
+        "text": "secretcurl only swaps secrets a skill declared",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b3_t2": {
+      "type": "Text",
+      "props": {
+        "text": "scheduler fails loud when cron state won't push",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b3_t3": {
+      "type": "Text",
+      "props": {
+        "text": "config validator catches misspelled skill keys",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "b4_badge",
+        "b4_text"
+      ]
+    },
+    "b4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "ci",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "b4_text": {
+      "type": "Text",
+      "props": {
+        "text": "10 parallel test lanes, faster gate",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "b5_badge",
+        "b5_text"
+      ]
+    },
+    "b5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "external contributors merged",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "b5_text": {
+      "type": "Text",
+      "props": {
+        "text": "anatomy skill, robinhood chain onchain-monitor, sentinel pack",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b6": {
+      "type": "Alert",
+      "props": {
+        "title": "security",
+        "message": "opencodex SSE decoder memory exhaustion, fixed in 2.9.0",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "traction_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "traction",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "traction_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t_stars",
+        "t_recaps"
+      ]
+    },
+    "t_stars": {
+      "type": "Stat",
+      "props": {
+        "label": "aeon ⭐ (+7 this window)",
+        "value": "778",
+        "delta": "+7",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "t_recaps": {
+      "type": "Text",
+      "props": {
+        "text": "named in 4 Base Hub recaps (57k), incl. week 41 tier list",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "source_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "source_text",
+        "source_link"
+      ]
+    },
+    "source_text": {
+      "type": "Text",
+      "props": {
+        "text": "⭐ Full log:",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "source_link": {
+      "type": "Link",
+      "props": {
+        "label": "shiplog-2026-10-21.md",
+        "href": "https://github.com/aeonfun/aeon-agent/blob/main/output/articles/shiplog-2026-10-21.md"
+      },
+      "children": []
+    }
+  }
+}
