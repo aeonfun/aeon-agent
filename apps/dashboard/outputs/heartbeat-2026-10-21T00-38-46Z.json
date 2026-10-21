@@ -1,0 +1,223 @@
+{
+  "root": "root",
+  "state": {},
+  "elements": {
+    "root": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat: fleet-wide gateway failure"
+      },
+      "children": [
+        "alert_main",
+        "failed_heading",
+        "failed_summary",
+        "stats_row",
+        "failed_table",
+        "cause_text",
+        "sep_1",
+        "recovery_heading",
+        "recovery_text",
+        "recovery_badges",
+        "recovery_alert"
+      ]
+    },
+    "alert_main": {
+      "type": "Alert",
+      "props": {
+        "title": "Fleet-wide gateway failure",
+        "message": "8 skills failed together. Not skill bugs.",
+        "type": "error"
+      },
+      "children": []
+    },
+    "failed_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "🔴 FAILED",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "failed_summary": {
+      "type": "Text",
+      "props": {
+        "text": "8 skills failed together on 2026-10-19 19:16 UTC (token-report x3 in a row; repo-pulse, shiplog, changelog, holdings, aeon-update x2; tweet-digest, heartbeat x1).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "stats_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_failed",
+        "stat_tokens"
+      ]
+    },
+    "stat_failed": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills failed",
+        "value": "8"
+      },
+      "children": []
+    },
+    "stat_tokens": {
+      "type": "Stat",
+      "props": {
+        "label": "Tokens used",
+        "value": "0"
+      },
+      "children": []
+    },
+    "failed_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Skill",
+          "Failed runs"
+        ],
+        "rows": [
+          [
+            "token-report",
+            "3"
+          ],
+          [
+            "repo-pulse",
+            "1"
+          ],
+          [
+            "shiplog",
+            "1"
+          ],
+          [
+            "changelog",
+            "1"
+          ],
+          [
+            "holdings",
+            "1"
+          ],
+          [
+            "aeon-update",
+            "2"
+          ],
+          [
+            "tweet-digest",
+            "1"
+          ],
+          [
+            "heartbeat",
+            "1"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "cause_text": {
+      "type": "Text",
+      "props": {
+        "text": "Shared cause: \"All gateway providers failed\", zero tokens used. Not skill bugs.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "recovery_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "🟡 RECOVERY",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "recovery_text": {
+      "type": "Text",
+      "props": {
+        "text": "New runs for changelog, aeon-update, shiplog, holdings, repo-pulse, tweet-digest dispatched 2026-10-21 00:37 UTC and still in flight.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "recovery_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_changelog",
+        "badge_aeon_update",
+        "badge_shiplog",
+        "badge_holdings",
+        "badge_repo_pulse",
+        "badge_tweet_digest"
+      ]
+    },
+    "badge_changelog": {
+      "type": "Badge",
+      "props": {
+        "text": "changelog",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_aeon_update": {
+      "type": "Badge",
+      "props": {
+        "text": "aeon-update",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_shiplog": {
+      "type": "Badge",
+      "props": {
+        "text": "shiplog",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_holdings": {
+      "type": "Badge",
+      "props": {
+        "text": "holdings",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_repo_pulse": {
+      "type": "Badge",
+      "props": {
+        "text": "repo-pulse",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_tweet_digest": {
+      "type": "Badge",
+      "props": {
+        "text": "tweet-digest",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "recovery_alert": {
+      "type": "Alert",
+      "props": {
+        "message": "If they fail again, check the gateway credentials/quota.",
+        "type": "warning"
+      },
+      "children": []
+    }
+  }
+}

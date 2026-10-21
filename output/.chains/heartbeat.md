@@ -1,10 +1,4 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH. Nothing new needs the operator's attention, so I sent no notification.
+⚠️ Heartbeat: fleet-wide gateway failure
 
-- **P0 (failed or stuck skills):** none. The nine enabled skills all show success with 0 consecutive failures. `token-report` recovered on its 10-18 run after the git-auth fix in #269.
-- **P1 (PRs and issues):** there are no open PRs. Six stale `health:` issues are still open on GitHub (#230, #231, #234, #247, #248, #258). The 10-17 heartbeat already reported them.
-- **P2 and P3 (memory flags, missing skills):** no new flags.
-- **Status page:** I regenerated `docs/status.md`. It reads 🟡 WATCH because of those stale issues, not because of any skill. Its token pulse is the 10-18 report: $0.00001357, −2.6% over 24h, verdict ACCUMULATING.
-
-## Summary
-- Modified `docs/status.md` and appended a `### heartbeat` entry to `memory/logs/2026-10-18.md`.
-- Follow-ups already tracked in memory: auto-close the stale `health:` issues, and decide what to do with the `AGENTS.md` deletion and the three untracked files in the working tree.
+🔴 FAILED: 8 skills failed together on 2026-10-19 19:16 UTC (token-report x3 in a row; repo-pulse, shiplog, changelog, holdings, aeon-update x2; tweet-digest, heartbeat x1). Shared cause: "All gateway providers failed", zero tokens used. Not skill bugs.
+🟡 RECOVERY: new runs for changelog, aeon-update, shiplog, holdings, repo-pulse, tweet-digest dispatched 2026-10-21 00:37 UTC and still in flight. If they fail again, check the gateway credentials/quota.
