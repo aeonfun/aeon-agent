@@ -1,0 +1,177 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest — 2026-10-21"
+      },
+      "children": [
+        "h-onb",
+        "stack-onb",
+        "sep-1",
+        "h-skills",
+        "stack-skills",
+        "sep-2",
+        "badge-sec",
+        "h-sec",
+        "stack-sec"
+      ]
+    },
+    "h-onb": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Onboarding & Education",
+        "level": "h3"
+      }
+    },
+    "stack-onb": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tw-1",
+        "lk-1",
+        "tw-2",
+        "lk-2"
+      ]
+    },
+    "tw-1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Contributor @svector_eth's ~9-min tutorial covers setting up agents via aeon connect: skill packs, SOUL.md, using Aeon from Claude, Telegram updates, MCP servers page.",
+        "likes": 35,
+        "retweets": 9
+      }
+    },
+    "lk-1": {
+      "type": "Link",
+      "props": {
+        "label": "View post",
+        "href": "https://x.com/aeonframework/status/2112801062558253479"
+      }
+    },
+    "tw-2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Same walkthrough now on YouTube (\"Aeon Connect Walkthrough: Run Your AI Agent from Claude, GitHub Actions & Telegram\")"
+      }
+    },
+    "lk-2": {
+      "type": "Link",
+      "props": {
+        "label": "View post",
+        "href": "https://x.com/aeonframework/status/2112838346435158259"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "h-skills": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Skills & Product",
+        "level": "h3"
+      }
+    },
+    "stack-skills": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tw-3",
+        "lk-3",
+        "tw-4",
+        "lk-4"
+      ]
+    },
+    "tw-3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Skill spotlight: Anatomy renders an idea as a physical object (dial gauge, lock, drawers) with a live readout instead of boxes and arrows; credit @wheresryan22"
+      }
+    },
+    "lk-3": {
+      "type": "Link",
+      "props": {
+        "label": "View post",
+        "href": "https://x.com/aeonframework/status/2112892709492908114"
+      }
+    },
+    "tw-4": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Quote of Aaron's post: agents trained on 11,000 smart contracts and 500+ crypto experiments for an upcoming \"wayback\" build"
+      }
+    },
+    "lk-4": {
+      "type": "Link",
+      "props": {
+        "label": "View post",
+        "href": "https://x.com/aeonframework/status/2112878263034908966"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "badge-sec": {
+      "type": "Badge",
+      "props": {
+        "text": "Security",
+        "variant": "destructive"
+      }
+    },
+    "h-sec": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Security",
+        "level": "h3"
+      }
+    },
+    "stack-sec": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tw-5",
+        "lk-5"
+      ]
+    },
+    "tw-5": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Scanner finding on @agentrouterai: a leaked session ID let one user act as another, and a default key made sessions forgeable"
+      }
+    },
+    "lk-5": {
+      "type": "Link",
+      "props": {
+        "label": "View post",
+        "href": "https://x.com/aeonframework/status/2112836048237834587"
+      }
+    }
+  }
+}

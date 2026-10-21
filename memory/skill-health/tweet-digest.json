@@ -1,17 +1,11 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-21T00:38:26Z",
-  "quality_score": 2,
-  "assessment": "Terse bullet list of tweet links with no sourcing or context; the third-party security claims (OpenCodex crash, nanobot gateway RCE, Maigret report code execution) and the 17k+ star figure are stated as fact without verifiable detail, and security findings on other projects fall outside the strategy's stay-in-lane rule.",
-  "flags": [
-    "unverifiable_claim"
-  ],
+  "last_analyzed": "2026-10-21T19:33:32Z",
+  "quality_score": 3,
+  "assessment": "Accurate-looking digest of the account's own posts with plausible tweet links, but thin: one-line restatements with little analysis, and the security item drifts outside the framework lane.",
+  "flags": [],
   "avg_score": 3.17,
   "history": [
-    {
-      "date": "2026-09-17",
-      "score": 3
-    },
     {
       "date": "2026-09-18",
       "score": 4
@@ -150,6 +144,12 @@
       "date": "2026-10-21",
       "score": 2,
       "ts": "2026-10-21T00:38:26Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-21",
+      "score": 3,
+      "ts": "2026-10-21T19:33:32Z",
       "harness": "claude"
     }
   ]
