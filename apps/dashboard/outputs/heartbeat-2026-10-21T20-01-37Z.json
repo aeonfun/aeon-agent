@@ -1,0 +1,185 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Priority Brief — 2026-10-21",
+        "description": "heartbeat"
+      },
+      "children": [
+        "focus_h",
+        "focus_1",
+        "focus_2",
+        "focus_3",
+        "sep_1",
+        "since_h",
+        "item_token",
+        "item_fleet",
+        "item_pr",
+        "item_stuck"
+      ]
+    },
+    "focus_h": {
+      "type": "Heading",
+      "props": {
+        "text": "Focus today",
+        "level": "h3"
+      }
+    },
+    "focus_1": {
+      "type": "Text",
+      "props": {
+        "text": "1. Merge aeon-update sync (`aeon-update/sync-75f3b55`, 13 commits) — why now: drift grows; 32 conflicts already carried.",
+        "variant": "body"
+      }
+    },
+    "focus_2": {
+      "type": "Text",
+      "props": {
+        "text": "2. Auto-close stale health issues (#230, #231, #234, #247, #248, #258, #261) — why now: fleet is green, issues misreport.",
+        "variant": "body"
+      }
+    },
+    "focus_3": {
+      "type": "Text",
+      "props": {
+        "text": "3. Scratch-file hygiene (268 tracked, `.gitignore` scratch dirs) — why now: repo noise hits first-time forkers.",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "since_h": {
+      "type": "Heading",
+      "props": {
+        "text": "Since yesterday",
+        "level": "h3"
+      }
+    },
+    "item_token": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_moved_1",
+        "text_token",
+        "stat_token_price",
+        "stat_token_liq"
+      ]
+    },
+    "badge_moved_1": {
+      "type": "Badge",
+      "props": {
+        "text": "moved",
+        "variant": "default"
+      }
+    },
+    "text_token": {
+      "type": "Text",
+      "props": {
+        "text": "token-report BREAKOUT",
+        "variant": "body"
+      }
+    },
+    "stat_token_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "0.00001773",
+        "delta": "+14.1% 24h, +15.7% 7d",
+        "trend": "up"
+      }
+    },
+    "stat_token_liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$385K"
+      }
+    },
+    "item_fleet": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_moved_2",
+        "text_fleet"
+      ]
+    },
+    "badge_moved_2": {
+      "type": "Badge",
+      "props": {
+        "text": "moved",
+        "variant": "default"
+      }
+    },
+    "text_fleet": {
+      "type": "Text",
+      "props": {
+        "text": "fleet recovered from the 10-19 gateway outage; 0 consecutive failures.",
+        "variant": "body"
+      }
+    },
+    "item_pr": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_open",
+        "text_pr"
+      ]
+    },
+    "badge_open": {
+      "type": "Badge",
+      "props": {
+        "text": "open",
+        "variant": "secondary"
+      }
+    },
+    "text_pr": {
+      "type": "Text",
+      "props": {
+        "text": "PR #275 (dependabot hono bump in mcp-server) under 24h old.",
+        "variant": "body"
+      }
+    },
+    "item_stuck": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_stuck",
+        "alert_stuck"
+      ]
+    },
+    "badge_stuck": {
+      "type": "Badge",
+      "props": {
+        "text": "stuck",
+        "variant": "destructive"
+      }
+    },
+    "alert_stuck": {
+      "type": "Alert",
+      "props": {
+        "title": "Working-tree anomaly",
+        "message": "AGENTS.md deleted, 3 untracked scripts — 60+ days, no operator decision.",
+        "type": "warning"
+      }
+    }
+  }
+}
