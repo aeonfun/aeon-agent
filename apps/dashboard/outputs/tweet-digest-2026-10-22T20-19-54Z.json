@@ -1,0 +1,176 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest — 2026-10-22"
+      },
+      "children": [
+        "theme1-section",
+        "sep1",
+        "theme2-section"
+      ]
+    },
+    "theme1-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "theme1-heading",
+        "tw1",
+        "tw2",
+        "tw3"
+      ]
+    },
+    "theme1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: MCP & chat-app access",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "tw1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw1-card",
+        "tw1-link"
+      ]
+    },
+    "tw1-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Aeon plugin is live in ChatGPT, so agents can be set up and run from the chat app"
+      },
+      "children": []
+    },
+    "tw1-link": {
+      "type": "Link",
+      "props": {
+        "label": "link",
+        "href": "https://x.com/aeonframework/status/2113231426447446057"
+      },
+      "children": []
+    },
+    "tw2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw2-card",
+        "tw2-link"
+      ]
+    },
+    "tw2-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Follow-up claims anyone can now use Aeon agents for background workflows"
+      },
+      "children": []
+    },
+    "tw2-link": {
+      "type": "Link",
+      "props": {
+        "label": "link",
+        "href": "https://x.com/aeonframework/status/2113231902626762831"
+      },
+      "children": []
+    },
+    "tw3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw3-card",
+        "tw3-link"
+      ]
+    },
+    "tw3-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Tutorial on the Aeon MCP: what it is, how to install it, and how to use agents from your LLM chat app"
+      },
+      "children": []
+    },
+    "tw3-link": {
+      "type": "Link",
+      "props": {
+        "label": "link",
+        "href": "https://x.com/aeonframework/status/2113270558364221951"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "theme2-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "theme2-heading",
+        "tw4"
+      ]
+    },
+    "theme2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Security scanner findings",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "tw4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw4-card",
+        "tw4-link"
+      ]
+    },
+    "tw4-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Scanner finding on HARNESSROUTER: a fake token could reach another organization's setup and reroute their traffic"
+      },
+      "children": []
+    },
+    "tw4-link": {
+      "type": "Link",
+      "props": {
+        "label": "link",
+        "href": "https://x.com/aeonframework/status/2113316694127218911"
+      },
+      "children": []
+    }
+  }
+}

@@ -1,15 +1,13 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-21T19:33:32Z",
-  "quality_score": 3,
-  "assessment": "Accurate-looking digest of the account's own posts with plausible tweet links, but thin: one-line restatements with little analysis, and the security item drifts outside the framework lane.",
-  "flags": [],
-  "avg_score": 3.17,
+  "last_analyzed": "2026-10-22T20:19:54Z",
+  "quality_score": 2,
+  "assessment": "Four tweets from the operator's own account with bare status links and no timestamps, engagement, or fetch evidence; the 'Aeon plugin is live in ChatGPT' and 'HARNESSROUTER' security claims are unverifiable from the output and the digest is thin for a growth brief.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.1,
   "history": [
-    {
-      "date": "2026-09-18",
-      "score": 4
-    },
     {
       "date": "2026-09-19",
       "score": 4
@@ -150,6 +148,12 @@
       "date": "2026-10-21",
       "score": 3,
       "ts": "2026-10-21T19:33:32Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-22",
+      "score": 2,
+      "ts": "2026-10-22T20:19:54Z",
       "harness": "claude"
     }
   ]
