@@ -1,17 +1,13 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-21T10:28:16Z",
+  "last_analyzed": "2026-10-22T14:54:14Z",
   "quality_score": 2,
-  "assessment": "Terse token-data snapshot with no cited source, timestamp, or shown method; the causal claim that the move was driven by a ~$4.9K buy cluster is asserted without evidence, and the BREAKOUT framing leans toward hype.",
+  "assessment": "Compact, internally consistent market snapshot (buy/sell ratio 107/117 = 0.91 checks out), but it gives no data source, timestamp, or definition for 'Whales' or the '10-18' baseline, and the 'large buys around 12:00 UTC' attribution is unsupported by anything shown, so the figures can't be verified from the output.",
   "flags": [
     "unverifiable_claim"
   ],
-  "avg_score": 3.67,
+  "avg_score": 3.6,
   "history": [
-    {
-      "date": "2026-09-19",
-      "score": 4
-    },
     {
       "date": "2026-09-20",
       "score": 4
@@ -152,6 +148,12 @@
       "date": "2026-10-21",
       "score": 2,
       "ts": "2026-10-21T10:28:16Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-22",
+      "score": 2,
+      "ts": "2026-10-22T14:54:14Z",
       "harness": "claude"
     }
   ]

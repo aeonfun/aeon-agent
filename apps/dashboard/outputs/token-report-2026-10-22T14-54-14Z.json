@@ -1,0 +1,148 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$AEON — RALLYING"
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "grid1",
+        "grid2",
+        "ratio",
+        "sep2",
+        "chart"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price +8.2% on the day with 24h volume at 2.05× the 7d average, led by large buys around 12:00 UTC.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "grid1": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "price",
+        "liq",
+        "vol"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001941",
+        "delta": "+8.2% 24h",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liq",
+        "value": "$381.3K",
+        "delta": "+5.7% vs 10-18",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Vol",
+        "value": "$100.0K",
+        "delta": "2.05× 7d",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "grid2": {
+      "type": "Grid",
+      "props": {
+        "columns": 4,
+        "gap": "md"
+      },
+      "children": [
+        "buysells",
+        "whales",
+        "perf7",
+        "perf30"
+      ]
+    },
+    "buysells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "107/117"
+      },
+      "children": []
+    },
+    "whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "28"
+      },
+      "children": []
+    },
+    "perf7": {
+      "type": "Stat",
+      "props": {
+        "label": "7d",
+        "value": "+23.6%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "perf30": {
+      "type": "Stat",
+      "props": {
+        "label": "30d",
+        "value": "-28.0%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "ratio": {
+      "type": "Text",
+      "props": {
+        "text": "Buys/Sells ratio 0.91",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}
