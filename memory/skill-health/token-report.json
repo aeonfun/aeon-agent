@@ -1,17 +1,14 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-22T14:54:14Z",
+  "last_analyzed": "2026-10-23T12:59:52Z",
   "quality_score": 2,
-  "assessment": "Compact, internally consistent market snapshot (buy/sell ratio 107/117 = 0.91 checks out), but it gives no data source, timestamp, or definition for 'Whales' or the '10-18' baseline, and the 'large buys around 12:00 UTC' attribution is unsupported by anything shown, so the figures can't be verified from the output.",
+  "assessment": "Terse price alert with precise on-chain figures (price, liquidity, volume, buy/sell counts, whale count, a pool link) and no source, timestamp, or method, so the numbers cannot be checked from the output. The 'BREAKOUT' framing is hype and off-strategy for a skill meant to track momentum honestly and avoid price-driven calls.",
   "flags": [
-    "unverifiable_claim"
+    "unverifiable_claim",
+    "generic_content"
   ],
-  "avg_score": 3.6,
+  "avg_score": 3.53,
   "history": [
-    {
-      "date": "2026-09-20",
-      "score": 4
-    },
     {
       "date": "2026-09-21",
       "score": 4
@@ -154,6 +151,12 @@
       "date": "2026-10-22",
       "score": 2,
       "ts": "2026-10-22T14:54:14Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-23",
+      "score": 2,
+      "ts": "2026-10-23T12:59:52Z",
       "harness": "claude"
     }
   ]

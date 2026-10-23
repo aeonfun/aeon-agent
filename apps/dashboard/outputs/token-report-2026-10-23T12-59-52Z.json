@@ -1,0 +1,131 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "✅ AEON BREAKOUT"
+      },
+      "children": [
+        "stack"
+      ]
+    },
+    "stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h_token",
+        "summary",
+        "sep1",
+        "grid_main",
+        "grid_secondary",
+        "sep2",
+        "chart"
+      ]
+    },
+    "h_token": {
+      "type": "Heading",
+      "props": {
+        "text": "$AEON — BREAKOUT",
+        "level": "h2"
+      }
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price +10.7% on 24h volume at 2.5× the 7-run average, rebounding +40.1% off the 10-18 low.",
+        "variant": "lead"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "grid_main": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "price",
+        "liq",
+        "vol"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00002148",
+        "delta": "+10.7% (24h)",
+        "trend": "up"
+      }
+    },
+    "liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liq",
+        "value": "$441.4K",
+        "delta": "+15.8%",
+        "trend": "up"
+      }
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Vol",
+        "value": "$169.8K",
+        "delta": "2.5× 7d",
+        "trend": "up"
+      }
+    },
+    "grid_secondary": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "buys",
+        "whales"
+      ]
+    },
+    "buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "334/238",
+        "delta": "ratio 1.40",
+        "trend": "up"
+      }
+    },
+    "whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "14",
+        "trend": "neutral"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      }
+    }
+  }
+}
