@@ -174,7 +174,7 @@
     "last_quality_score": 4
   },
   "tweet-digest": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-10-22T20:20:10Z",
     "total_runs": 132,
     "total_successes": 123,
@@ -182,7 +182,7 @@
     "consecutive_failures": 0,
     "success_rate": 0.93,
     "last_quality_score": 2,
-    "last_dispatch": "2026-10-22T20:18:42Z",
+    "last_dispatch": "2026-10-23T17:29:56Z",
     "last_failed": "2026-10-19T19:17:10Z",
     "last_error": "background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safe"
   },
