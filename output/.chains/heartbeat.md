@@ -1,11 +1,12 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH. All 9 enabled skills are healthy, so I sent no notification.
+HEARTBEAT_OK · STATUS_PAGE=WATCH. Nothing new needs attention, so I sent no notification.
 
-- **Failures:** No skill is failed, stuck or degraded. `token-report` failed on 10-22 with an auth error and has recovered since. That recovered failure is why the page reads WATCH rather than OK.
-- **GitHub:** There are no open PRs and no urgent issues.
-- **Memory:** The follow-ups flagged in `memory/MEMORY.md` are already known and not new.
-- **Token:** AEON is at $0.00002148, up 10.7% in 24h, with liquidity of $441.4K and a BREAKOUT verdict.
+- **Skills:** all 9 enabled skills are healthy. None are failed or stuck. `token-report` failed on 10-22 and recovered. Its 10-24 run succeeded.
+- **PRs and issues:** no open PRs. The 9 open `health:` GitHub issues (#230, #231, #234, #247, #248, #258, #270, #271, #272) are stale carry-overs already flagged in memory (the first seven are listed in `memory/MEMORY.md`), so I didn't re-report them. They are also why the page reads WATCH instead of OK.
+- **Memory:** the working-tree anomaly is still flagged in memory (`AGENTS.md` deleted, three untracked scripts).
+- **Open-issues count on the page:** `docs/status.md` says "No open issues", but that comes from `memory/issues/INDEX.md`, which is empty. The 9 open issues are on GitHub, not in that index.
+- **Token pulse:** AEON is at $0.00001799, down 16.2% on the day, with the 10-24 verdict CONSOLIDATING.
 
 ## Summary
-- Regenerated `docs/status.md` with the new token pulse and skill table.
-- Appended the `### heartbeat` entry to `memory/logs/2026-10-23.md`.
-- No follow-up needed beyond the existing priorities in `memory/MEMORY.md`.
+- Rewrote `docs/status.md` with the current fleet table and the 10-24 token pulse.
+- Appended a `### heartbeat` entry to `memory/logs/2026-10-24.md`.
+- Follow-up still open from memory: the stale `health:` issues don't auto-close, so they need a skill-repair pass.
