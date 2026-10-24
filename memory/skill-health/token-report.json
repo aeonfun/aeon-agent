@@ -1,18 +1,13 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-23T12:59:52Z",
+  "last_analyzed": "2026-10-24T07:12:36Z",
   "quality_score": 2,
-  "assessment": "Terse price alert with precise on-chain figures (price, liquidity, volume, buy/sell counts, whale count, a pool link) and no source, timestamp, or method, so the numbers cannot be checked from the output. The 'BREAKOUT' framing is hype and off-strategy for a skill meant to track momentum honestly and avoid price-driven calls.",
+  "assessment": "Terse price/liquidity/whale snapshot with no timestamp, data source, or 7d-average method, so the figures can't be verified from the output and the analysis is a bare data dump with little substance for the strategy.",
   "flags": [
-    "unverifiable_claim",
-    "generic_content"
+    "low_quality"
   ],
-  "avg_score": 3.53,
+  "avg_score": 3.47,
   "history": [
-    {
-      "date": "2026-09-21",
-      "score": 4
-    },
     {
       "date": "2026-09-22",
       "score": 4
@@ -157,6 +152,12 @@
       "date": "2026-10-23",
       "score": 2,
       "ts": "2026-10-23T12:59:52Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-24",
+      "score": 2,
+      "ts": "2026-10-24T07:12:36Z",
       "harness": "claude"
     }
   ]
