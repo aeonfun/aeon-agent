@@ -1,15 +1,13 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-23T17:31:27Z",
-  "quality_score": 3,
-  "assessment": "Completed a short digest of three of the account's own tweets with links, but each entry is a one-line restatement with no engagement, context, or analysis, and the links cannot be verified from the output alone.",
-  "flags": [],
-  "avg_score": 3.07,
+  "last_analyzed": "2026-10-24T18:36:20Z",
+  "quality_score": 2,
+  "assessment": "Single-item digest on a security finding in another project (UI-TARS), outside Aeon's lane. The claim and tweet link are unsourced and can't be verified from the output, and the digest has no substance beyond that one line.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.03,
   "history": [
-    {
-      "date": "2026-09-20",
-      "score": 3
-    },
     {
       "date": "2026-09-21",
       "score": 4
@@ -154,6 +152,12 @@
       "date": "2026-10-23",
       "score": 3,
       "ts": "2026-10-23T17:31:27Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-24",
+      "score": 2,
+      "ts": "2026-10-24T18:36:20Z",
       "harness": "claude"
     }
   ]
