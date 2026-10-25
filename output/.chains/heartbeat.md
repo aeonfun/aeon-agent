@@ -1,12 +1,11 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH. Nothing new needs attention, so I sent no notification.
+HEARTBEAT_OK · STATUS_PAGE=WATCH. Nothing needed attention, so I sent no notification.
 
-- **Skills:** all 9 enabled skills are healthy. None are failed or stuck. `token-report` failed on 10-22 and recovered. Its 10-24 run succeeded.
-- **PRs and issues:** no open PRs. The 9 open `health:` GitHub issues (#230, #231, #234, #247, #248, #258, #270, #271, #272) are stale carry-overs already flagged in memory (the first seven are listed in `memory/MEMORY.md`), so I didn't re-report them. They are also why the page reads WATCH instead of OK.
-- **Memory:** the working-tree anomaly is still flagged in memory (`AGENTS.md` deleted, three untracked scripts).
-- **Open-issues count on the page:** `docs/status.md` says "No open issues", but that comes from `memory/issues/INDEX.md`, which is empty. The 9 open issues are on GitHub, not in that index.
-- **Token pulse:** AEON is at $0.00001799, down 16.2% on the day, with the 10-24 verdict CONSOLIDATING.
+- **Fleet:** all 9 enabled skills show a successful last status, with no failures, stuck dispatches or API degradation. The 10-19 failures have all recovered.
+- **Repo and memory:** there are no open PRs and `memory/issues/INDEX.md` lists no open issues. P2 still flags the stale `health:` follow-ups in memory, plus the working-tree anomaly of `AGENTS.md` deleted and three untracked scripts.
+- **Watch item:** `memory-flush` was due at 18:00 UTC today, but `memory/cron-state.json` still shows its last success as 10-18 at 19:11 UTC. It is probably still running or its outcome write was lost, which is why the page reads WATCH instead of OK.
+- **Token pulse:** AEON is at $0.00001863 (+3.6% over 24h), liquidity $405.1K, volume $13.7K, FDV $1.86M, verdict CONSOLIDATING. These figures come from `output/articles/token-report-2026-10-25.md`.
 
 ## Summary
-- Rewrote `docs/status.md` with the current fleet table and the 10-24 token pulse.
-- Appended a `### heartbeat` entry to `memory/logs/2026-10-24.md`.
-- Follow-up still open from memory: the stale `health:` issues don't auto-close, so they need a skill-repair pass.
+- Regenerated `docs/status.md`, including the token pulse and the 9-skill health table.
+- Appended a `### heartbeat` entry (`mode: ambient`) to `memory/logs/2026-10-25.md`.
+- Follow-up: check tomorrow that `memory-flush` has reported an outcome.
