@@ -1,0 +1,52 @@
+{
+  "root": "digest-card",
+  "state": {},
+  "elements": {
+    "digest-card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest — 2026-10-25"
+      },
+      "children": [
+        "theme-text",
+        "divider-1",
+        "tweet-1",
+        "tweet-1-link"
+      ]
+    },
+    "theme-text": {
+      "type": "Text",
+      "props": {
+        "text": "Theme: Security scanner findings",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "divider-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "tweet-1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "aeonframework",
+        "text": "Scanner found that sandboxed code in Tencent's CubeSandbox could mount any host folder and escape the container entirely",
+        "likes": 20,
+        "retweets": 3
+      },
+      "children": []
+    },
+    "tweet-1-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2114242213215690879"
+      },
+      "children": []
+    }
+  }
+}

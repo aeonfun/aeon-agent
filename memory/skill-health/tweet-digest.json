@@ -1,17 +1,14 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-24T18:36:20Z",
+  "last_analyzed": "2026-10-25T19:11:34Z",
   "quality_score": 2,
-  "assessment": "Single-item digest on a security finding in another project (UI-TARS), outside Aeon's lane. The claim and tweet link are unsourced and can't be verified from the output, and the digest has no substance beyond that one line.",
+  "assessment": "Single-item digest on a security finding that is off-lane for this growth agent; the CubeSandbox escape claim, tweet ID, and engagement counts are presented as fact with no visible source or verification.",
   "flags": [
-    "unverifiable_claim"
+    "unverifiable_claim",
+    "low_quality"
   ],
-  "avg_score": 3.03,
+  "avg_score": 2.97,
   "history": [
-    {
-      "date": "2026-09-21",
-      "score": 4
-    },
     {
       "date": "2026-09-22",
       "score": 4
@@ -158,6 +155,12 @@
       "date": "2026-10-24",
       "score": 2,
       "ts": "2026-10-24T18:36:20Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-25",
+      "score": 2,
+      "ts": "2026-10-25T19:11:34Z",
       "harness": "claude"
     }
   ]
