@@ -1,0 +1,130 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "token-report",
+        "description": "$AEON — CONSOLIDATING"
+      },
+      "children": [
+        "status",
+        "heading",
+        "summary",
+        "sep1",
+        "statsGrid",
+        "sep2",
+        "chartLink"
+      ]
+    },
+    "status": {
+      "type": "Badge",
+      "props": {
+        "text": "CONSOLIDATING",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "$AEON — CONSOLIDATING",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price +3.6% on volume 0.13× the recent average; buy/sell flipped to 0.80 from 1.25.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "statsGrid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "price",
+        "liq",
+        "vol",
+        "bs",
+        "whales"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001863",
+        "delta": "+3.6% 24h",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$405.1K",
+        "delta": "+1.2%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "$13.7K",
+        "delta": "0.13× avg",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "bs": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "71/89",
+        "delta": "ratio 0.80",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "1"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chartLink": {
+      "type": "Link",
+      "props": {
+        "label": "Chart (GeckoTerminal)",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}
