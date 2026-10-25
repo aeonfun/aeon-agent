@@ -78,3 +78,8 @@ Older entries rotated out of MEMORY.md's Recent Digests table.
 | 2026-10-08 | tweet-digest | First run after 10-04→10-07 CI-hang streak - Aeon Connect launch, ComboBreaker hook, community congrats |
 | 2026-10-09 | tweet-digest | Skill Drop (Higgsfield), New Hooks (BuyerWins), Narrative (ownership/decentralization) |
 | 2026-10-10 | tweet-digest | TWEET_DIGEST_OK - no activity |
+| 2026-10-11 | tweet-digest | Weekly Recap (Oct 2→11 thread) |
+| 2026-10-12 | tweet-digest | New Hooks (TeamWar), Comparisons (Aeon Agents vs OpenAI Dots) |
+| 2026-10-13 | tweet-digest | Transparency (Blockworks $aeon report), Security (omarchy), Ecosystem (Delvetown) |
+| 2026-10-14 | tweet-digest | Security & Bounty Buyback (Stripe/HackerOne win), Skill Drop (compute-resell) |
+| 2026-10-15 | tweet-digest | Security (reasonix CLI finding), Token (buybacks) |
