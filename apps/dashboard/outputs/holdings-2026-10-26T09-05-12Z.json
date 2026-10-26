@@ -1,0 +1,85 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Holdings — aeon"
+      },
+      "children": [
+        "stack"
+      ]
+    },
+    "stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "grid",
+        "pct",
+        "sep",
+        "src"
+      ]
+    },
+    "grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-holdings",
+        "stat-7d",
+        "stat-30d"
+      ]
+    },
+    "stat-holdings": {
+      "type": "Stat",
+      "props": {
+        "label": "Holdings",
+        "value": "15.12B"
+      }
+    },
+    "stat-7d": {
+      "type": "Stat",
+      "props": {
+        "label": "7d change",
+        "value": "+74.21M",
+        "delta": "+0.49%",
+        "trend": "up"
+      }
+    },
+    "stat-30d": {
+      "type": "Stat",
+      "props": {
+        "label": "30d change",
+        "value": "+406.22M",
+        "delta": "+2.76%",
+        "trend": "up"
+      }
+    },
+    "pct": {
+      "type": "Text",
+      "props": {
+        "text": "15.12% of supply",
+        "variant": "muted"
+      }
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "src": {
+      "type": "Text",
+      "props": {
+        "text": "Balances: public RPC. Supply: GeckoTerminal. Growth: own snapshots (7d vs 2026-10-21). 2026-10-26",
+        "variant": "caption"
+      }
+    }
+  }
+}

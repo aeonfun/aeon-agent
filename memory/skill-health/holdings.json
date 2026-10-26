@@ -1,10 +1,12 @@
 {
   "skill": "holdings",
-  "last_analyzed": "2026-10-21T00:38:23Z",
-  "quality_score": 3,
-  "assessment": "Terse but internally consistent data card: the 7d and 30d percentages reconcile with the stated balance, sources are named and the date matches. It gives no wallet addresses, per-wallet breakdown, or snapshot method beyond one line, so it is hard to verify and offers little analysis for the strategy.",
-  "flags": [],
-  "avg_score": 3.8,
+  "last_analyzed": "2026-10-26T09:05:12Z",
+  "quality_score": 2,
+  "assessment": "Terse number dump with no wallet addresses, RPC or GeckoTerminal references, supply base, or snapshot details, so the figures cannot be checked from the output; the arithmetic is internally consistent but the report is thin for a holdings brief.",
+  "flags": [
+    "low_quality"
+  ],
+  "avg_score": 3.69,
   "history": [
     {
       "date": "2026-07-30",
@@ -68,6 +70,12 @@
       "date": "2026-10-21",
       "score": 3,
       "ts": "2026-10-21T00:38:23Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-26",
+      "score": 2,
+      "ts": "2026-10-26T09:05:12Z",
       "harness": "claude"
     }
   ]
