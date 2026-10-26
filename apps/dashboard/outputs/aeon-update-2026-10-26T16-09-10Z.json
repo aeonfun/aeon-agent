@@ -1,0 +1,122 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "aeon-update",
+        "description": "2026-10-26"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sync-text",
+        "sep-1",
+        "applied-stat",
+        "review-badge",
+        "sep-2",
+        "highlights-heading",
+        "highlight-1",
+        "highlight-2",
+        "highlight-3",
+        "sep-3",
+        "pr-story"
+      ]
+    },
+    "sync-text": {
+      "type": "Text",
+      "props": {
+        "text": "Synced 11 upstream commits → PR. Applied 14 files cleanly, 6 need manual review (.gitignore, CHANGELOG, dashboard/mcp-server dep bumps, ci-lanes.txt).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "applied-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Files applied cleanly",
+        "value": "14"
+      },
+      "children": []
+    },
+    "review-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "6 files need manual review",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "highlights-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Highlights",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "highlight-1": {
+      "type": "Text",
+      "props": {
+        "text": "onchain-monitor evidence replay + offline receipt verification",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "highlight-2": {
+      "type": "Text",
+      "props": {
+        "text": "push-retry cannot-lock-ref fix",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "highlight-3": {
+      "type": "Text",
+      "props": {
+        "text": "aeon-update now runs via scripts/aeon_update.py",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr-story": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #281: aeon-agent update",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/281",
+        "source": "github.com"
+      },
+      "children": []
+    }
+  }
+}

@@ -1,10 +1,12 @@
 {
   "skill": "aeon-update",
-  "last_analyzed": "2026-10-21T00:39:49Z",
-  "quality_score": 3,
-  "assessment": "Completed the upstream sync with concrete counts and a PR link consistent with the branch name, but the output is a terse status line with no verifiable detail on the highlights or the held conflicts.",
-  "flags": [],
-  "avg_score": 3.91,
+  "last_analyzed": "2026-10-26T16:09:10Z",
+  "quality_score": 2,
+  "assessment": "Output reports a sync PR with specific counts and a PR URL, but gives no verifiable detail (no file list, commit hashes, or PR state) and the 'Highlights' are generic summaries of upstream commits, so the claims cannot be checked from the output alone.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.75,
   "history": [
     {
       "date": "2026-08-24",
@@ -54,6 +56,12 @@
       "date": "2026-10-21",
       "score": 3,
       "ts": "2026-10-21T00:39:49Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-26",
+      "score": 2,
+      "ts": "2026-10-26T16:09:10Z",
       "harness": "claude"
     }
   ]
