@@ -1,8 +1,8 @@
 *$AEON — CONSOLIDATING*
 
-Price +3.6% on volume 0.13× the recent average; buy/sell flipped to 0.80 from 1.25.
+Price slipped 3.7% on volume at 0.14× the 7d average, so no SLIDING signal. Two $1.8K sells, no whale buys.
 
-Price $0.00001863 (+3.6% 24h) | Liq $405.1K (+1.2%) | Vol $13.7K (0.13× avg)
-Buys/Sells 71/89 (ratio 0.80) | Whales: 1
+Price $0.00001795 (−3.65% 24h) | Liq $394.3K (−2.7%) | Vol $11.1K (0.14× 7d)
+Buys/Sells 26/59 (ratio 0.44) | Whales: 2
 
 Chart: https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4
