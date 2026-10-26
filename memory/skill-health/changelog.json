@@ -1,12 +1,12 @@
 {
   "skill": "changelog",
-  "last_analyzed": "2026-10-21T00:38:57Z",
-  "quality_score": 2,
-  "assessment": "Output is a two-line pointer to a draft PR with a changelog title; no changelog content, PR list, or substance is shown, so the work cannot be verified or used by a reader.",
+  "last_analyzed": "2026-10-26T09:06:19Z",
+  "quality_score": 1,
+  "assessment": "Output is a one-line summary that points to a draft PR with no changelog content, PR list, or verifiable substance in the output itself, so the run's captured output is effectively empty.",
   "flags": [
     "empty_output"
   ],
-  "avg_score": 3.57,
+  "avg_score": 3.4,
   "history": [
     {
       "date": "2026-07-27",
@@ -68,6 +68,12 @@
       "date": "2026-10-21",
       "score": 2,
       "ts": "2026-10-21T00:38:57Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-26",
+      "score": 1,
+      "ts": "2026-10-26T09:06:19Z",
       "harness": "claude"
     }
   ]

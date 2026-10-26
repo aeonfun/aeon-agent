@@ -1,0 +1,68 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Changelog (push-to) - 2026-10-26"
+      },
+      "children": [
+        "repo_mapping",
+        "sep_1",
+        "pr_stat",
+        "sep_2",
+        "entry_text",
+        "draft_badge",
+        "pr_link"
+      ]
+    },
+    "repo_mapping": {
+      "type": "Text",
+      "props": {
+        "text": "aeonfun/aeon -> aeonfun/aeon-website",
+        "variant": "body"
+      }
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "New PRs",
+        "value": "8"
+      }
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "entry_text": {
+      "type": "Text",
+      "props": {
+        "text": "8 new PRs -> changelog entry \"Verifiable onchain evidence and safer syncs\" (draft PR)",
+        "variant": "body"
+      }
+    },
+    "draft_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "draft",
+        "variant": "outline"
+      }
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/aeonfun/aeon-website/pull/700",
+        "href": "https://github.com/aeonfun/aeon-website/pull/700"
+      }
+    }
+  }
+}
