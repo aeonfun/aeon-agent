@@ -1,0 +1,260 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest — 2026-10-26"
+      },
+      "children": [
+        "h_security",
+        "s1",
+        "s2",
+        "s3",
+        "sep_1",
+        "h_community",
+        "s4",
+        "s5",
+        "s6",
+        "sep_2",
+        "h_shipping",
+        "s7"
+      ]
+    },
+    "h_security": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Security scanner reports",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "s1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t1",
+        "l1"
+      ]
+    },
+    "t1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Scanner flagged a mint-math flaw in Capminal that lets one deposit mint ~74% too many tokens"
+      },
+      "children": []
+    },
+    "l1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2114673394893414531"
+      },
+      "children": []
+    },
+    "s2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t2",
+        "l2"
+      ]
+    },
+    "t2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Indexing a booby-trapped repo in graphify could leak private files like SSH keys"
+      },
+      "children": []
+    },
+    "l2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2113580292070141976"
+      },
+      "children": []
+    },
+    "s3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t3",
+        "l3"
+      ]
+    },
+    "t3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Quoting Aaron's AgentHours line that far too much software is unsafe, ahead of the worst security week in software history"
+      },
+      "children": []
+    },
+    "l3": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2114705021115760955"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_community": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Community and external traction",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "s4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t4",
+        "l4"
+      ]
+    },
+    "t4": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Reshared a contributor's first merged security PR, where their Aeon agent found three vulns (2 high, 1 low)"
+      },
+      "children": []
+    },
+    "l4": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2114669802468110813"
+      },
+      "children": []
+    },
+    "s5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t5",
+        "l5"
+      ]
+    },
+    "t5": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Reshared Bankrbot's recap of the scan stats: 147 findings across 109 repos, protecting 5.3M stars"
+      },
+      "children": []
+    },
+    "l5": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2114765551473934388"
+      },
+      "children": []
+    },
+    "s6": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t6",
+        "l6"
+      ]
+    },
+    "t6": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Sentinelhood community pack spotlight: watches a Robinhood Chain address, diffs state each run, and speaks only on change"
+      },
+      "children": []
+    },
+    "l6": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2113565269520203872"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_shipping": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Shipping and docs",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "s7": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "t7",
+        "l7"
+      ]
+    },
+    "t7": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Weekly recap 16–23 Oct: Aeon MCP, the ChatGPT plugin, Aeon Connect and full tutorials"
+      },
+      "children": []
+    },
+    "l7": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2113613289003377073"
+      },
+      "children": []
+    }
+  }
+}

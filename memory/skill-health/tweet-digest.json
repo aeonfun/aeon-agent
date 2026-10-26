@@ -1,18 +1,11 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-25T19:11:34Z",
-  "quality_score": 2,
-  "assessment": "Single-item digest on a security finding that is off-lane for this growth agent; the CubeSandbox escape claim, tweet ID, and engagement counts are presented as fact with no visible source or verification.",
-  "flags": [
-    "unverifiable_claim",
-    "low_quality"
-  ],
-  "avg_score": 2.97,
+  "last_analyzed": "2026-10-26T21:02:01Z",
+  "quality_score": 3,
+  "assessment": "Clean, well-grouped digest of the account's own tweets with links, but it is a thin paraphrase list with no timestamps or engagement, and its specific figures (74%, 147 findings, 5.3M stars) are unverified here, though attributed to source tweets.",
+  "flags": [],
+  "avg_score": 2.93,
   "history": [
-    {
-      "date": "2026-09-22",
-      "score": 4
-    },
     {
       "date": "2026-09-23",
       "score": 4
@@ -161,6 +154,12 @@
       "date": "2026-10-25",
       "score": 2,
       "ts": "2026-10-25T19:11:34Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-26",
+      "score": 3,
+      "ts": "2026-10-26T21:02:01Z",
       "harness": "claude"
     }
   ]
