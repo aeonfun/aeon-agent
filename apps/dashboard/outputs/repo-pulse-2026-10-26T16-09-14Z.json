@@ -1,0 +1,917 @@
+{
+  "root": "root",
+  "state": {},
+  "elements": {
+    "root": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse",
+        "description": "2026-10-26 · STEADY"
+      },
+      "children": [
+        "hdr",
+        "overall",
+        "repo_table",
+        "sep0",
+        "aeon_sec",
+        "sep1",
+        "opendia_sec",
+        "sep2",
+        "soul_sec",
+        "sep3",
+        "footer"
+      ]
+    },
+    "hdr": {
+      "type": "Heading",
+      "props": {
+        "text": "Repo Pulse — 2026-10-26",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "overall": {
+      "type": "Badge",
+      "props": {
+        "text": "STEADY",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "repo_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repo",
+          "Stars",
+          "Forks",
+          "Rel",
+          "Verdict"
+        ],
+        "rows": [
+          [
+            "aeon",
+            "783 (+7)",
+            "291 (+8)",
+            "—",
+            "STEADY"
+          ],
+          [
+            "opendia",
+            "1933 (+4)",
+            "159 (—)",
+            "—",
+            "STEADY"
+          ],
+          [
+            "soul.md",
+            "700 (+4)",
+            "77 (+2)",
+            "—",
+            "STEADY"
+          ],
+          [
+            "minitor",
+            "20 (—)",
+            "4 (—)",
+            "—",
+            "QUIET"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "sep0": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "Source: events · minitor QUIET (no activity) · aeon fork delta is event-based; net forks_count unchanged (291) vs last run",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "aeon_sec": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aeon_h",
+        "aeon_stat",
+        "aeon_new_lbl",
+        "aeon_s1",
+        "aeon_s2",
+        "aeon_s3",
+        "aeon_s4",
+        "aeon_other_lbl",
+        "aeon_other_links",
+        "aeon_fork_lbl",
+        "aeon_f1",
+        "aeon_f2",
+        "aeon_f3",
+        "aeon_f4",
+        "aeon_f5",
+        "aeon_ofork_lbl",
+        "aeon_ofork_links"
+      ]
+    },
+    "aeon_h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/aeon — STEADY",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "aeon_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "avg4w",
+        "value": "≈ 13"
+      },
+      "children": []
+    },
+    "aeon_new_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Notable new stargazers (enriched 7 of 7):",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "aeon_s1": {
+      "type": "Card",
+      "props": {
+        "title": "Sayo"
+      },
+      "children": [
+        "l_sayo",
+        "aeon_s1_info",
+        "aeon_s1_bio"
+      ]
+    },
+    "l_sayo": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/wtfsayo",
+        "href": "https://github.com/wtfsayo"
+      },
+      "children": []
+    },
+    "aeon_s1_info": {
+      "type": "Text",
+      "props": {
+        "text": "Sayo · 🏢 Freelancer · 57 repos · 🐦 @sayodotfun · 278 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_s1_bio": {
+      "type": "Text",
+      "props": {
+        "text": "\"The ticker is $ETH\"",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_s2": {
+      "type": "Card",
+      "props": {
+        "title": "icepy"
+      },
+      "children": [
+        "l_icepy",
+        "aeon_s2_info"
+      ]
+    },
+    "l_icepy": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/icepy",
+        "href": "https://github.com/icepy"
+      },
+      "children": []
+    },
+    "aeon_s2_info": {
+      "type": "Text",
+      "props": {
+        "text": "17 repos · 🐦 @i_icepy · 1.5k followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_s3": {
+      "type": "Card",
+      "props": {
+        "title": "Jonathan"
+      },
+      "children": [
+        "l_jcamp",
+        "aeon_s3_info",
+        "l_jcamp_site",
+        "aeon_s3_bio"
+      ]
+    },
+    "l_jcamp": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/jcamp",
+        "href": "https://github.com/jcamp"
+      },
+      "children": []
+    },
+    "aeon_s3_info": {
+      "type": "Text",
+      "props": {
+        "text": "Jonathan · 📍 Newton Abbot, Devon, UK · 🏢 Micro Update Ltd · 277 repos · 35 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "l_jcamp_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 jonathancamp.com",
+        "href": "https://jonathancamp.com"
+      },
+      "children": []
+    },
+    "aeon_s3_bio": {
+      "type": "Text",
+      "props": {
+        "text": "Web tech (everything tech), wet plate photography (ambrotypes and tintypes), letterpress printing, camera restoration, painting, watch and clock repair.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_s4": {
+      "type": "Card",
+      "props": {
+        "title": "Lakshman Turlapati"
+      },
+      "children": [
+        "l_lakshman",
+        "aeon_s4_info",
+        "l_lakshman_site",
+        "aeon_s4_bio"
+      ]
+    },
+    "l_lakshman": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/LakshmanTurlapati",
+        "href": "https://github.com/LakshmanTurlapati"
+      },
+      "children": []
+    },
+    "aeon_s4_info": {
+      "type": "Text",
+      "props": {
+        "text": "Lakshman Turlapati · 📍 Texas · 🏢 Voyza · 105 repos · 🐦 @parzival1213 · 55 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "l_lakshman_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 parzival.live",
+        "href": "https://parzival.live"
+      },
+      "children": []
+    },
+    "aeon_s4_bio": {
+      "type": "Text",
+      "props": {
+        "text": "Debugging.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_other_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_other_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "l_aafrancis",
+        "l_jakubdobosz",
+        "l_alveslim"
+      ]
+    },
+    "l_aafrancis": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/aafrancis",
+        "href": "https://github.com/aafrancis"
+      },
+      "children": []
+    },
+    "l_jakubdobosz": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/jakubdobosz",
+        "href": "https://github.com/jakubdobosz"
+      },
+      "children": []
+    },
+    "l_alveslim": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/alveslim",
+        "href": "https://github.com/alveslim"
+      },
+      "children": []
+    },
+    "aeon_fork_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "New forks:",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "aeon_f1": {
+      "type": "Card",
+      "props": {
+        "title": "Wu Shuwen"
+      },
+      "children": [
+        "l_dajiaohuang",
+        "aeon_f1_info",
+        "aeon_f1_bio"
+      ]
+    },
+    "l_dajiaohuang": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/dajiaohuang/aeon",
+        "href": "https://github.com/dajiaohuang/aeon"
+      },
+      "children": []
+    },
+    "aeon_f1_info": {
+      "type": "Text",
+      "props": {
+        "text": "Wu Shuwen · 📍 Singapore · 🏢 Tiktok · 3099 repos · 143 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_f1_bio": {
+      "type": "Text",
+      "props": {
+        "text": "Software Engineer Intern in Tiktok. Graduate student in NUS.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_f2": {
+      "type": "Card",
+      "props": {
+        "title": "Mahbub Zulkarnain"
+      },
+      "children": [
+        "l_mahbub_aeon",
+        "aeon_f2_info",
+        "l_mahbub_site"
+      ]
+    },
+    "l_mahbub_aeon": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/mahbubzulkarnain/aeon",
+        "href": "https://github.com/mahbubzulkarnain/aeon"
+      },
+      "children": []
+    },
+    "aeon_f2_info": {
+      "type": "Text",
+      "props": {
+        "text": "Mahbub Zulkarnain · 📍 Cirebon, Indonesia · 114 repos · 77 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "l_mahbub_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 mahbubzulkarnain.com",
+        "href": "https://mahbubzulkarnain.com"
+      },
+      "children": []
+    },
+    "aeon_f3": {
+      "type": "Card",
+      "props": {
+        "title": "Brandon Giesing"
+      },
+      "children": [
+        "l_bgiesing",
+        "aeon_f3_info",
+        "l_bgiesing_site"
+      ]
+    },
+    "l_bgiesing": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/bgiesing/aeon",
+        "href": "https://github.com/bgiesing/aeon"
+      },
+      "children": []
+    },
+    "aeon_f3_info": {
+      "type": "Text",
+      "props": {
+        "text": "Brandon Giesing · 📍 Union, MO · 62 repos · 18 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "l_bgiesing_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 brandongiesing.com",
+        "href": "https://brandongiesing.com"
+      },
+      "children": []
+    },
+    "aeon_f4": {
+      "type": "Card",
+      "props": {
+        "title": "Repoken"
+      },
+      "children": [
+        "l_repoken",
+        "aeon_f4_info",
+        "l_repoken_site",
+        "aeon_f4_bio"
+      ]
+    },
+    "l_repoken": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/repoken/aeon",
+        "href": "https://github.com/repoken/aeon"
+      },
+      "children": []
+    },
+    "aeon_f4_info": {
+      "type": "Text",
+      "props": {
+        "text": "Repoken · 3 repos · 🐦 @repokendotfun",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "l_repoken_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 repoken.fun",
+        "href": "https://repoken.fun"
+      },
+      "children": []
+    },
+    "aeon_f4_bio": {
+      "type": "Text",
+      "props": {
+        "text": "Repoken pulls metadata straight from your repo, then deploys a token via the PONS factory. No contracts to write, no long forms to fill.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_f5": {
+      "type": "Card",
+      "props": {
+        "title": "icepy"
+      },
+      "children": [
+        "l_icepy_aeon",
+        "aeon_f5_info"
+      ]
+    },
+    "l_icepy_aeon": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/icepy/aeon",
+        "href": "https://github.com/icepy/aeon"
+      },
+      "children": []
+    },
+    "aeon_f5_info": {
+      "type": "Text",
+      "props": {
+        "text": "17 repos · 1.5k followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_ofork_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other forks:",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_ofork_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "l_moosebizlab",
+        "l_xiaozz8",
+        "l_00288"
+      ]
+    },
+    "l_moosebizlab": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/moosebizlab",
+        "href": "https://github.com/moosebizlab"
+      },
+      "children": []
+    },
+    "l_xiaozz8": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/xiaozz8",
+        "href": "https://github.com/xiaozz8"
+      },
+      "children": []
+    },
+    "l_00288": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/00288",
+        "href": "https://github.com/00288"
+      },
+      "children": []
+    },
+    "opendia_sec": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "opendia_h",
+        "opendia_stat",
+        "opendia_new_lbl",
+        "o1",
+        "o2",
+        "opendia_other_lbl",
+        "opendia_other_links"
+      ]
+    },
+    "opendia_h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/opendia — STEADY",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "opendia_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "avg4w",
+        "value": "≈ 3.3"
+      },
+      "children": []
+    },
+    "opendia_new_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Notable new stargazers (enriched 4 of 4):",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "o1": {
+      "type": "Card",
+      "props": {
+        "title": "Leo Dang"
+      },
+      "children": [
+        "l_amazingnerd",
+        "o1_info",
+        "l_uiskill",
+        "o1_bio"
+      ]
+    },
+    "l_amazingnerd": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/amazingnerd",
+        "href": "https://github.com/amazingnerd"
+      },
+      "children": []
+    },
+    "o1_info": {
+      "type": "Text",
+      "props": {
+        "text": "Leo Dang · 73 repos",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "l_uiskill": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 uiskill.com",
+        "href": "https://uiskill.com"
+      },
+      "children": []
+    },
+    "o1_bio": {
+      "type": "Text",
+      "props": {
+        "text": "Design Engineer with a love for art, animation, and 3D.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "o2": {
+      "type": "Card",
+      "props": {
+        "title": "groveLqh"
+      },
+      "children": [
+        "l_grovelqh",
+        "o2_info",
+        "l_grove_site",
+        "o2_bio"
+      ]
+    },
+    "l_grovelqh": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/groveLqh",
+        "href": "https://github.com/groveLqh"
+      },
+      "children": []
+    },
+    "o2_info": {
+      "type": "Text",
+      "props": {
+        "text": "📍 Hangzhou, China · 65 repos · 🐦 @groveLqh · 14 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "l_grove_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 grove-blog.vercel.app",
+        "href": "https://grove-blog.vercel.app"
+      },
+      "children": []
+    },
+    "o2_bio": {
+      "type": "Text",
+      "props": {
+        "text": "Conceptual integrity over feature accumulation",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "opendia_other_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "opendia_other_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "l_kido0001",
+        "l_seismic"
+      ]
+    },
+    "l_kido0001": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Kido0001",
+        "href": "https://github.com/Kido0001"
+      },
+      "children": []
+    },
+    "l_seismic": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Seismic-Fate",
+        "href": "https://github.com/Seismic-Fate"
+      },
+      "children": []
+    },
+    "soul_sec": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "soul_h",
+        "soul_stat",
+        "soul_fork_lbl",
+        "s1",
+        "s2",
+        "soul_other_lbl",
+        "soul_other_links"
+      ]
+    },
+    "soul_h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/soul.md — STEADY",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "soul_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "avg4w",
+        "value": "≈ 6"
+      },
+      "children": []
+    },
+    "soul_fork_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "New forks:",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "s1": {
+      "type": "Card",
+      "props": {
+        "title": "data-path-9/soul.md"
+      },
+      "children": [
+        "l_datapath",
+        "s1_info",
+        "l_azalith",
+        "s1_bio"
+      ]
+    },
+    "l_datapath": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/data-path-9/soul.md",
+        "href": "https://github.com/data-path-9/soul.md"
+      },
+      "children": []
+    },
+    "s1_info": {
+      "type": "Text",
+      "props": {
+        "text": "281 repos",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "l_azalith": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 github.com/azalith-9",
+        "href": "https://github.com/azalith-9"
+      },
+      "children": []
+    },
+    "s1_bio": {
+      "type": "Text",
+      "props": {
+        "text": "Welcome to my Digital Library of Alexandria for all things AI.",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "s2": {
+      "type": "Card",
+      "props": {
+        "title": "Mahbub Zulkarnain"
+      },
+      "children": [
+        "l_mahbub_soul",
+        "s2_info"
+      ]
+    },
+    "l_mahbub_soul": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/mahbubzulkarnain/soul.md",
+        "href": "https://github.com/mahbubzulkarnain/soul.md"
+      },
+      "children": []
+    },
+    "s2_info": {
+      "type": "Text",
+      "props": {
+        "text": "Mahbub Zulkarnain · 📍 Cirebon, Indonesia · 114 repos · 77 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "soul_other_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "soul_other_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "l_verhan",
+        "l_xdr",
+        "l_afer00t",
+        "l_sistemwms"
+      ]
+    },
+    "l_verhan": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/VerhanCao",
+        "href": "https://github.com/VerhanCao"
+      },
+      "children": []
+    },
+    "l_xdr": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/xdr041104",
+        "href": "https://github.com/xdr041104"
+      },
+      "children": []
+    },
+    "l_afer00t": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/afer00t",
+        "href": "https://github.com/afer00t"
+      },
+      "children": []
+    },
+    "l_sistemwms": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/sistemwms-shc",
+        "href": "https://github.com/sistemwms-shc"
+      },
+      "children": []
+    }
+  }
+}
