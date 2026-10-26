@@ -654,3 +654,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-10-26,holdings,claude-sonnet-5-5,10,1537,140459,22504
 2026-10-26,token-report,claude-sonnet-5-5,24,5052,689064,58557
 2026-10-26,changelog,claude-sonnet-5-5,44,5690,951394,37890
+2026-10-26,shiplog,claude-sonnet-5-5,32,10372,903557,66746

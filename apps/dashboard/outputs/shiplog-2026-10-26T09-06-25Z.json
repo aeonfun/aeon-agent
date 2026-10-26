@@ -1,0 +1,189 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "aeon shiplog",
+        "description": "oct 21 → 26"
+      },
+      "children": [
+        "h_main",
+        "lead",
+        "sep1",
+        "h_bytes",
+        "stack_bytes",
+        "sep2",
+        "h_traction",
+        "stack_traction",
+        "t_feat",
+        "sep3",
+        "article_link",
+        "end_star"
+      ]
+    },
+    "h_main": {
+      "type": "Heading",
+      "props": {
+        "text": "aeon shiplog ⭐ oct 21 → 26",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "lead": {
+      "type": "Text",
+      "props": {
+        "text": "100+ PRs across the stack, 8 commits on the framework. the bytes:",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_bytes": {
+      "type": "Heading",
+      "props": {
+        "text": "the bytes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_bytes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5"
+      ]
+    },
+    "b1": {
+      "type": "Text",
+      "props": {
+        "text": "aeon-update: sync file work moved into a script, new baseline stays off main until the PR merges. fewer stuck syncs",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b2": {
+      "type": "Text",
+      "props": {
+        "text": "security pack: web-recon + web-pentest + native-fuzz skills, deepsec runs beside the hunters",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b3": {
+      "type": "Text",
+      "props": {
+        "text": "community: @sentinelhood landed reorg-safe evidence replay & offline receipt verification for onchain-monitor",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b4": {
+      "type": "Text",
+      "props": {
+        "text": "benchmarks: 4-model results on 55 tasks, Aeon OpenRouter attribution across the bench repos",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "b5": {
+      "type": "Text",
+      "props": {
+        "text": "security advisories: scanner reports on 8 popular projects went public",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_traction": {
+      "type": "Heading",
+      "props": {
+        "text": "traction",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_traction": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "s1",
+        "s2"
+      ]
+    },
+    "s1": {
+      "type": "Stat",
+      "props": {
+        "label": "aeon ⭐",
+        "value": "782",
+        "delta": "+4",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "s2": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark 🦈",
+        "value": "1480",
+        "delta": "+5",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "t_feat": {
+      "type": "Text",
+      "props": {
+        "text": "featured in @BaseHubHB's Base daily recap & tier list",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "article_link": {
+      "type": "Link",
+      "props": {
+        "label": "shiplog-2026-10-26.md",
+        "href": "https://github.com/aeonfun/aeon-agent/blob/main/output/articles/shiplog-2026-10-26.md"
+      },
+      "children": []
+    },
+    "end_star": {
+      "type": "Text",
+      "props": {
+        "text": "⭐",
+        "variant": "body"
+      },
+      "children": []
+    }
+  }
+}

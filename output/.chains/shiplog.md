@@ -1,20 +1,20 @@
-ℹ️ aeon shiplog
+ℹ️ Aeon shiplog
 
-aeon shiplog ⭐ oct 12 → oct 21
+aeon shiplog ⭐ oct 21 → 26
 
-55 PRs merged on the repo, 55 commits. the bytes:
+100+ PRs across the stack, 8 commits on the framework. the bytes:
 
-- aeon MCP server, hosted: add aeon.fun/connect/mcp to ChatGPT, Claude or Cursor, sign in with GitHub, run your skills from there. @aeonframework
-- langfuse overhaul: cost per skill, run quality scores, error classes on every trace
-- hardening: secretcurl only swaps secrets a skill declared, scheduler fails loud when cron state won't push, config validator catches misspelled skill keys
-- ci: 10 parallel test lanes, faster gate
-- external contributors merged: anatomy skill, robinhood chain onchain-monitor, sentinel pack
-- security: opencodex SSE decoder memory exhaustion, fixed in 2.9.0
+- aeon-update: sync file work moved into a script, new baseline stays off main until the PR merges. fewer stuck syncs
+- security pack: web-recon + web-pentest + native-fuzz skills, deepsec runs beside the hunters
+- community: @sentinelhood landed reorg-safe evidence replay & offline receipt verification for onchain-monitor
+- benchmarks: 4-model results on 55 tasks, Aeon OpenRouter attribution across the bench repos
+- security advisories: scanner reports on 8 popular projects went public
 
 traction:
-- aeon 778 ⭐ (+7 this window)
-- named in 4 Base Hub recaps (57k), incl. week 41 tier list
+- aeon 782 ⭐ (+4)
+- MiroShark 1480 🦈 (+5)
+- featured in @BaseHubHB's Base daily recap & tier list
 
 ⭐
 
-https://github.com/aeonfun/aeon-agent/blob/main/output/articles/shiplog-2026-10-21.md
+https://github.com/aeonfun/aeon-agent/blob/main/output/articles/shiplog-2026-10-26.md

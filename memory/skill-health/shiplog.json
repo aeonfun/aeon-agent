@@ -1,12 +1,12 @@
 {
   "skill": "shiplog",
-  "last_analyzed": "2026-10-21T00:39:21Z",
+  "last_analyzed": "2026-10-26T09:06:25Z",
   "quality_score": 2,
-  "assessment": "Concise shiplog with a clear structure, but it has no PR numbers or links and states traction figures (778 stars, +7, 57k reach, 4 Base Hub recaps, week 41 tier list) without sources, against the strategy's 'never publish an unverified number' rule.",
+  "assessment": "Terse, on-voice shiplog, but its star counts, PR and commit totals, benchmark figures, and the @sentinelhood and @BaseHubHB attributions have no visible source, and the linked article is untracked in the working tree, so the link is not yet live on main.",
   "flags": [
     "unverifiable_claim"
   ],
-  "avg_score": 3.86,
+  "avg_score": 3.78,
   "history": [
     {
       "date": "2026-06-15",
@@ -98,6 +98,12 @@
       "date": "2026-10-21",
       "score": 2,
       "ts": "2026-10-21T00:39:21Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-26",
+      "score": 2,
+      "ts": "2026-10-26T09:06:25Z",
       "harness": "claude"
     }
   ]
