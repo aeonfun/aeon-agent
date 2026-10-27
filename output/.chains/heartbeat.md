@@ -1,12 +1,11 @@
-HEARTBEAT_OK · STATUS_PAGE=OK. I checked the fleet and sent no notification, because nothing needs attention.
+HEARTBEAT_OK · STATUS_PAGE=OK. The fleet is healthy, so I sent no notification.
 
-- **Skills:** All 9 enabled skills show `last_status: success` with 0 consecutive failures. None are stuck or warming up.
-- **PRs and issues:** There are no open PRs, no issues labeled urgent, and no open health issues.
-- **Memory:** The follow-ups in `memory/MEMORY.md` aren't new, so I didn't flag them.
-- **Missing runs:** No enabled skill is more than 2x past its schedule interval.
-- **Status page:** `docs/status.md` is regenerated with overall status 🟢 OK. The last page showed 🟡 WATCH because memory-flush hadn't reported an outcome. That run has since landed.
-- **Token pulse:** AEON is at $0.00001795 (−3.65% over 24h), liquidity $394.3K, 24h volume $11.1K, FDV $1.80M. The verdict is CONSOLIDATING, from `token-report-2026-10-26.md`.
+- **Skills:** all 9 enabled skills show success with 0 consecutive failures. None is stuck, and none is overdue against its schedule.
+- **Repo:** there are no open PRs, no urgent issues, and no open issues in `memory/issues/INDEX.md`.
+- **Token pulse:** AEON is at $0.00002054 (+14.3% over 24h), with liquidity of $424.0K and 24h volume of $65.2K. The 10-27 token-report calls it CONSOLIDATING, because volume is only 0.85× the 7-day average.
+- **Memory:** nothing flagged in `memory/MEMORY.md` needs a new alert. The working-tree anomaly and stale health issues listed there are unchanged.
 
 ## Summary
-- Modified `docs/status.md` (full rewrite) and `memory/logs/2026-10-26.md` (appended a `### heartbeat` entry).
-- Follow-up: none for this run.
+- Rewrote `docs/status.md` with fresh fleet data, the 10-27 token pulse, and overall 🟢 OK.
+- Appended a `### heartbeat` entry (`mode: ambient`) to `memory/logs/2026-10-27.md`.
+- No follow-up needed from this run.
