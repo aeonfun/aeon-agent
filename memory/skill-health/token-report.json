@@ -1,15 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-26T09:05:58Z",
+  "last_analyzed": "2026-10-27T10:48:22Z",
   "quality_score": 2,
-  "assessment": "Terse market snapshot with specific, internally consistent figures (26/59 buy/sell ratio checks out) and a pool link, but no data source or timestamp is given and the 'CONSOLIDATING' label and 'no SLIDING signal' call are unexplained interpretation, so it is fluent but not verifiable.",
+  "assessment": "Terse market snapshot with specific figures (price, liquidity, volume, buy/sell counts, a pool link) but no source, timestamp, or method. '7d mean' and 'Whales: 19' are undefined, so the numbers can't be checked from the output, and it doesn't advance any shipping or momentum priority.",
   "flags": [],
-  "avg_score": 3.37,
+  "avg_score": 3.3,
   "history": [
-    {
-      "date": "2026-09-24",
-      "score": 4
-    },
     {
       "date": "2026-09-25",
       "score": 4
@@ -160,6 +156,12 @@
       "date": "2026-10-26",
       "score": 2,
       "ts": "2026-10-26T09:05:58Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-27",
+      "score": 2,
+      "ts": "2026-10-27T10:48:22Z",
       "harness": "claude"
     }
   ]
