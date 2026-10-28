@@ -1,15 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-27T10:48:22Z",
-  "quality_score": 2,
-  "assessment": "Terse market snapshot with specific figures (price, liquidity, volume, buy/sell counts, a pool link) but no source, timestamp, or method. '7d mean' and 'Whales: 19' are undefined, so the numbers can't be checked from the output, and it doesn't advance any shipping or momentum priority.",
+  "last_analyzed": "2026-10-28T11:41:13Z",
+  "quality_score": 3,
+  "assessment": "Concise, internally consistent token snapshot (buy/sell ratio 129/111 = 1.16 checks out) that tracks $AEON momentum and honestly flags the missing whale data, but it gives one chart link as its only source and frames the output with breakout-style technical language rather than shipping or ecosystem context.",
   "flags": [],
-  "avg_score": 3.3,
+  "avg_score": 3.27,
   "history": [
-    {
-      "date": "2026-09-25",
-      "score": 4
-    },
     {
       "date": "2026-09-26",
       "score": 4
@@ -162,6 +158,12 @@
       "date": "2026-10-27",
       "score": 2,
       "ts": "2026-10-27T10:48:22Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-28",
+      "score": 3,
+      "ts": "2026-10-28T11:41:13Z",
       "harness": "claude"
     }
   ]
