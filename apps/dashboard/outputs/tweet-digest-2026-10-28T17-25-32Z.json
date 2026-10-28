@@ -1,0 +1,98 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest — 2026-10-28"
+      },
+      "children": [
+        "sec1",
+        "sep1",
+        "sec2"
+      ]
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sec1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "theme1",
+        "tweet1",
+        "link1"
+      ]
+    },
+    "theme1": {
+      "type": "Badge",
+      "props": {
+        "text": "Theme: Security scanner findings",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "tweet1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Scanner found a crafted model file in justvugg's Colibrì can corrupt memory on load, opening a path to code execution"
+      },
+      "children": []
+    },
+    "link1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2115388369186193889"
+      },
+      "children": []
+    },
+    "sec2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "theme2",
+        "tweet2",
+        "link2"
+      ]
+    },
+    "theme2": {
+      "type": "Badge",
+      "props": {
+        "text": "Theme: Positioning",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "tweet2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Founder @aaronjmars talks through how Aeon is building a Software Factory for everyone"
+      },
+      "children": []
+    },
+    "link2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2115430647137439979"
+      },
+      "children": []
+    }
+  }
+}

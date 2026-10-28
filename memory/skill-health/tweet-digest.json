@@ -1,17 +1,14 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-27T20:43:53Z",
+  "last_analyzed": "2026-10-28T17:25:32Z",
   "quality_score": 2,
-  "assessment": "Two-item digest of @aeonframework posts with specific CVE-era claims and tweet links that the output does not show being fetched or verified, and the security-disclosure theme sits outside the stated growth lane.",
+  "assessment": "Very thin digest of two self-authored tweets with no engagement data, dates, or context, and specific claims (a memory-corruption finding in justvugg's Colibrì, a status-ID link) that the output gives no way to verify.",
   "flags": [
-    "unverifiable_claim"
+    "unverifiable_claim",
+    "low_quality"
   ],
-  "avg_score": 2.87,
+  "avg_score": 2.8,
   "history": [
-    {
-      "date": "2026-09-24",
-      "score": 4
-    },
     {
       "date": "2026-09-25",
       "score": 4
@@ -164,6 +161,12 @@
       "date": "2026-10-27",
       "score": 2,
       "ts": "2026-10-27T20:43:53Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-28",
+      "score": 2,
+      "ts": "2026-10-28T17:25:32Z",
       "harness": "claude"
     }
   ]

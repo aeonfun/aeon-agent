@@ -1,5 +1,7 @@
-*Tweet Digest — 2026-10-27*
+*Tweet Digest — 2026-10-28*
 
-*Theme: Security scanner output*
-@aeonframework: Launched "Aeon VulnScanning", a YouTube/X video series walking through high/critical vulns the vuln-scanner found and that were patched via private advisories; episode one covers the "Black October" week (PHP2Shell, LiteLLM, eMudhra) plus omarchy, graphify and colibri findings — [link](https://x.com/aeonframework/status/2115111244126355593)
-@aeonframework: Scanner finding on LoopX: any website you visited could quietly read local status, file paths, run history and private notes — [link](https://x.com/aeonframework/status/2114973507532796393)
+*Theme: Security scanner findings*
+@aeonframework: Scanner found a crafted model file in justvugg's Colibrì can corrupt memory on load, opening a path to code execution — [link](https://x.com/aeonframework/status/2115388369186193889)
+
+*Theme: Positioning*
+@aeonframework: Founder @aaronjmars talks through how Aeon is building a Software Factory for everyone — [link](https://x.com/aeonframework/status/2115430647137439979)
