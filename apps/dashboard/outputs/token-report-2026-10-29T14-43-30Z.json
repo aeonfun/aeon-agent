@@ -1,0 +1,121 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "token-report: $AEON — CONSOLIDATING"
+      },
+      "children": [
+        "note",
+        "sep1",
+        "stats_row",
+        "stats_row2",
+        "sep2",
+        "chart"
+      ]
+    },
+    "note": {
+      "type": "Text",
+      "props": {
+        "text": "Price is −15.5% vs yesterday's stored 0.00002337, but volume ran 0.87× the 7d average, so the table gives no breakdown label.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "price",
+        "liq",
+        "vol"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001974",
+        "delta": "−15.5% 24h",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liq",
+        "value": "$419.4K",
+        "delta": "−7.4%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Vol",
+        "value": "$64.0K",
+        "delta": "0.87× 7d",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stats_row2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "buys",
+        "whales"
+      ]
+    },
+    "buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "96/66",
+        "delta": "ratio 1.45",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "5+"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart: GeckoTerminal pool",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}

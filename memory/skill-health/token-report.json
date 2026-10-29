@@ -1,15 +1,13 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-28T11:41:13Z",
-  "quality_score": 3,
-  "assessment": "Concise, internally consistent token snapshot (buy/sell ratio 129/111 = 1.16 checks out) that tracks $AEON momentum and honestly flags the missing whale data, but it gives one chart link as its only source and frames the output with breakout-style technical language rather than shipping or ecosystem context.",
-  "flags": [],
-  "avg_score": 3.27,
+  "last_analyzed": "2026-10-29T14:43:30Z",
+  "quality_score": 2,
+  "assessment": "Arithmetic is internally consistent (-15.5% checks out, buy/sell ratio 96/66 is 1.45), but the snapshot gives no source, timestamp, or data-fetch trace, uses a vague 'Whales: 5+' figure, and has a garbled 'no breakdown label' line, so it is a bare, unverifiable price table with no analysis.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 3.2,
   "history": [
-    {
-      "date": "2026-09-26",
-      "score": 4
-    },
     {
       "date": "2026-09-27",
       "score": 4
@@ -164,6 +162,12 @@
       "date": "2026-10-28",
       "score": 3,
       "ts": "2026-10-28T11:41:13Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-29",
+      "score": 2,
+      "ts": "2026-10-29T14:43:30Z",
       "harness": "claude"
     }
   ]
