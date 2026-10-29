@@ -1,18 +1,11 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-28T17:25:32Z",
-  "quality_score": 2,
-  "assessment": "Very thin digest of two self-authored tweets with no engagement data, dates, or context, and specific claims (a memory-corruption finding in justvugg's Colibrì, a status-ID link) that the output gives no way to verify.",
-  "flags": [
-    "unverifiable_claim",
-    "low_quality"
-  ],
-  "avg_score": 2.8,
+  "last_analyzed": "2026-10-29T19:53:39Z",
+  "quality_score": 3,
+  "assessment": "Concise, themed digest of six tweets with status links that serves the operator's shipping and momentum priorities, but it adds no analysis or engagement context, and I did not verify the linked tweets or the Aave/Kaneo claims.",
+  "flags": [],
+  "avg_score": 2.77,
   "history": [
-    {
-      "date": "2026-09-25",
-      "score": 4
-    },
     {
       "date": "2026-09-26",
       "score": 4
@@ -167,6 +160,12 @@
       "date": "2026-10-28",
       "score": 2,
       "ts": "2026-10-28T17:25:32Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-29",
+      "score": 3,
+      "ts": "2026-10-29T19:53:39Z",
       "harness": "claude"
     }
   ]
