@@ -1,11 +1,12 @@
-HEARTBEAT_OK · STATUS_PAGE=OK. All 9 enabled skills are healthy and nothing needs attention, so I sent no notification.
+HEARTBEAT_OK · STATUS_PAGE=WATCH. Nothing needed attention, so I sent no notification.
 
-- **Skills:** none are failed, stuck, or on consecutive failures. Every `last_status` is success, and the fleet has completed runs, so it isn't warming up.
-- **P1/P2/P3:** there are no open PRs and no urgent issues. `memory/issues/INDEX.md` has no open issues. Every enabled skill has a recent success within its schedule interval.
-- **Memory follow-ups:** `memory/MEMORY.md` still lists older priorities (scratch-file cleanup, secured-watch, aeon-update). They are already logged and I didn't re-flag them.
-- **Token pulse:** AEON is at $0.00002337, +13.8% over 24h, with $453.0K liquidity, $99.8K 24h volume and $2.34M FDV. The verdict is CONSOLIDATING, from the 10-28 token report.
+- **Failed or stuck skills:** none. token-report failed at 07:40 UTC today on a session limit and succeeded again at 14:43 UTC. That recovered failure is what makes the page read WATCH instead of OK.
+- **Success rates:** these are below 80% for aeon-update (67%), holdings (73%) and changelog (75%), but all three are succeeding now (0 consecutive failures).
+- **Pull requests and issues:** no open PRs, no urgent issues, and `memory/issues/INDEX.md` has 0 open issues.
+- **Missing skills:** every enabled skill is within its schedule window.
+- **Token pulse:** today's token-report is fresh. AEON is at $0.00001974, down 15.5% in 24h, verdict CONSOLIDATING.
 
 ## Summary
-- Rewrote `docs/status.md` with overall 🟢 OK, the token pulse, and the 9-skill health table.
-- Appended a `### heartbeat` entry to `memory/logs/2026-10-28.md`.
-- No follow-up needed.
+- Rewrote `docs/status.md` with the WATCH verdict, token pulse, and a health table covering all 9 enabled skills.
+- Appended a `### heartbeat` entry (mode: ambient) to `memory/logs/2026-10-29.md`.
+- Follow-up: `MEMORY.md` still lists 9 stale `health:` issues and an `AGENTS.md`/`notify` working-tree anomaly. The first looks out of date, since the issue index is empty, so it needs checking.
