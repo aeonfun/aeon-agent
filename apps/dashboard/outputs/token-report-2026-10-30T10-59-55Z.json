@@ -1,0 +1,140 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "AEON token report"
+      },
+      "children": [
+        "heading",
+        "summary",
+        "sep1",
+        "marketGrid",
+        "sep2",
+        "flowGrid",
+        "sep3",
+        "chartLink"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "$AEON — CONSOLIDATING",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price fell 11.9% in 24h but volume was only 0.6× the 7d average, so it doesn't qualify as a breakdown.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "marketGrid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "priceStat",
+        "liqStat",
+        "volStat"
+      ]
+    },
+    "priceStat": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001739",
+        "delta": "−11.9% 24h",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "liqStat": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$382.5K",
+        "delta": "−8.8%",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "volStat": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "$41.0K",
+        "delta": "0.6× 7d average",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "flowGrid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "buySellStat",
+        "whalesStat"
+      ]
+    },
+    "buySellStat": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "76/61",
+        "delta": "ratio 1.25",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "whalesStat": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "11",
+        "delta": "4 buys / 7 sells",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chartLink": {
+      "type": "Link",
+      "props": {
+        "label": "Chart: GeckoTerminal pool (Base)",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}

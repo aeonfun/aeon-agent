@@ -1,17 +1,13 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-29T14:43:30Z",
+  "last_analyzed": "2026-10-30T10:59:55Z",
   "quality_score": 2,
-  "assessment": "Arithmetic is internally consistent (-15.5% checks out, buy/sell ratio 96/66 is 1.45), but the snapshot gives no source, timestamp, or data-fetch trace, uses a vague 'Whales: 5+' figure, and has a garbled 'no breakdown label' line, so it is a bare, unverifiable price table with no analysis.",
+  "assessment": "Terse single-snapshot price dashboard with no as-of timestamp, no trend or sourcing context, and no link to memory or prior reports; figures and pool address are plausible but unverifiable from the output, and it adds little toward the momentum-tracking priority.",
   "flags": [
-    "unverifiable_claim"
+    "low_quality"
   ],
-  "avg_score": 3.2,
+  "avg_score": 3.13,
   "history": [
-    {
-      "date": "2026-09-27",
-      "score": 4
-    },
     {
       "date": "2026-09-28",
       "score": 5
@@ -168,6 +164,12 @@
       "date": "2026-10-29",
       "score": 2,
       "ts": "2026-10-29T14:43:30Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-30",
+      "score": 2,
+      "ts": "2026-10-30T10:59:55Z",
       "harness": "claude"
     }
   ]
