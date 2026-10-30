@@ -1,15 +1,13 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-29T19:53:39Z",
-  "quality_score": 3,
-  "assessment": "Concise, themed digest of six tweets with status links that serves the operator's shipping and momentum priorities, but it adds no analysis or engagement context, and I did not verify the linked tweets or the Aave/Kaneo claims.",
-  "flags": [],
-  "avg_score": 2.77,
+  "last_analyzed": "2026-10-30T21:26:21Z",
+  "quality_score": 2,
+  "assessment": "Short, readable digest, but it presents specific X status URLs and a '5M+ GitHub stars secured' figure as fact with no visible source fetch or verification, and the strategy forbids publishing unverified numbers.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 2.7,
   "history": [
-    {
-      "date": "2026-09-26",
-      "score": 4
-    },
     {
       "date": "2026-09-27",
       "score": 3
@@ -166,6 +164,12 @@
       "date": "2026-10-29",
       "score": 3,
       "ts": "2026-10-29T19:53:39Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-30",
+      "score": 2,
+      "ts": "2026-10-30T21:26:21Z",
       "harness": "claude"
     }
   ]
