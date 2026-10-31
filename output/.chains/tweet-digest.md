@@ -1,13 +1,11 @@
-*Tweet Digest — 2026-10-30*
+No digest this run. The fetch for @aeonframework worked (twitterapi.io returned http=200), but nothing in the last 3 days was new, so I sent no notification. That is the `TWEET_DIGEST_OK` outcome.
 
-*Theme: Aeon VulnScanning series*
-@aeonframework: Ep.2 argues "it only runs on localhost" won't protect an agent, covering DNS rebinding, Reasonix CLI and nanobot — [link](https://x.com/aeonframework/status/2116144867369800064)
-@aeonframework: Scanner found omnigent_ai's guardrail let through commands it couldn't parse, so attackers could slip past policy — [link](https://x.com/aeonframework/status/2116136373547876500)
-@aeonframework: Scanner found Kaneo handed integration secrets (access tokens, webhook keys) to every member, even view-only — [link](https://x.com/aeonframework/status/2115784026799673382)
-@aeonframework: Scanner found a crafted model file in Colibrì could corrupt memory on load and open a path to code execution — [link](https://x.com/aeonframework/status/2115388369186193889)
-@aeonframework: Launch of the "Aeon VulnScanning" YouTube/X series on high/critical findings patched via private advisories — [link](https://x.com/aeonframework/status/2115111244126355593)
+- **Already reported:** every tweet with real text was already in the 10-29 and 10-30 logs.
+- **Skipped:** retweets, plus three link-only posts (2116196222478193018, 2116166127726530692, 2115337698940526760) with nothing to summarize.
 
-*Theme: Framework & ecosystem*
-@aeonframework: Weekly recap 10-23 to 10-30: agents borrowing on Aave, the VulnScanning series, 5M+ GitHub stars secured — [link](https://x.com/aeonframework/status/2116165655301062780)
-@aeonframework: Lays out its pillars: next-gen vuln-scanning, audited-by-birth onchain contracts, and building in public — [link](https://x.com/aeonframework/status/2115789802364645608)
-@aeonframework: "Our agents are DeFi-native" — [link](https://x.com/aeonframework/status/2115814667524210802)
+## Summary
+- Read the skill, `memory/MEMORY.md` and the tracked-accounts config. @aeonframework is the only account tracked.
+- Fetched with `./secretcurl` and filtered out replies and retweets. I also removed anything already in the last 3 days of logs.
+- Appended a `TWEET_DIGEST_OK` entry to `memory/logs/2026-10-31.md`.
+- Left a scratch file at `output/.tw-td.json`. I can't delete it because `rm` isn't granted.
+- No follow-up needed.
