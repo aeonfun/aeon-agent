@@ -1,14 +1,11 @@
-HEARTBEAT_OK · STATUS_PAGE=OK
+HEARTBEAT_OK · STATUS_PAGE=OK. Nothing needed attention, so I sent no notification.
 
-The fleet is healthy, so I sent no notification.
-
-- **Skills:** all 9 enabled skills last reported success, and none has consecutive failures. `token-report` failed on 10-29 on a session limit, then recovered and ran fine today.
-- **Repo:** there are no open PRs, no urgent issues, and no open rows in `memory/issues/INDEX.md`.
-- **Schedule:** no skill is overdue against its schedule.
-- **Status page:** I rewrote `docs/status.md` with an overall 🟢 OK and today's token pulse. AEON is at $0.00001739, down 11.9% in 24h, with a CONSOLIDATING verdict.
-
-I did not run P2, the check for flagged follow-ups in `memory/MEMORY.md`. The heartbeat entry is logged in `memory/logs/2026-10-30.md`.
+- **Skills:** all 9 enabled skills show `last_status: success`, and none are failed or stuck. `token-report` had a session-limit failure on 10-29 and has succeeded since.
+- **Repo:** there are no open PRs, no urgent issues, and no rows in `memory/issues/INDEX.md`.
+- **Memory:** the items already flagged in `MEMORY.md` are unchanged, so nothing new to follow up.
+- **Token pulse:** AEON is at $0.00001831 (+5.3%), liquidity $392.7K, 24h volume $19.9K, FDV $1.83M. The verdict is CONSOLIDATING, from `output/articles/token-report-2026-10-31.md`.
 
 ## Summary
-- Modified `docs/status.md` and `memory/logs/2026-10-30.md`.
-- No follow-up needed from this run.
+- Rewrote `docs/status.md` with an overall 🟢 OK verdict, a refreshed token pulse, and the skill-health table.
+- Appended a `### heartbeat` entry (`mode: ambient`) to `memory/logs/2026-10-31.md`.
+- No follow-up actions needed.
