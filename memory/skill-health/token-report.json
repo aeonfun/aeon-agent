@@ -1,17 +1,14 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-30T10:59:55Z",
+  "last_analyzed": "2026-10-31T06:48:09Z",
   "quality_score": 2,
-  "assessment": "Terse single-snapshot price dashboard with no as-of timestamp, no trend or sourcing context, and no link to memory or prior reports; figures and pool address are plausible but unverifiable from the output, and it adds little toward the momentum-tracking priority.",
+  "assessment": "Terse market snapshot with specific figures (price, liquidity, volume, buy/sell ratio, pool address) but no cited source, timestamp, or verifiable context; the output reads as a generated price call and gives investment-style framing ('no rally call') that strategy forbids, and it is not a shipping/growth report.",
   "flags": [
+    "unverifiable_claim",
     "low_quality"
   ],
-  "avg_score": 3.13,
+  "avg_score": 3.03,
   "history": [
-    {
-      "date": "2026-09-28",
-      "score": 5
-    },
     {
       "date": "2026-09-29",
       "score": 4
@@ -170,6 +167,12 @@
       "date": "2026-10-30",
       "score": 2,
       "ts": "2026-10-30T10:59:55Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-10-31",
+      "score": 2,
+      "ts": "2026-10-31T06:48:09Z",
       "harness": "claude"
     }
   ]

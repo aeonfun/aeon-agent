@@ -1,0 +1,119 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$AEON — CONSOLIDATING"
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "stats",
+        "sep2",
+        "whales",
+        "sep3",
+        "chart"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price +5.3% on the day but volume is only 0.40× the 7d average, so no rally call.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-price",
+        "stat-liq",
+        "stat-vol",
+        "stat-ratio"
+      ]
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001831",
+        "delta": "+5.3% (24h)",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$392.7K",
+        "delta": "+2.6%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "$19.9K",
+        "delta": "0.40× 7d avg",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat-ratio": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "55/27",
+        "delta": "ratio 2.04"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "whales": {
+      "type": "Alert",
+      "props": {
+        "title": "Whales",
+        "message": "n/a (rate-limited)",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}
