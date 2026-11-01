@@ -1,15 +1,14 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-10-31T17:52:30Z",
-  "quality_score": 3,
-  "assessment": "Honest, correctly reasoned no-op: it confirmed a 200 fetch, found nothing new, and sent no notification. Its substance is thin, since it is mostly run bookkeeping with no digest content.",
-  "flags": [],
-  "avg_score": 2.7,
+  "last_analyzed": "2026-11-01T18:09:12Z",
+  "quality_score": 1,
+  "assessment": "Output is a single tweet-style line with a link and no verifiable substance; it asserts specific vulnerability claims about a third-party repo (ds2api) and a status URL that cannot be verified from the output, so it is unverifiable and not a usable digest.",
+  "flags": [
+    "unverifiable_claim",
+    "low_quality"
+  ],
+  "avg_score": 2.63,
   "history": [
-    {
-      "date": "2026-09-28",
-      "score": 3
-    },
     {
       "date": "2026-09-29",
       "score": 4
@@ -170,6 +169,12 @@
       "date": "2026-10-31",
       "score": 3,
       "ts": "2026-10-31T17:52:30Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-01",
+      "score": 1,
+      "ts": "2026-11-01T18:09:12Z",
       "harness": "claude"
     }
   ]
