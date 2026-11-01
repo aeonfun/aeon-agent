@@ -83,3 +83,10 @@ Older entries rotated out of MEMORY.md's Recent Digests table.
 | 2026-10-13 | tweet-digest | Transparency (Blockworks $aeon report), Security (omarchy), Ecosystem (Delvetown) |
 | 2026-10-14 | tweet-digest | Security & Bounty Buyback (Stripe/HackerOne win), Skill Drop (compute-resell) |
 | 2026-10-15 | tweet-digest | Security (reasonix CLI finding), Token (buybacks) |
+| 2026-10-16 | tweet-digest | Security (fumadocs proxy finding), Skills (create-prove), Weekly Recap |
+| 2026-10-17 | tweet-digest | TWEET_DIGEST_OK — zero net-new |
+| 2026-10-18 | tweet-digest | Security (Maigret profile-text code execution finding) |
+| 2026-10-21 | tweet-digest | Onboarding, Skills, Security (5 net-new) |
+| 2026-10-22 | tweet-digest | MCP & chat-app access, Security scanner findings (4 net-new) |
+| 2026-10-23 | tweet-digest | 3 net-new, earlier deduped |
+| 2026-10-24 | tweet-digest | Security (UI-TARS scanner finding), 1 net-new |
