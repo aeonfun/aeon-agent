@@ -1,8 +1,8 @@
 *$AEON — CONSOLIDATING*
 
-Price +5.3% on the day but volume is only 0.40× the 7d average, so no rally call.
+Price +2.7% but volume only 0.41× the 7d mean and buy/sell cooled to 1.06, so no confirmation.
 
-Price $0.00001831 (+5.3% 24h) | Liq $392.7K (+2.6%) | Vol $19.9K (0.40× 7d)
-Buys/Sells 55/27 (ratio 2.04) | Whales: n/a (rate-limited)
+Price $0.00001880 (+2.7% 24h) | Liq $398.9K (+1.6%) | Vol $18.3K (0.41× 7d)
+Buys/Sells 38/36 (ratio 1.06) | Whales: 2
 
 Chart: https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4

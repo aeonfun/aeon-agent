@@ -1,18 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-10-31T06:48:09Z",
+  "last_analyzed": "2026-11-01T12:43:15Z",
   "quality_score": 2,
-  "assessment": "Terse market snapshot with specific figures (price, liquidity, volume, buy/sell ratio, pool address) but no cited source, timestamp, or verifiable context; the output reads as a generated price call and gives investment-style framing ('no rally call') that strategy forbids, and it is not a shipping/growth report.",
-  "flags": [
-    "unverifiable_claim",
-    "low_quality"
-  ],
-  "avg_score": 3.03,
+  "assessment": "Terse token snapshot with specific figures and a chart link, but no timestamp, data source, or method is shown, so the numbers can't be checked from the output, and the 'no confirmation' read adds trading-style interpretation with little substance.",
+  "flags": [],
+  "avg_score": 2.97,
   "history": [
-    {
-      "date": "2026-09-29",
-      "score": 4
-    },
     {
       "date": "2026-09-30",
       "score": 4
@@ -173,6 +166,12 @@
       "date": "2026-10-31",
       "score": 2,
       "ts": "2026-10-31T06:48:09Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-01",
+      "score": 2,
+      "ts": "2026-11-01T12:43:15Z",
       "harness": "claude"
     }
   ]
