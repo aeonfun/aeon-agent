@@ -1,3 +1,3 @@
-*Changelog (push-to) - 2026-10-26*
-aeonfun/aeon -> aeonfun/aeon-website
-8 new PRs -> changelog entry "Verifiable onchain evidence and safer syncs" (draft PR https://github.com/aeonfun/aeon-website/pull/700)
+*Changelog (push-to) — 2026-11-02*
+aeonfun/aeon → aeonfun/aeon-website
+21 new PRs → changelog entry "Ecosystem cleanup, pinned scanners, leaner CI" (draft PR: https://github.com/aeonfun/aeon-website/pull/719)

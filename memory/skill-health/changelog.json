@@ -1,12 +1,12 @@
 {
   "skill": "changelog",
-  "last_analyzed": "2026-10-26T09:06:19Z",
-  "quality_score": 1,
-  "assessment": "Output is a one-line summary that points to a draft PR with no changelog content, PR list, or verifiable substance in the output itself, so the run's captured output is effectively empty.",
+  "last_analyzed": "2026-11-02T08:13:36Z",
+  "quality_score": 2,
+  "assessment": "Terse push-to summary that states a count (21 PRs), a changelog title, and a draft PR URL with no list of the PRs or changelog content, so the substance can't be checked or used.",
   "flags": [
-    "empty_output"
+    "low_quality"
   ],
-  "avg_score": 3.4,
+  "avg_score": 3.31,
   "history": [
     {
       "date": "2026-07-27",
@@ -74,6 +74,12 @@
       "date": "2026-10-26",
       "score": 1,
       "ts": "2026-10-26T09:06:19Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-02",
+      "score": 2,
+      "ts": "2026-11-02T08:13:36Z",
       "harness": "claude"
     }
   ]

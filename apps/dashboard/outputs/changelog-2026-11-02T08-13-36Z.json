@@ -1,0 +1,87 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Changelog",
+        "description": "Changelog (push-to) — 2026-11-02"
+      },
+      "children": [
+        "repo_heading",
+        "repo_flow",
+        "new_prs",
+        "sep1",
+        "entry_heading",
+        "entry_text",
+        "draft_badge",
+        "draft_pr"
+      ]
+    },
+    "repo_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Changelog (push-to) — 2026-11-02",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "repo_flow": {
+      "type": "Text",
+      "props": {
+        "text": "aeonfun/aeon → aeonfun/aeon-website",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "new_prs": {
+      "type": "Stat",
+      "props": {
+        "label": "New PRs",
+        "value": "21"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "entry_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "21 new PRs → changelog entry",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "entry_text": {
+      "type": "Text",
+      "props": {
+        "text": "Ecosystem cleanup, pinned scanners, leaner CI",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "draft_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Draft PR",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "draft_pr": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Ecosystem cleanup, pinned scanners, leaner CI",
+        "href": "https://github.com/aeonfun/aeon-website/pull/719",
+        "source": "aeonfun/aeon-website"
+      },
+      "children": []
+    }
+  }
+}
