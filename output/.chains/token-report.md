@@ -1,8 +1,8 @@
 *$AEON — CONSOLIDATING*
 
-Price +2.7% but volume only 0.41× the 7d mean and buy/sell cooled to 1.06, so no confirmation.
+Price +1.0% on 0.73× 7d volume with an even buy/sell split, so no breakout or breakdown trigger fired.
 
-Price $0.00001880 (+2.7% 24h) | Liq $398.9K (+1.6%) | Vol $18.3K (0.41× 7d)
-Buys/Sells 38/36 (ratio 1.06) | Whales: 2
+Price $0.00001899 (+1.0% 24h) | Liq $405.4K (+1.6%) | Vol $33.2K (0.73× 7d)
+Buys/Sells 42/43 (ratio 0.98) | Whales: 12
 
 Chart: https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4

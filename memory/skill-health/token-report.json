@@ -1,15 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-11-01T12:43:15Z",
+  "last_analyzed": "2026-11-02T08:13:10Z",
   "quality_score": 2,
-  "assessment": "Terse token snapshot with specific figures and a chart link, but no timestamp, data source, or method is shown, so the numbers can't be checked from the output, and the 'no confirmation' read adds trading-style interpretation with little substance.",
+  "assessment": "Terse price snapshot with no timestamp, data source, or 7d baseline behind the figures, so the numbers and the 'no trigger fired' call can't be verified from the output; it is thin on substance for a token report.",
   "flags": [],
-  "avg_score": 2.97,
+  "avg_score": 2.9,
   "history": [
-    {
-      "date": "2026-09-30",
-      "score": 4
-    },
     {
       "date": "2026-10-01",
       "score": 4
@@ -172,6 +168,12 @@
       "date": "2026-11-01",
       "score": 2,
       "ts": "2026-11-01T12:43:15Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-02",
+      "score": 2,
+      "ts": "2026-11-02T08:13:10Z",
       "harness": "claude"
     }
   ]
