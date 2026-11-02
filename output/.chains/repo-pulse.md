@@ -1,50 +1,43 @@
-ℹ️ Repo Pulse
-
-*Repo Pulse — 2026-10-26* — [STEADY]
+*Repo Pulse — 2026-11-02* — [STEADY]
 
 | Repo | Stars | Forks | Rel | Verdict |
 |---|---|---|---|---|
-| aeon | 783 (+7) | 291 (+8) | — | STEADY |
-| opendia | 1933 (+4) | 159 (—) | — | STEADY |
-| soul.md | 700 (+4) | 77 (+2) | — | STEADY |
+| aeon | 787 (+4) | 297 (+6) | — | STEADY |
+| opendia | 1930 (—) | 157 (−2) | — | STEADY |
+| soul.md | 701 (+1) | 77 (—) | — | STEADY |
 | minitor | 20 (—) | 4 (—) | — | QUIET |
 
-**aeonfun/aeon** — STEADY (avg4w ≈ 13)
-Notable new stargazers (enriched 7 of 7):
-github.com/wtfsayo — Sayo · 🏢 Freelancer · 57 repos · 🐦 @sayodotfun · 278 followers
-  "The ticker is $ETH"
-github.com/icepy — 17 repos · 🐦 @i_icepy · 1.5k followers
-github.com/jcamp — Jonathan · 📍 Newton Abbot, Devon, UK · 🏢 Micro Update Ltd · 277 repos · 🌐 jonathancamp.com · 35 followers
-  "Web tech (everything tech), wet plate photography (ambrotypes and tintypes), letterpress printing, camera restoration, painting, watch and clock repair."
-github.com/LakshmanTurlapati — Lakshman Turlapati · 📍 Texas · 🏢 Voyza · 105 repos · 🌐 parzival.live · 🐦 @parzival1213 · 55 followers
-  "Debugging."
+Deltas are vs the 10-26 run. aeon saw 9 star and 10 fork events; net counts are lower because of unstars and deleted forks.
+
+**aeonfun/aeon** — STEADY (avg4w ≈ 7)
+Notable new stargazers (enriched 9 of 9):
+github.com/rzyns — Janusz Dziurzyński · 📍 New Haven, CT · 🏢 Corechain Technologies · 140 repos · 🌐 corechain.tech · 50 followers
+github.com/TReinaCOM — thewolverine · 171 repos (also forked)
+github.com/CrystalArchitect — Crystal E Arena-Turner · 91 repos
+github.com/kpodemski — Krystian Podemski · 📍 Bydgoszcz, Poland · 🏢 @PrestaShop · 76 repos · 🐦 @podemski · 89 followers
+  "VP Technology & Community at @PrestaShop, working across technology, product, and the open-source ecosystem"
 Other new stargazers:
-github.com/aafrancis | github.com/jakubdobosz | github.com/alveslim
+github.com/Oniolove | github.com/cvvpapi | github.com/Gonzoponics | github.com/raju-thapa-au | github.com/aafrancis
 New forks:
-github.com/dajiaohuang/aeon — Wu Shuwen · 📍 Singapore · 🏢 Tiktok · 3099 repos · 143 followers
-  "Software Engineer Intern in Tiktok. Graduate student in NUS."
-github.com/mahbubzulkarnain/aeon — Mahbub Zulkarnain · 📍 Cirebon, Indonesia · 114 repos · 🌐 mahbubzulkarnain.com · 77 followers
-github.com/bgiesing/aeon — Brandon Giesing · 📍 Union, MO · 62 repos · 🌐 brandongiesing.com · 18 followers
-github.com/repoken/aeon — Repoken · 3 repos · 🌐 repoken.fun · 🐦 @repokendotfun
-  "Repoken pulls metadata straight from your repo, then deploys a token via the PONS factory. No contracts to write, no long forms to fill."
-github.com/icepy/aeon — 17 repos · 1.5k followers
-Other forks: github.com/moosebizlab | github.com/xiaozz8 | github.com/00288
+github.com/shubu258/aeon — Shivansh Nigam · 📍 Delhi NCR · 41 repos · 🌐 shivanshnigam0.netlify.app · 🐦 @shivanshnigam0
+  "Blockchain Developer | Security Researcher | Building secure dApps & Defi"
+github.com/vaubandev/aeon — Vauban · 🌐 vauban.works
+  "The fort you build around an agent before you hand it a key. Spend caps, allowlist, time-lock, kill switch. On Robinhood Chain."
+github.com/ardy03851-bit/aeon — Ardy · 13 repos
+  "I’m Ardy, I am a robot <3"
+github.com/caigen18/aeon — caigen · 📍 xiamen · 64 repos
+github.com/airdropia/aeon — 47 repos
+Other forks: github.com/duan521127 | github.com/Tunn3l | github.com/njfyanf9-a11y | github.com/o8613844-cpu | github.com/TReinaCOM
 
-**aeonfun/opendia** — STEADY (avg4w ≈ 3.3)
-Notable new stargazers (enriched 4 of 4):
-github.com/amazingnerd — Leo Dang · 73 repos · 🌐 uiskill.com
-  "Design Engineer with a love for art, animation, and 3D."
-github.com/groveLqh — 📍 Hangzhou, China · 65 repos · 🌐 grove-blog.vercel.app · 🐦 @groveLqh · 14 followers
-  "Conceptual integrity over feature accumulation"
+**aeonfun/opendia** — STEADY (avg4w ≈ 3.5)
+Notable new stargazers (enriched 3 of 5):
+github.com/masesas — Khesa Alvandi Sembodo · 📍 Bogor · 62 repos · 🌐 otomotives.com · 7 followers
+  "trust me it's works!"
 Other new stargazers:
-github.com/Kido0001 | github.com/Seismic-Fate
+github.com/n7eonard | github.com/1kiNopal | github.com/Rain-dev-187 | github.com/VerhanCao
 
-**aeonfun/soul.md** — STEADY (avg4w ≈ 6)
-New forks:
-github.com/data-path-9/soul.md — 281 repos · 🌐 github.com/azalith-9
-  "Welcome to my Digital Library of Alexandria for all things AI."
-github.com/mahbubzulkarnain/soul.md — Mahbub Zulkarnain · 📍 Cirebon, Indonesia · 114 repos · 77 followers
+**aeonfun/soul.md** — STEADY
 Other new stargazers:
-github.com/VerhanCao | github.com/xdr041104 | github.com/afer00t | github.com/sistemwms-shc
+github.com/jt851113
 
-Source: events · minitor QUIET (no activity) · aeon fork delta is event-based; net forks_count unchanged (291) vs last run
+Source: events (aeon: window reached 10-26, not truncated) · minitor QUIET (no activity)

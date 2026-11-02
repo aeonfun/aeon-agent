@@ -1,0 +1,765 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Repo Pulse — 2026-11-02",
+        "description": "[STEADY]"
+      },
+      "children": [
+        "summary_table",
+        "deltas_note",
+        "sep_1",
+        "sec_aeon",
+        "sep_2",
+        "sec_opendia",
+        "sep_3",
+        "sec_soul",
+        "sep_4",
+        "source_txt"
+      ]
+    },
+    "summary_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repo",
+          "Stars",
+          "Forks",
+          "Rel",
+          "Verdict"
+        ],
+        "rows": [
+          [
+            "aeon",
+            "787 (+4)",
+            "297 (+6)",
+            "—",
+            "STEADY"
+          ],
+          [
+            "opendia",
+            "1930 (—)",
+            "157 (−2)",
+            "—",
+            "STEADY"
+          ],
+          [
+            "soul.md",
+            "701 (+1)",
+            "77 (—)",
+            "—",
+            "STEADY"
+          ],
+          [
+            "minitor",
+            "20 (—)",
+            "4 (—)",
+            "—",
+            "QUIET"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "deltas_note": {
+      "type": "Text",
+      "props": {
+        "text": "Deltas are vs the 10-26 run. aeon saw 9 star and 10 fork events; net counts are lower because of unstars and deleted forks.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sep_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sec_aeon": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aeon_h",
+        "aeon_lbl",
+        "aeon_s1",
+        "aeon_s2",
+        "aeon_s3",
+        "aeon_s4",
+        "aeon_other_lbl",
+        "aeon_other_links",
+        "aeon_forks_lbl",
+        "aeon_f1",
+        "aeon_f2",
+        "aeon_f3",
+        "aeon_f4",
+        "aeon_f5",
+        "aeon_forks_other_lbl",
+        "aeon_forks_other_links"
+      ]
+    },
+    "aeon_h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/aeon — STEADY (avg4w ≈ 7)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "aeon_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Notable new stargazers (enriched 9 of 9):",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "aeon_s1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_s1_link",
+        "aeon_s1_txt",
+        "aeon_s1_site"
+      ]
+    },
+    "aeon_s1_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/rzyns",
+        "href": "https://github.com/rzyns"
+      },
+      "children": []
+    },
+    "aeon_s1_txt": {
+      "type": "Text",
+      "props": {
+        "text": "Janusz Dziurzyński · 📍 New Haven, CT · 🏢 Corechain Technologies · 140 repos · 50 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_s1_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 corechain.tech",
+        "href": "https://corechain.tech"
+      },
+      "children": []
+    },
+    "aeon_s2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_s2_link",
+        "aeon_s2_txt"
+      ]
+    },
+    "aeon_s2_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/TReinaCOM",
+        "href": "https://github.com/TReinaCOM"
+      },
+      "children": []
+    },
+    "aeon_s2_txt": {
+      "type": "Text",
+      "props": {
+        "text": "thewolverine · 171 repos (also forked)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_s3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_s3_link",
+        "aeon_s3_txt"
+      ]
+    },
+    "aeon_s3_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/CrystalArchitect",
+        "href": "https://github.com/CrystalArchitect"
+      },
+      "children": []
+    },
+    "aeon_s3_txt": {
+      "type": "Text",
+      "props": {
+        "text": "Crystal E Arena-Turner · 91 repos",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_s4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_s4_link",
+        "aeon_s4_txt",
+        "aeon_s4_quote"
+      ]
+    },
+    "aeon_s4_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/kpodemski",
+        "href": "https://github.com/kpodemski"
+      },
+      "children": []
+    },
+    "aeon_s4_txt": {
+      "type": "Text",
+      "props": {
+        "text": "Krystian Podemski · 📍 Bydgoszcz, Poland · 🏢 @PrestaShop · 76 repos · 🐦 @podemski · 89 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_s4_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"VP Technology & Community at @PrestaShop, working across technology, product, and the open-source ecosystem\"",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_other_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "aeon_other_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_og1",
+        "aeon_og2",
+        "aeon_og3",
+        "aeon_og4",
+        "aeon_og5"
+      ]
+    },
+    "aeon_og1": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Oniolove",
+        "href": "https://github.com/Oniolove"
+      },
+      "children": []
+    },
+    "aeon_og2": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/cvvpapi",
+        "href": "https://github.com/cvvpapi"
+      },
+      "children": []
+    },
+    "aeon_og3": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Gonzoponics",
+        "href": "https://github.com/Gonzoponics"
+      },
+      "children": []
+    },
+    "aeon_og4": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/raju-thapa-au",
+        "href": "https://github.com/raju-thapa-au"
+      },
+      "children": []
+    },
+    "aeon_og5": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/aafrancis",
+        "href": "https://github.com/aafrancis"
+      },
+      "children": []
+    },
+    "aeon_forks_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "New forks:",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "aeon_f1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_f1_link",
+        "aeon_f1_txt",
+        "aeon_f1_site",
+        "aeon_f1_quote"
+      ]
+    },
+    "aeon_f1_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/shubu258/aeon",
+        "href": "https://github.com/shubu258/aeon"
+      },
+      "children": []
+    },
+    "aeon_f1_txt": {
+      "type": "Text",
+      "props": {
+        "text": "Shivansh Nigam · 📍 Delhi NCR · 41 repos · 🐦 @shivanshnigam0",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_f1_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 shivanshnigam0.netlify.app",
+        "href": "https://shivanshnigam0.netlify.app"
+      },
+      "children": []
+    },
+    "aeon_f1_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Blockchain Developer | Security Researcher | Building secure dApps & Defi\"",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_f2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_f2_link",
+        "aeon_f2_txt",
+        "aeon_f2_site",
+        "aeon_f2_quote"
+      ]
+    },
+    "aeon_f2_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/vaubandev/aeon",
+        "href": "https://github.com/vaubandev/aeon"
+      },
+      "children": []
+    },
+    "aeon_f2_txt": {
+      "type": "Text",
+      "props": {
+        "text": "Vauban",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_f2_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 vauban.works",
+        "href": "https://vauban.works"
+      },
+      "children": []
+    },
+    "aeon_f2_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"The fort you build around an agent before you hand it a key. Spend caps, allowlist, time-lock, kill switch. On Robinhood Chain.\"",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_f3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_f3_link",
+        "aeon_f3_txt",
+        "aeon_f3_quote"
+      ]
+    },
+    "aeon_f3_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/ardy03851-bit/aeon",
+        "href": "https://github.com/ardy03851-bit/aeon"
+      },
+      "children": []
+    },
+    "aeon_f3_txt": {
+      "type": "Text",
+      "props": {
+        "text": "Ardy · 13 repos",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_f3_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"I’m Ardy, I am a robot <3\"",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "aeon_f4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_f4_link",
+        "aeon_f4_txt"
+      ]
+    },
+    "aeon_f4_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/caigen18/aeon",
+        "href": "https://github.com/caigen18/aeon"
+      },
+      "children": []
+    },
+    "aeon_f4_txt": {
+      "type": "Text",
+      "props": {
+        "text": "caigen · 📍 xiamen · 64 repos",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_f5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_f5_link",
+        "aeon_f5_txt"
+      ]
+    },
+    "aeon_f5_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/airdropia/aeon",
+        "href": "https://github.com/airdropia/aeon"
+      },
+      "children": []
+    },
+    "aeon_f5_txt": {
+      "type": "Text",
+      "props": {
+        "text": "47 repos",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "aeon_forks_other_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other forks:",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "aeon_forks_other_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "aeon_fg1",
+        "aeon_fg2",
+        "aeon_fg3",
+        "aeon_fg4",
+        "aeon_fg5"
+      ]
+    },
+    "aeon_fg1": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/duan521127",
+        "href": "https://github.com/duan521127"
+      },
+      "children": []
+    },
+    "aeon_fg2": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Tunn3l",
+        "href": "https://github.com/Tunn3l"
+      },
+      "children": []
+    },
+    "aeon_fg3": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/njfyanf9-a11y",
+        "href": "https://github.com/njfyanf9-a11y"
+      },
+      "children": []
+    },
+    "aeon_fg4": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/o8613844-cpu",
+        "href": "https://github.com/o8613844-cpu"
+      },
+      "children": []
+    },
+    "aeon_fg5": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/TReinaCOM",
+        "href": "https://github.com/TReinaCOM"
+      },
+      "children": []
+    },
+    "sec_opendia": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "opendia_h",
+        "opendia_lbl",
+        "op_s1",
+        "opendia_other_lbl",
+        "opendia_other_links"
+      ]
+    },
+    "opendia_h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/opendia — STEADY (avg4w ≈ 3.5)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "opendia_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Notable new stargazers (enriched 3 of 5):",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "op_s1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "op_s1_link",
+        "op_s1_txt",
+        "op_s1_site",
+        "op_s1_quote"
+      ]
+    },
+    "op_s1_link": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/masesas",
+        "href": "https://github.com/masesas"
+      },
+      "children": []
+    },
+    "op_s1_txt": {
+      "type": "Text",
+      "props": {
+        "text": "Khesa Alvandi Sembodo · 📍 Bogor · 62 repos · 7 followers",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "op_s1_site": {
+      "type": "Link",
+      "props": {
+        "label": "🌐 otomotives.com",
+        "href": "https://otomotives.com"
+      },
+      "children": []
+    },
+    "op_s1_quote": {
+      "type": "Text",
+      "props": {
+        "text": "\"trust me it's works!\"",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "opendia_other_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "opendia_other_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "op_og1",
+        "op_og2",
+        "op_og3",
+        "op_og4"
+      ]
+    },
+    "op_og1": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/n7eonard",
+        "href": "https://github.com/n7eonard"
+      },
+      "children": []
+    },
+    "op_og2": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/1kiNopal",
+        "href": "https://github.com/1kiNopal"
+      },
+      "children": []
+    },
+    "op_og3": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Rain-dev-187",
+        "href": "https://github.com/Rain-dev-187"
+      },
+      "children": []
+    },
+    "op_og4": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/VerhanCao",
+        "href": "https://github.com/VerhanCao"
+      },
+      "children": []
+    },
+    "sec_soul": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "soul_h",
+        "soul_lbl",
+        "soul_links"
+      ]
+    },
+    "soul_h": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/soul.md — STEADY",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "soul_lbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "soul_links": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "soul_g1"
+      ]
+    },
+    "soul_g1": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/jt851113",
+        "href": "https://github.com/jt851113"
+      },
+      "children": []
+    },
+    "source_txt": {
+      "type": "Text",
+      "props": {
+        "text": "Source: events (aeon: window reached 10-26, not truncated) · minitor QUIET (no activity)",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}

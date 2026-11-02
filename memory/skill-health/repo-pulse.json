@@ -1,15 +1,11 @@
 {
   "skill": "repo-pulse",
-  "last_analyzed": "2026-10-26T16:09:13Z",
+  "last_analyzed": "2026-11-02T22:45:00Z",
   "quality_score": 3,
-  "assessment": "Well-structured and on-strategy, with per-repo star/fork tables and enriched stargazer profiles, but the aeon fork figure contradicts itself (table shows 291 (+8), footnote says the net forks_count is unchanged at 291), which undercuts verifiability.",
+  "assessment": "Tracks the requested metrics with deltas and a reference run, but the report is thin on analysis and the enriched profile details (locations, employers, bios) are unverifiable from the output and go beyond what a momentum brief needs.",
   "flags": [],
-  "avg_score": 3.87,
+  "avg_score": 3.83,
   "history": [
-    {
-      "date": "2026-06-21",
-      "score": 4
-    },
     {
       "date": "2026-06-22",
       "score": 4
@@ -130,6 +126,12 @@
       "date": "2026-10-26",
       "score": 3,
       "ts": "2026-10-26T16:09:13Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-02",
+      "score": 3,
+      "ts": "2026-11-02T22:45:00Z",
       "harness": "claude"
     }
   ]
