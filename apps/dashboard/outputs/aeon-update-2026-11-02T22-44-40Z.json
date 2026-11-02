@@ -1,0 +1,249 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "aeon-update — 2026-11-02",
+        "description": "Synced 29 upstream commits → PR"
+      },
+      "children": [
+        "summary",
+        "stats",
+        "sep1",
+        "new_heading",
+        "new_badges",
+        "sep2",
+        "changes_heading",
+        "t_vuln",
+        "t_deploy",
+        "t_x",
+        "sep3",
+        "manual_alert",
+        "t_ci",
+        "t_sched",
+        "t_langfuse",
+        "t_skillpacks",
+        "t_aeonyml",
+        "sep4",
+        "pr_heading",
+        "pr_story",
+        "pr_link"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Upstream `aeonfun/aeon` is 29 commits ahead. Applied 48 files cleanly, 30 need review.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "stat_commits",
+        "stat_applied",
+        "stat_review"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Upstream commits ahead",
+        "value": "29"
+      },
+      "children": []
+    },
+    "stat_applied": {
+      "type": "Stat",
+      "props": {
+        "label": "Files applied cleanly",
+        "value": "48"
+      },
+      "children": []
+    },
+    "stat_review": {
+      "type": "Stat",
+      "props": {
+        "label": "Files needing review",
+        "value": "30"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "new_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "New skills",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "new_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_flovia",
+        "badge_registry"
+      ]
+    },
+    "badge_flovia": {
+      "type": "Badge",
+      "props": {
+        "text": "flovia",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge_registry": {
+      "type": "Badge",
+      "props": {
+        "text": "github-filing-registry",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "changes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Changes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "t_vuln": {
+      "type": "Text",
+      "props": {
+        "text": "vuln-scanner pins",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "t_deploy": {
+      "type": "Text",
+      "props": {
+        "text": "deploy-uni-hook v4-core fix",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "t_x": {
+      "type": "Text",
+      "props": {
+        "text": "X skills via TwitterAPI.io",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "manual_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Manual review required",
+        "message": "Manual: 12 CI workflows (runs-on), scheduler/messages/aeon.yml, Langfuse/otel scripts, skill-packs registry, aeon.yml entries.",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "t_ci": {
+      "type": "Text",
+      "props": {
+        "text": "12 CI workflows (runs-on)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "t_sched": {
+      "type": "Text",
+      "props": {
+        "text": "scheduler/messages/aeon.yml",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "t_langfuse": {
+      "type": "Text",
+      "props": {
+        "text": "Langfuse/otel scripts",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "t_skillpacks": {
+      "type": "Text",
+      "props": {
+        "text": "skill-packs registry",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "t_aeonyml": {
+      "type": "Text",
+      "props": {
+        "text": "aeon.yml entries",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Pull request",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "pr_story": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #290 — aeonfun/aeon-agent",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/290",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "🔗 https://github.com/aeonfun/aeon-agent/pull/290",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/290"
+      },
+      "children": []
+    }
+  }
+}
