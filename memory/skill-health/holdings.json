@@ -1,12 +1,10 @@
 {
   "skill": "holdings",
-  "last_analyzed": "2026-10-26T09:05:12Z",
-  "quality_score": 2,
-  "assessment": "Terse number dump with no wallet addresses, RPC or GeckoTerminal references, supply base, or snapshot details, so the figures cannot be checked from the output; the arithmetic is internally consistent but the report is thin for a holdings brief.",
-  "flags": [
-    "low_quality"
-  ],
-  "avg_score": 3.69,
+  "last_analyzed": "2026-11-02T08:12:48Z",
+  "quality_score": 3,
+  "assessment": "Compact, internally consistent snapshot: the 7d and 30d percentages check out against the stated balances, and sources and the comparison date are named. It is thin, with no wallet breakdown or links to the underlying RPC and GeckoTerminal data, so the figures can't be independently checked from the output alone.",
+  "flags": [],
+  "avg_score": 3.65,
   "history": [
     {
       "date": "2026-07-30",
@@ -76,6 +74,12 @@
       "date": "2026-10-26",
       "score": 2,
       "ts": "2026-10-26T09:05:12Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-02",
+      "score": 3,
+      "ts": "2026-11-02T08:12:48Z",
       "harness": "claude"
     }
   ]
