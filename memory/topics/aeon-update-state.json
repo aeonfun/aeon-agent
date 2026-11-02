@@ -1,86 +1,246 @@
 {
-  "baseline_sha": "e4d9e35410382afd157613dc483a559f4b411f9a",
+  "baseline_sha": "25575a6be3bfab41925964de55654056a2fe0c39",
   "upstream": "aeonfun/aeon",
-  "last_run": "2026-10-26",
-  "last_pr": null,
+  "last_run": "2026-11-02",
+  "last_pr": "https://github.com/aeonfun/aeon-agent/pull/290",
   "applied": {
-    "added": 4,
-    "updated": 10,
-    "merged": 0,
+    "added": 8,
+    "updated": 36,
+    "merged": 4,
     "deleted": 0
   },
   "pending_conflicts": [
     {
+      "path": ".github/README.md",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "25575a6",
+        "0208afe",
+        "665a0e2",
+        "933fbbd"
+      ]
+    },
+    {
+      "path": ".github/workflows/aeon.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "665a0e2",
+        "1ade386",
+        "fc9fe5c"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-aeon-skill-sync.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-agents-md.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-capabilities-parity.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-harnesses-json.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-packs-json.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-readme-catalog.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-skill-category.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-skill-integrity.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-skill-packs.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-skills-json.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "9b752df"
+      ]
+    },
+    {
+      "path": ".github/workflows/messages.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "665a0e2",
+        "1ade386"
+      ]
+    },
+    {
+      "path": ".github/workflows/scheduler.yml",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "2eaaf1b"
+      ]
+    },
+    {
       "path": ".gitignore",
       "reason": "operator-customized",
       "upstream_commits": [
-        "f27af14"
+        "2eaaf1b",
+        "933fbbd"
       ]
     },
     {
       "path": "CHANGELOG.md",
       "reason": "operator-customized",
       "upstream_commits": [
-        "a0cca77"
+        "34362db",
+        "82c874f"
       ]
     },
     {
       "path": "apps/dashboard/package-lock.json",
       "reason": "operator-customized",
       "upstream_commits": [
-        "b2f58a3"
+        "ec7a50c",
+        "1ade386"
       ]
     },
     {
       "path": "apps/mcp-server/package-lock.json",
       "reason": "operator-customized",
       "upstream_commits": [
-        "1e8e7c3"
+        "1ade386",
+        "28816c7",
+        "67ccc90"
       ]
     },
     {
       "path": "apps/mcp-server/package.json",
       "reason": "operator-customized",
       "upstream_commits": [
-        "1e8e7c3"
+        "1ade386"
+      ]
+    },
+    {
+      "path": "catalog/skill-packs.json",
+      "reason": "skill-packs-unit",
+      "upstream_commits": [
+        "ed698c9",
+        "a69404c",
+        "fd8e3c2",
+        "89db6f8"
+      ]
+    },
+    {
+      "path": "docs/aeon-setup.md",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "25575a6",
+        "933fbbd",
+        "82c874f"
+      ]
+    },
+    {
+      "path": "docs/assets/hero-animated.svg",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "25575a6",
+        "933fbbd"
+      ]
+    },
+    {
+      "path": "docs/community-skill-packs.md",
+      "reason": "skill-packs-unit",
+      "upstream_commits": [
+        "ed698c9",
+        "a69404c",
+        "fd8e3c2",
+        "89db6f8"
+      ]
+    },
+    {
+      "path": "docs/examples/README.md",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "25575a6",
+        "933fbbd"
+      ]
+    },
+    {
+      "path": "docs/langfuse.md",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "2eaaf1b"
+      ]
+    },
+    {
+      "path": "docs/skill-packs.md",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "25575a6",
+        "933fbbd"
+      ]
+    },
+    {
+      "path": "harness-adapter/lib/otel-span.sh",
+      "reason": "operator-customized",
+      "upstream_commits": [
+        "2eaaf1b"
       ]
     },
     {
       "path": "scripts/tests/ci-lanes.txt",
       "reason": "operator-customized",
       "upstream_commits": [
-        "6eddd85",
-        "a0cca77"
+        "933fbbd",
+        "fc9fe5c"
       ]
     },
     {
-      "path": ".github/README.md",
-      "reason": "operator-customized-overlap",
+      "path": "scripts/tests/test_otel_span.sh",
+      "reason": "operator-customized",
       "upstream_commits": [
-        "1560dcc",
-        "2cd951a",
-        "5c6200b"
+        "2eaaf1b"
       ]
     },
     {
-      "path": ".github/workflows/ci-aeon-skill-sync.yml",
-      "reason": "operator-customized-overlap (runs-on AEON_RUNNER vs Blacksmith)",
+      "path": "skills/shiplog/SKILL.md",
+      "reason": "operator-customized",
       "upstream_commits": [
-        "95d7f7d"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-agents-md.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-capabilities-parity.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d"
+        "665a0e2"
       ]
     },
     {
@@ -92,119 +252,11 @@
       ]
     },
     {
-      "path": ".github/workflows/ci-harnesses-json.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-packs-json.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-readme-catalog.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-skill-category.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-skill-integrity.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-skill-packs.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-skills-json.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d"
-      ]
-    },
-    {
       "path": ".github/workflows/ci-tests.yml",
       "reason": "operator-customized-overlap (runs-on, 10 parallel lanes)",
       "upstream_commits": [
         "0bc7a70",
         "f9ec0bf"
-      ]
-    },
-    {
-      "path": "llms.txt",
-      "reason": "operator-customized (carried; upstream untouched this window)",
-      "upstream_commits": [
-        "1560dcc"
-      ]
-    },
-    {
-      "path": "docs/examples/README.md",
-      "reason": "operator-customized-overlap",
-      "upstream_commits": [
-        "1560dcc"
-      ]
-    },
-    {
-      "path": "docs/skill-packs.md",
-      "reason": "operator-customized-overlap",
-      "upstream_commits": [
-        "1a7f07e",
-        "0bc3806"
-      ]
-    },
-    {
-      "path": "skills/shiplog/SKILL.md",
-      "reason": "operator-customized (carried; upstream untouched this window)",
-      "upstream_commits": [
-        "1a7f07e"
-      ]
-    },
-    {
-      "path": "docs/aeon-setup.md",
-      "reason": "operator-customized-overlap",
-      "upstream_commits": [
-        "2cd951a"
-      ]
-    },
-    {
-      "path": "docs/langfuse.md",
-      "reason": "operator-customized-overlap",
-      "upstream_commits": [
-        "7fd335d",
-        "c47b155"
-      ]
-    },
-    {
-      "path": "docs/assets/hero-animated.svg",
-      "reason": "operator-customized-overlap",
-      "upstream_commits": [
-        "2cd951a"
-      ]
-    },
-    {
-      "path": "harness-adapter/lib/otel-span.sh",
-      "reason": "operator-customized-overlap",
-      "upstream_commits": [
-        "7fd335d",
-        "88ec745"
       ]
     },
     {
@@ -224,20 +276,6 @@
       "reason": "operator-customized-overlap",
       "upstream_commits": [
         "7fd335d"
-      ]
-    },
-    {
-      "path": "scripts/tests/test_otel_span.sh",
-      "reason": "operator-customized-overlap",
-      "upstream_commits": [
-        "7fd335d"
-      ]
-    },
-    {
-      "path": "scripts/skill_mode.sh",
-      "reason": "paired-with-conflicting-test (test_skill_mode.sh overlaps; held together)",
-      "upstream_commits": [
-        "ac3045a"
       ]
     },
     {
