@@ -1,18 +1,11 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-11-01T18:09:12Z",
-  "quality_score": 1,
-  "assessment": "Output is a single tweet-style line with a link and no verifiable substance; it asserts specific vulnerability claims about a third-party repo (ds2api) and a status URL that cannot be verified from the output, so it is unverifiable and not a usable digest.",
-  "flags": [
-    "unverifiable_claim",
-    "low_quality"
-  ],
-  "avg_score": 2.63,
+  "last_analyzed": "2026-11-02T22:44:01Z",
+  "quality_score": 2,
+  "assessment": "Two-item digest with specific tweet links and technical claims that cannot be verified from the output; the security theme also falls outside this instance's lane per STRATEGY.md, and it carries little substance for a digest.",
+  "flags": [],
+  "avg_score": 2.57,
   "history": [
-    {
-      "date": "2026-09-29",
-      "score": 4
-    },
     {
       "date": "2026-09-30",
       "score": 2
@@ -175,6 +168,12 @@
       "date": "2026-11-01",
       "score": 1,
       "ts": "2026-11-01T18:09:12Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-02",
+      "score": 2,
+      "ts": "2026-11-02T22:44:01Z",
       "harness": "claude"
     }
   ]

@@ -1,0 +1,116 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest — 2026-11-02"
+      },
+      "children": [
+        "h_security",
+        "badge_security",
+        "stack_security",
+        "sep_1",
+        "h_positioning",
+        "badge_positioning",
+        "stack_positioning"
+      ]
+    },
+    "h_security": {
+      "type": "Heading",
+      "props": {
+        "text": "Security (VulnScanning series)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "badge_security": {
+      "type": "Badge",
+      "props": {
+        "text": "Security",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "stack_security": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet_1",
+        "link_1"
+      ]
+    },
+    "tweet_1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "VulnScanning #3 video covers three AI tools hackable via a web page: LoopX (wildcard CORS reads local agent state), Maigret (stored XSS in OSINT reports), OpenHuman — pattern: the browser obeys attackers"
+      },
+      "children": []
+    },
+    "link_1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2117248377335243038"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_positioning": {
+      "type": "Heading",
+      "props": {
+        "text": "Positioning",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "badge_positioning": {
+      "type": "Badge",
+      "props": {
+        "text": "Positioning",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "stack_positioning": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet_2",
+        "link_2"
+      ]
+    },
+    "tweet_2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Shares a clip of @aaronjmars on agent futurism: agents build software before you wake up, humans move to a judge role"
+      },
+      "children": []
+    },
+    "link_2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2117278720486429071"
+      },
+      "children": []
+    }
+  }
+}
