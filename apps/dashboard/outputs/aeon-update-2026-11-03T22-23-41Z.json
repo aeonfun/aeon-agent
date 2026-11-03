@@ -1,0 +1,204 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "aeon-update — 2026-11-03"
+      },
+      "children": [
+        "summary",
+        "status",
+        "stats",
+        "alert",
+        "sep1",
+        "hl_head",
+        "hl_stack",
+        "sep2",
+        "man_head",
+        "man_stack",
+        "sep3",
+        "pr_link"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "synced 7 commits → PR",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "status": {
+      "type": "Badge",
+      "props": {
+        "text": "synced",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_commits",
+        "stat_applied",
+        "stat_review"
+      ]
+    },
+    "stat_commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Upstream commits ahead",
+        "value": "7"
+      },
+      "children": []
+    },
+    "stat_applied": {
+      "type": "Stat",
+      "props": {
+        "label": "Files applied cleanly",
+        "value": "21"
+      },
+      "children": []
+    },
+    "stat_review": {
+      "type": "Stat",
+      "props": {
+        "label": "Files need review",
+        "value": "2"
+      },
+      "children": []
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "2 files need review",
+        "message": "Upstream aeonfun/aeon was 7 commits ahead. Applied 21 files cleanly, 2 need review.",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "hl_head": {
+      "type": "Heading",
+      "props": {
+        "text": "Highlights",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "hl_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "hl1",
+        "hl2",
+        "hl3",
+        "hl4"
+      ]
+    },
+    "hl1": {
+      "type": "Text",
+      "props": {
+        "text": "Scheduler catch-up window 12h → 23h",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "hl2": {
+      "type": "Text",
+      "props": {
+        "text": "aeon-update stale-copy fix",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "hl3": {
+      "type": "Text",
+      "props": {
+        "text": "token-movers real source URLs",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "hl4": {
+      "type": "Text",
+      "props": {
+        "text": "skill-install sha fix",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "man_head": {
+      "type": "Heading",
+      "props": {
+        "text": "Manual review",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "man_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "man1",
+        "man2"
+      ]
+    },
+    "man1": {
+      "type": "Text",
+      "props": {
+        "text": "`.github/workflows/aeon.yml` — scorer now grades the written article",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "man2": {
+      "type": "Text",
+      "props": {
+        "text": "`CHANGELOG.md` — local edits",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "Pull request #292",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/292"
+      },
+      "children": []
+    }
+  }
+}

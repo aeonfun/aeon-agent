@@ -1,10 +1,8 @@
-*aeon-update — 2026-11-02*
-Synced 29 upstream commits → PR
+*aeon-update — 2026-11-03*
+synced 7 commits → PR
 
-Upstream `aeonfun/aeon` is 29 commits ahead. Applied 48 files cleanly, 30 need review.
-New skills: `flovia`, `github-filing-registry`; vuln-scanner pins, deploy-uni-hook v4-core fix, X skills via TwitterAPI.io.
-Manual: 12 CI workflows (runs-on), scheduler/messages/aeon.yml, Langfuse/otel scripts, skill-packs registry, `aeon.yml` entries.
+Upstream `aeonfun/aeon` was 7 commits ahead. Applied 21 files cleanly, 2 need review.
+Highlights: scheduler catch-up window 12h → 23h, aeon-update stale-copy fix, token-movers real source URLs, skill-install sha fix.
+Manual: `.github/workflows/aeon.yml` (scorer now grades the written article), `CHANGELOG.md` (local edits).
 
-PR: https://github.com/aeonfun/aeon-agent/pull/290
-
-🔗 https://github.com/aeonfun/aeon-agent/pull/290
+PR: https://github.com/aeonfun/aeon-agent/pull/292
