@@ -1,0 +1,50 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest — 2026-11-03"
+      },
+      "children": [
+        "theme",
+        "sep",
+        "tweet",
+        "link"
+      ]
+    },
+    "theme": {
+      "type": "Text",
+      "props": {
+        "text": "Theme: Onchain products in the Aeon software factory",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "tweet": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Aaron lays out onchain as a core Aeon use case: Special Hooks, Aeon Wayback (a database trained on 8 years of crypto innovation), agents that build forks and launchpads, and an auditing tool for safe shipping —"
+      },
+      "children": []
+    },
+    "link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2117642098333642902"
+      },
+      "children": []
+    }
+  }
+}

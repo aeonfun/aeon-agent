@@ -686,3 +686,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-11-02,aeon-update,claude-sonnet-5-5,36,5421,929817,51434
 2026-11-02,repo-pulse,claude-sonnet-5-5,24,9991,466114,35382
 2026-11-03,token-report,claude-sonnet-5-5,18,5662,348706,36395
+2026-11-03,tweet-digest,claude-sonnet-5-5,16,1851,229972,22168
