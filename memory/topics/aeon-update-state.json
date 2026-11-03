@@ -5,7 +5,7 @@
   "last_pr": "https://github.com/aeonfun/aeon-agent/pull/292",
   "applied": {
     "added": 0,
-    "updated": 20,
+    "updated": 38,
     "merged": 1,
     "deleted": 0
   },
@@ -32,76 +32,6 @@
         "0208afe",
         "665a0e2",
         "933fbbd"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-aeon-skill-sync.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-agents-md.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-capabilities-parity.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-harnesses-json.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-packs-json.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-readme-catalog.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-skill-category.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-skill-integrity.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-skill-packs.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
-      ]
-    },
-    {
-      "path": ".github/workflows/ci-skills-json.yml",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "9b752df"
       ]
     },
     {
@@ -137,16 +67,6 @@
       ]
     },
     {
-      "path": "catalog/skill-packs.json",
-      "reason": "skill-packs-unit",
-      "upstream_commits": [
-        "ed698c9",
-        "a69404c",
-        "fd8e3c2",
-        "89db6f8"
-      ]
-    },
-    {
       "path": "docs/aeon-setup.md",
       "reason": "operator-customized",
       "upstream_commits": [
@@ -164,28 +84,11 @@
       ]
     },
     {
-      "path": "docs/community-skill-packs.md",
-      "reason": "skill-packs-unit",
-      "upstream_commits": [
-        "ed698c9",
-        "a69404c",
-        "fd8e3c2",
-        "89db6f8"
-      ]
-    },
-    {
       "path": "docs/examples/README.md",
       "reason": "operator-customized",
       "upstream_commits": [
         "25575a6",
         "933fbbd"
-      ]
-    },
-    {
-      "path": "docs/langfuse.md",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "2eaaf1b"
       ]
     },
     {
@@ -197,25 +100,11 @@
       ]
     },
     {
-      "path": "harness-adapter/lib/otel-span.sh",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "2eaaf1b"
-      ]
-    },
-    {
       "path": "scripts/tests/ci-lanes.txt",
       "reason": "operator-customized",
       "upstream_commits": [
         "933fbbd",
         "fc9fe5c"
-      ]
-    },
-    {
-      "path": "scripts/tests/test_otel_span.sh",
-      "reason": "operator-customized",
-      "upstream_commits": [
-        "2eaaf1b"
       ]
     },
     {
@@ -226,38 +115,11 @@
       ]
     },
     {
-      "path": ".github/workflows/ci-gate.yml",
-      "reason": "operator-customized-overlap (runs-on)",
-      "upstream_commits": [
-        "95d7f7d",
-        "ca26beb"
-      ]
-    },
-    {
       "path": ".github/workflows/ci-tests.yml",
       "reason": "operator-customized-overlap (runs-on, 10 parallel lanes)",
       "upstream_commits": [
         "0bc7a70",
         "f9ec0bf"
-      ]
-    },
-    {
-      "path": "scripts/langfuse-otel.sh",
-      "reason": "operator-customized-overlap",
-      "upstream_commits": [
-        "7fd335d",
-        "c47b155",
-        "88ec745",
-        "d01bae9",
-        "3dc55bb",
-        "7686a1d"
-      ]
-    },
-    {
-      "path": "scripts/tests/test_langfuse_otel.sh",
-      "reason": "operator-customized-overlap",
-      "upstream_commits": [
-        "7fd335d"
       ]
     },
     {
