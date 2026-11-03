@@ -68,8 +68,8 @@
     "last_failed": "2026-06-17T18:39:44Z"
   },
   "token-report": {
-    "last_dispatch": "2026-11-02T08:11:21Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-03T11:23:36Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-02T08:13:24Z",
     "total_runs": 155,
     "total_successes": 137,
