@@ -1,15 +1,13 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-11-02T08:13:10Z",
+  "last_analyzed": "2026-11-03T11:25:20Z",
   "quality_score": 2,
-  "assessment": "Terse price snapshot with no timestamp, data source, or 7d baseline behind the figures, so the numbers and the 'no trigger fired' call can't be verified from the output; it is thin on substance for a token report.",
-  "flags": [],
-  "avg_score": 2.9,
+  "assessment": "Concise and internally consistent (98/87 gives the stated 1.13 ratio, 6+8 gives 14 whales), but it gives precise price, liquidity, volume, whale, and 10-28 high figures with no source, timestamp, or method, so none can be verified from the output.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 2.83,
   "history": [
-    {
-      "date": "2026-10-01",
-      "score": 4
-    },
     {
       "date": "2026-10-02",
       "score": 4
@@ -174,6 +172,12 @@
       "date": "2026-11-02",
       "score": 2,
       "ts": "2026-11-02T08:13:10Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-03",
+      "score": 2,
+      "ts": "2026-11-03T11:25:20Z",
       "harness": "claude"
     }
   ]
