@@ -49,10 +49,9 @@ If nothing in the catalog matches the intent, log `CTRL_NO_BLOCK_MATCH` and noti
 
 The workflow is a ReactFlow-style `{ nodes, edges }` graph. Each node carries BOTH a top-level `blockType + blockSubtype` (for the create-time validator) AND a `data.blockId + data.subtype` (for the keeper). The two are redundant by design — get them all from the catalog row.
 
-Minimum viable weekly DCA — buy 0.005 ETH of USDC every 10080 minutes, 1% slippage. Write it to `body.json` (step 3 reads that file):
+Minimum viable weekly DCA — buy 0.005 ETH of USDC every 10080 minutes, 1% slippage. Step 3 sends this body; never write it to a file with `cat > body.json <<'JSON'` (a `>` redirect and a JSON heredoc body are both refused in this run):
 
-```bash
-cat > body.json <<'JSON'
+```json
 {
   "name": "Weekly DCA — ETH to USDC",
   "description": "DCA 0.005 ETH into USDC weekly via CTRL",
@@ -98,7 +97,6 @@ cat > body.json <<'JSON'
     ]
   }
 }
-JSON
 ```
 
 Units the catalog is explicit about:
@@ -109,22 +107,32 @@ Units the catalog is explicit about:
 
 ### 3. Create the workflow (draft, anonymous)
 
+One call: the step 2 body pasted in as a literal `jq -nc` filter (a JSON object is a valid jq filter; keep it free of single quotes), piped straight into curl, the response saved with `-o`:
+
 ```bash
-WORKFLOW=$(curl -m 15 -s -X POST "https://ctrl.build/api/mcp/workflows" \
-  -H "Content-Type: application/json" -d @body.json)
-WID=$(printf '%s' "$WORKFLOW" | jq -r '.workflow.id')
-[ -n "$WID" ] && [ "$WID" != "null" ] || { echo "CTRL_CREATE_FAILED"; exit 1; }
+jq -nc '{"name": "...", "description": "...", "chain": "base", "network": "mainnet", "workflow_data": {"nodes": [...], "edges": [...]}}' \
+  | curl -m 15 -s -o /tmp/ctrl-create.json -w 'http=%{http_code}\n' -X POST "https://ctrl.build/api/mcp/workflows" \
+  -H "Content-Type: application/json" --data-binary @-
 ```
+
+Then read the id with one literal `jq` call (no `WID=$(...)` assignment, no `[ ]` test):
+
+```bash
+jq -r '.workflow.id // "CTRL_CREATE_FAILED"' /tmp/ctrl-create.json
+```
+
+If it prints `CTRL_CREATE_FAILED` (or the call above was not `http=2xx`), log `CTRL_CREATE_FAILED` and stop. Otherwise the printed value is WID: write it into every later command literally.
 
 The response is `{ "workflow": { "id", "name", "status", "created_at" } }`. The draft's `user_id` stays NULL until the wallet that signs the activation batch claims it. Drafts that are never activated auto-prune.
 
 ### 4. Optional pre-flight — check vault state
 
-`${USER_WALLET}` below is the operator's connected wallet address (the vault owner, a `0x…` address) — read it from `memory/` or ask the user once. Before sending them to sign, surface the vault preview so they know whether a deploy is included and how much ETH to fund:
+`<USER_WALLET>` below is the operator's connected wallet address (the vault owner, a `0x…` address) — read it from `memory/` or ask the user once. Before sending them to sign, surface the vault preview so they know whether a deploy is included and how much ETH to fund:
+
+One call, the wallet address written in literally for `<USER_WALLET>`:
 
 ```bash
-USER_WALLET="0x..."   # the operator's wallet (vault owner)
-curl -s "https://ctrl.build/api/mcp/vault-status?wallet=${USER_WALLET}" | jq '{
+curl -s "https://ctrl.build/api/mcp/vault-status?wallet=<USER_WALLET>" | jq '{
   vaultExists, vaultAddress, predictedVaultAddress,
   ethBalance: .balances.ethDecimal,
   wethBalance: .balances.wethDecimal,
@@ -138,9 +146,7 @@ If `vaultExists` is `false`, the activate batch will deploy the V3 vault in the 
 
 CTRL's activate endpoint (`POST /api/mcp/activate/<id>`) **requires wallet auth** to encode the EIP-5792 batch — the agent cannot call it from a server sandbox. Instead, construct the landing-page URL and notify the user. The landing page handles wallet-connect, lets the user adjust caps, calls activate from their authenticated session, then hands the returned `transactions[]` to their wallet's EIP-5792 `wallet_sendCalls` flow.
 
-```bash
-ACTIVATE_URL="https://ctrl.build/activate/${WID}"
-```
+The activate URL (ACTIVATE_URL below) is `https://ctrl.build/activate/<WID>`, with the id step 3 printed written in. No shell call is needed to build it.
 
 Send via `./notify`. Keep it under 4000 chars and put the URL last so it stays clickable:
 
@@ -180,10 +186,10 @@ Once a workflow is live, both endpoints work anonymously by id / wallet:
 
 ```bash
 # Vault address, balances, active spending rules, ready flag.
-curl -s "https://ctrl.build/api/mcp/vault-status?wallet=${USER_WALLET}" | jq '.activeRules'
+curl -s "https://ctrl.build/api/mcp/vault-status?wallet=<USER_WALLET>" | jq '.activeRules'
 
 # Last N executions for this workflow — surfaces tx hashes, error messages, gas spent.
-curl -s "https://ctrl.build/api/mcp/execution-logs?workflow_id=${WID}" | jq '.logs[0:5]'
+curl -s "https://ctrl.build/api/mcp/execution-logs?workflow_id=<WID>" | jq '.logs[0:5]'
 ```
 
 Use these to write a one-line health line in a follow-up notify ("3 executions in last 24h, last trigger 2h ago, vault balance 0.034 ETH").
@@ -195,7 +201,7 @@ To pull funds back out of the vault, `POST /api/mcp/vault-withdraw`. Like activa
 ```bash
 curl -s -X POST "https://ctrl.build/api/mcp/vault-withdraw" \
   -H "Content-Type: application/json" \
-  -d "{ \"wallet\": \"${USER_WALLET}\", \"token\": \"ETH\", \"amount\": \"0.05\" }" \
+  -d '{"wallet": "<USER_WALLET>", "token": "ETH", "amount": "0.05"}' \
   | jq '{ vaultAddress, amount, signUrl }'
 ```
 

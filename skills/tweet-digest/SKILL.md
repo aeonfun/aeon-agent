@@ -50,35 +50,32 @@ For each `handle` in the config (or just the one from `${var}` if set):
 
 **Path A - twitterapi.io (primary).** `/user/last_tweets` returns structured tweet objects (exact engagement counts, real permalinks, parsed fields) in ~700ms - no fabrication risk. It has no server-side date filter, so keep the last 3 days client-side on `.createdAt`. Auth via `./secretcurl` with the literal `{TWITTER_API_KEY}` placeholder (never `$TWITTER_API_KEY`; see CLAUDE.md -> Network & Secrets):
 
+Each Bash call is one command with every value written in literally: no `VAR=$(...)`, no `$HANDLE`, no loop, no `>` redirect, no `$name` inside a jq filter (the run refuses all of those). First `date -u -d '3 days ago' +%Y-%m-%d` as its own call (prints SINCE). Then one call per handle, the handle written in:
+
 ```bash
-SINCE=$(date -u -d '3 days ago' +%Y-%m-%d 2>/dev/null || date -u -v-3d +%Y-%m-%d)
-HTTP=$(./secretcurl -m 30 -s -o /tmp/tw-td.json -w '%{http_code}' -G "https://api.twitterapi.io/twitter/user/last_tweets" \
-  --data-urlencode "userName=$HANDLE" -H "X-API-Key: {TWITTER_API_KEY}")
-echo "twitterapi http=$HTTP"
-# on HTTP 200: last-3-day originals (createdAt is Twitter native format; strptime normalizes to a date), skip replies/RTs
-jq -r --arg since "$SINCE" '
-  .data.tweets[]
-  | select((.isReply // false) | not)
-  | (try (.createdAt | strptime("%a %b %d %H:%M:%S %z %Y") | strftime("%Y-%m-%d")) catch (.createdAt[0:10])) as $d
-  | select($d >= $since)
-  | [.author.userName, $d, .likeCount, .retweetCount, .replyCount, .url, .text] | @tsv' /tmp/tw-td.json
+./secretcurl -m 30 -s -o /tmp/tw-td.json -w 'twitterapi http=%{http_code} bytes=%{size_download}\n' -G "https://api.twitterapi.io/twitter/user/last_tweets" \
+  --data-urlencode "userName=<HANDLE>" -H "X-API-Key: {TWITTER_API_KEY}"
+```
+
+On HTTP 200, list the last-3-day originals (createdAt is Twitter native format; strptime normalizes it to a date; replies and RTs skipped) with one `jq` call, SINCE written in literally:
+
+```bash
+jq -r '.data.tweets[] | select((.isReply // false) | not) | select((try (.createdAt | strptime("%a %b %d %H:%M:%S %z %Y") | strftime("%Y-%m-%d")) catch (.createdAt[0:10])) >= "<SINCE>") | [.author.userName, (try (.createdAt | strptime("%a %b %d %H:%M:%S %z %Y") | strftime("%Y-%m-%d")) catch (.createdAt[0:10])), .likeCount, .retweetCount, .replyCount, .url, .text] | @tsv' /tmp/tw-td.json
 ```
 
 On `HTTP=200` with parsed rows, take the 5 most interesting or substantive tweets for that handle; paginate with `&cursor=<next_cursor>` only if you need older in-window tweets.
 
-**Path B - xAI Grok `x_search` (fallback).** Only if a handle's Path A returned non-2xx, empty, or timed out (or `TWITTER_API_KEY` is unset). Call Grok's `x_search` **in-run** with `./secretcurl` (the literal `{XAI_API_KEY}` placeholder - never `$XAI_API_KEY`; see CLAUDE.md -> Network & Secrets). Capture the HTTP status and print `http=<code>` before parsing:
+**Path B - xAI Grok `x_search` (fallback).** Only if a handle's Path A returned non-2xx, empty, or timed out (or `TWITTER_API_KEY` is not on the run notes' "Keys set for this run" line). Call Grok's `x_search` **in-run** with `./secretcurl` (the literal `{XAI_API_KEY}` placeholder - never `$XAI_API_KEY`; see CLAUDE.md -> Network & Secrets). Build the body with a literal `jq -n` filter, the handle written in, and pipe it straight into the send in one call; it prints `http=<code>` before you parse:
 
 ```bash
-PROMPT="Search X for the latest tweets from ${HANDLE} in the last 3 days. Return the 5 most interesting or substantive tweets. For each: full text, date, direct link (https://x.com/${HANDLE}/status/ID). Skip retweets of others."
-jq -n --arg p "$PROMPT" '{model:"grok-4-1-fast", input:[{role:"user",content:$p}], tools:[{type:"x_search"}]}' > /tmp/xai-td.json
-HTTP=$(./secretcurl -m 60 -s -o /tmp/xai-td-out.json -w '%{http_code}' -X POST "https://api.x.ai/v1/responses" \
+jq -n '{model:"grok-4-1-fast", input:[{role:"user",content:"Search X for the latest tweets from @<HANDLE> in the last 3 days. Return the 5 most interesting or substantive tweets. For each: full text, date, direct link (https://x.com/<HANDLE>/status/ID). Skip retweets of others."}], tools:[{type:"x_search"}]}' \
+  | ./secretcurl -m 60 -s -o /tmp/xai-td-out.json -w 'http=%{http_code}\n' -X POST "https://api.x.ai/v1/responses" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer {XAI_API_KEY}" \
-  -d @/tmp/xai-td.json)
-echo "http=$HTTP"
+  --data-binary @-
 ```
 
-Then parse `/tmp/xai-td-out.json` for the tweets. If neither `TWITTER_API_KEY` nor `XAI_API_KEY` is set, log `TWEET_DIGEST_NO_KEY: skill requires TWITTER_API_KEY or XAI_API_KEY` and exit (no notification). On a non-2xx `http`, a `--max-time` timeout, or a 200 with an empty body on both paths, record the real reason (`http-<code>` / `timeout` / `empty`) and skip that handle - never blame a "sandbox".
+Then parse `/tmp/xai-td-out.json` for the tweets. If neither `TWITTER_API_KEY` nor `XAI_API_KEY` is on the run notes' "Keys set for this run" line (never test a key with a shell command: those calls are refused), log `TWEET_DIGEST_NO_KEY: skill requires TWITTER_API_KEY or XAI_API_KEY` and exit (no notification). On a non-2xx `http`, a `--max-time` timeout, or a 200 with an empty body on both paths, record the real reason (`http-<code>` / `timeout` / `empty`) and skip that handle - never blame a "sandbox".
 
 **Dedup:** grep the last 2 days of `memory/logs/` for `https://x.com/` URLs already reported. Drop any candidate URL that's already been seen.
 
