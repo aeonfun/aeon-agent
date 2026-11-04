@@ -1,0 +1,128 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$AEON — CONSOLIDATING (table label; price +33.8%)"
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "stats",
+        "progress",
+        "metrics",
+        "sep2",
+        "chart"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price jumped a third on 1.57× the 7d volume, short of the 2.0× breakout bar. 13 of 18 whale trades were buys; buy volume $51.1K vs $18.8K sells, though sell count (113) beat buys (104).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liq",
+        "stat_vol",
+        "stat_ratio",
+        "stat_whales"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00002469",
+        "delta": "+33.8% 24h",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$469.9K",
+        "delta": "+18.5%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "$75.1K",
+        "delta": "1.57× 7d"
+      },
+      "children": []
+    },
+    "stat_ratio": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "104/113",
+        "delta": "ratio 0.92"
+      },
+      "children": []
+    },
+    "stat_whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "18"
+      },
+      "children": []
+    },
+    "progress": {
+      "type": "Progress",
+      "props": {
+        "value": 1.57,
+        "max": 2,
+        "label": "Volume vs 2.0× breakout bar (1.57×)"
+      },
+      "children": []
+    },
+    "metrics": {
+      "type": "Text",
+      "props": {
+        "text": "Price $0.00002469 (+33.8% 24h) | Liq $469.9K (+18.5%) | Vol $75.1K (1.57× 7d)\nBuys/Sells 104/113 (ratio 0.92) | Whales: 18",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}
