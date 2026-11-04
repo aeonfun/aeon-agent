@@ -67,17 +67,18 @@ If DexScreener fails, continue with GT only (`ds=fail` in footer). Never abort o
 
 If `memory/treasury-wallets.json` exists, fetch native-ETH balance for each entry on Base. This optional file declares the project's protocol wallets (treasury, deployer, etc.). If it's absent, skip this step (treasury reporting is off).
 
+Check that the file exists with the Read tool (or a bare `ls memory/treasury-wallets.json`), then list the Base wallets with one literal `jq` call. No `VAR=` assignment, `[ -f ]` test, `&&` or `>` redirect: the run refuses each of those shapes.
+
 ```bash
-WALLETS_FILE="memory/treasury-wallets.json"
-[ -f "$WALLETS_FILE" ] && jq -c '.wallets[] | select(.chain=="base")' "$WALLETS_FILE" > /tmp/treasury-wallets.jsonl
+jq -c '.wallets[] | select(.chain=="base")' memory/treasury-wallets.json
 ```
 
 For each wallet line, query Base in this fallback order:
 
 1. **Public Base RPC `eth_getBalance` (primary, keyless — the same endpoint the repo's other Base skills use):**
+   Pick `<RPC_URL>` yourself: `BASE_RPC_URL` when it is set, else `https://mainnet.base.org`. One call per wallet, with the URL and the wallet address written in literally (an `RPC="..."` assignment is refused):
    ```bash
-   RPC="${BASE_RPC_URL:-https://mainnet.base.org}"
-   curl -m 10 -s -X POST "$RPC" -H "Content-Type: application/json" \
+   curl -m 10 -s -X POST "<RPC_URL>" -H "Content-Type: application/json" \
      -d '{"jsonrpc":"2.0","method":"eth_getBalance","params":["ADDRESS","latest"],"id":1}'
    ```
    `https://mainnet.base.org` is the public, keyless Base JSON-RPC endpoint that `wallet-profile`, `tx-explain`, `lp-lock`, and `fund-flow` already default to; override with `BASE_RPC_URL` for an authenticated endpoint (append any key in the URL path, **never a `-H` header** — the sandbox blocks env-var expansion in headers). The static `-H "Content-Type: application/json"` carries no secret, so it is safe. Response is JSON-RPC `{"jsonrpc":"2.0","result":"0x<hex_wei>","id":1}`. Convert hex → decimal → ÷1e18. If the response has no `result`, the `result` is `null`/non-hex, or it carries an `error`, mark this wallet `eth=fetch_fail` and continue.
@@ -211,35 +212,32 @@ Save to `output/articles/token-report-${today}.md`:
 
 **Path A - twitterapi.io (primary).** Structured tweet objects with exact engagement counts and real permalinks - no fabrication risk, ~700ms. Search the last 24h for the ticker or contract, then keep tweets clearing the engagement bar. Auth via `./secretcurl` with the literal `{TWITTER_API_KEY}` placeholder (never `$TWITTER_API_KEY`; see CLAUDE.md -> Network & Secrets):
 
+First `date -u +%Y-%m-%d` (prints TODAY) and `date -u -d '1 day ago' +%Y-%m-%d` (prints SINCE), each as its own call. Then one call with the ticker, contract and both dates written in literally (no `VAR=$(...)`, no `$` on the line):
+
 ```bash
-TODAY=$(date -u +%Y-%m-%d)
-SINCE=$(date -u -d '1 day ago' +%Y-%m-%d 2>/dev/null || date -u -v-1d +%Y-%m-%d)
-Q="$TOKEN_SYMBOL OR CONTRACT_ADDRESS since:$SINCE until:$TODAY"
-HTTP=$(./secretcurl -s -o /tmp/tw-token.json -w '%{http_code}' -G "https://api.twitterapi.io/twitter/tweet/advanced_search" \
-  --data-urlencode "query=$Q" --data-urlencode "queryType=Latest" -H "X-API-Key: {TWITTER_API_KEY}")
-echo "twitterapi http=$HTTP bytes=$(wc -c </tmp/tw-token.json)"
-# on HTTP 200: keep tweets with >=10 engagement, top 5 by likes
-jq -r '[.tweets[] | select((.likeCount + .retweetCount + .replyCount) >= 10)]
-  | sort_by(-.likeCount) | .[:5][]
-  | [.author.userName, .likeCount, .retweetCount, .replyCount, .url, .text] | @tsv' /tmp/tw-token.json
+./secretcurl -s -o /tmp/tw-token.json -w 'twitterapi http=%{http_code} bytes=%{size_download}\n' -G "https://api.twitterapi.io/twitter/tweet/advanced_search" \
+  --data 'query=%24<TICKER>%20OR%20CONTRACT_ADDRESS%20since:<SINCE>%20until:<TODAY>' --data 'queryType=Latest' -H "X-API-Key: {TWITTER_API_KEY}"
 ```
 
-Substitute the tracked ticker (cashtag form) for `$TOKEN_SYMBOL` and the token address for `CONTRACT_ADDRESS`. On `HTTP=200` with >=2 tweets clearing the bar, build the Social Pulse section, exclude obvious bots and generic shill posts, and set `xai=ok` in the footer.
-
-**Path B - xAI Grok `x_search` (fallback).** Only if Path A returned non-2xx, empty, timed out, or `TWITTER_API_KEY` is unset. Call it **in-run** with `./secretcurl` and the literal `{XAI_API_KEY}` placeholder (never `$XAI_API_KEY`; see CLAUDE.md -> Network & Secrets):
+`%24` is the cashtag `$`, sent already URL-encoded (spaces as `%20`) so no `$` lands on the command line, where it reads as a shell expansion and is refused. `<TICKER>` is the bare tracked ticker (e.g. `AEON`), `CONTRACT_ADDRESS` the token address. On HTTP 200, keep tweets with >=10 engagement, top 5 by likes, in one literal `jq` call:
 
 ```bash
-./secretcurl -s -X POST "https://api.x.ai/v1/responses" \
+jq -r '[.tweets[] | select((.likeCount + .retweetCount + .replyCount) >= 10)] | sort_by(-.likeCount) | .[:5][] | [.author.userName, .likeCount, .retweetCount, .replyCount, .url, .text] | @tsv' /tmp/tw-token.json
+```
+
+On `HTTP=200` with >=2 tweets clearing the bar, build the Social Pulse section, exclude obvious bots and generic shill posts, and set `xai=ok` in the footer.
+
+**Path B - xAI Grok `x_search` (fallback).** Only if Path A returned non-2xx, empty, timed out, or `TWITTER_API_KEY` is not on the run notes' "Keys set for this run" line. Call it **in-run** with `./secretcurl` and the literal `{XAI_API_KEY}` placeholder (never `$XAI_API_KEY`; see CLAUDE.md -> Network & Secrets). Build the body with a literal `jq -n` filter, the ticker and contract written in, and pipe it straight into the send in one call:
+
+```bash
+jq -n '{model:"grok-4-1-fast", input:[{role:"user",content:"Search X for the TICKER cashtag or CONTRACT_ADDRESS mentions in the last 24 hours with at least 10 likes. Return up to 5 notable tweets with @handle, engagement counts, and a one-line summary of the claim or vibe. Exclude obvious bots and generic shill posts."}], tools:[{type:"x_search"}]}' \
+  | ./secretcurl -s -X POST "https://api.x.ai/v1/responses" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer {XAI_API_KEY}" \
-  -d '{
-    "model": "grok-4-1-fast",
-    "input": [{"role": "user", "content": "Search X for $TOKEN_SYMBOL or CONTRACT_ADDRESS mentions in the last 24 hours with at least 10 likes. Return up to 5 notable tweets with @handle, engagement counts, and a one-line summary of the claim or vibe. Exclude obvious bots and generic shill posts."}],
-    "tools": [{"type": "x_search"}]
-  }'
+  --data-binary @-
 ```
 
-If neither path returns at least 2 tweets that clear the engagement bar, skip the Social Pulse section and set `xai=skip`. On API error on both paths, set `xai=fail` and skip. If neither `TWITTER_API_KEY` nor `XAI_API_KEY` is set, set `xai=skip`. Only `xai=ok` adds the X search line to the Sources block; on `skip` or `fail` it goes on the `Not used:` line, and the article cites no X post at all (not in Social Pulse, Context or What changed), even one found some other way.
+If neither path returns at least 2 tweets that clear the engagement bar, skip the Social Pulse section and set `xai=skip`. On API error on both paths, set `xai=fail` and skip. If neither `TWITTER_API_KEY` nor `XAI_API_KEY` is on the run notes' "Keys set for this run" line, set `xai=skip` (never test a key with a shell command: those calls are refused). Only `xai=ok` adds the X search line to the Sources block; on `skip` or `fail` it goes on the `Not used:` line, and the article cites no X post at all (not in Social Pulse, Context or What changed), even one found some other way.
 
 ### 7. Save article
 
@@ -296,7 +294,7 @@ The `Treasury:` line is included ONLY when step 2b populated treasury_eth_total 
 
 Public reads (GeckoTerminal, DexScreener, the keyless Base RPC `mainnet.base.org`) use plain `curl`; on a real failure (non-2xx / timeout / empty), retry with **WebFetch** - it accepts the JSON body for the `eth_getBalance` POST. The auth'd calls (Alchemy fallback, twitterapi.io + api.x.ai Social Pulse) run **in-run** via `./secretcurl` with `{ALCHEMY_API_KEY}` / `{TWITTER_API_KEY}` / `{XAI_API_KEY}` placeholders - no pre-fetch / post-process plumbing.
 
-The Alchemy fallback in step 2b uses `$ALCHEMY_API_KEY` in the URL path (not in a header), so curl envvar expansion is safe here. If Alchemy is unset, skip silently — the keyless public RPC + WebFetch are enough.
+The Alchemy fallback in step 2b puts the key in the URL path through `./secretcurl`'s `{ALCHEMY_API_KEY}` placeholder; a bare `$ALCHEMY_API_KEY` on the line (even inside the URL) is refused, so never inline it. If Alchemy is unset, skip silently — the keyless public RPC + WebFetch are enough.
 
 ## Constraints
 
