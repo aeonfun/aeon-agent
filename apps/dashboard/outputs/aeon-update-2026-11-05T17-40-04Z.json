@@ -1,0 +1,216 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "aeon-update",
+        "description": "2026-11-05"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sync-text",
+        "stats-grid",
+        "sep-1",
+        "upstream-text",
+        "skill-text",
+        "fixes-text",
+        "fixes-badges",
+        "sep-2",
+        "manual-text",
+        "yml-alert",
+        "sep-3",
+        "pr-story",
+        "pr-link"
+      ]
+    },
+    "sync-text": {
+      "type": "Text",
+      "props": {
+        "text": "Synced 10 upstream commits → PR",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "sm"
+      },
+      "children": [
+        "stat-commits",
+        "stat-applied",
+        "stat-review"
+      ]
+    },
+    "stat-commits": {
+      "type": "Stat",
+      "props": {
+        "label": "Commits ahead",
+        "value": "10"
+      },
+      "children": []
+    },
+    "stat-applied": {
+      "type": "Stat",
+      "props": {
+        "label": "Files applied cleanly",
+        "value": "46"
+      },
+      "children": []
+    },
+    "stat-review": {
+      "type": "Stat",
+      "props": {
+        "label": "Files need review",
+        "value": "8",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "upstream-text": {
+      "type": "Text",
+      "props": {
+        "text": "Upstream `aeonfun/aeon` is 10 commits ahead. Applied 46 files cleanly, 8 need review.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "skill-text": {
+      "type": "Text",
+      "props": {
+        "text": "New skill: `canister-audit` (IC Rust-canister security audit).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "fixes-text": {
+      "type": "Text",
+      "props": {
+        "text": "Fixes: git-push-retry, vuln-scanner gitlinks, token-movers 24h change, heartbeat timestamp.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "fixes-badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-new-skill",
+        "badge-fix-1",
+        "badge-fix-2",
+        "badge-fix-3",
+        "badge-fix-4"
+      ]
+    },
+    "badge-new-skill": {
+      "type": "Badge",
+      "props": {
+        "text": "New skill: canister-audit",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge-fix-1": {
+      "type": "Badge",
+      "props": {
+        "text": "git-push-retry",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge-fix-2": {
+      "type": "Badge",
+      "props": {
+        "text": "vuln-scanner gitlinks",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge-fix-3": {
+      "type": "Badge",
+      "props": {
+        "text": "token-movers 24h change",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "badge-fix-4": {
+      "type": "Badge",
+      "props": {
+        "text": "heartbeat timestamp",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "manual-text": {
+      "type": "Text",
+      "props": {
+        "text": "Manual: `CHANGELOG.md`, `AGENTS.md`, `.github/README.md`, 4 docs files, `scripts/tests/ci-lanes.txt`; `aeon.yml` needs the canister-audit entry by hand.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "yml-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Manual action required",
+        "message": "`aeon.yml` needs the canister-audit entry by hand.",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "pr-story": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aeonfun/aeon-agent PR #299",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/299",
+        "source": "GitHub"
+      },
+      "children": []
+    },
+    "pr-link": {
+      "type": "Link",
+      "props": {
+        "label": "🔗 https://github.com/aeonfun/aeon-agent/pull/299",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/299"
+      },
+      "children": []
+    }
+  }
+}
