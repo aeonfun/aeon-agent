@@ -1,0 +1,78 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest: 2026-11-05"
+      },
+      "children": [
+        "theme-security",
+        "tweet-security",
+        "link-security",
+        "sep-1",
+        "theme-skills",
+        "tweet-skills",
+        "link-skills"
+      ]
+    },
+    "theme-security": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Security scanning",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "tweet-security": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Scanner finding on dlthub: a pipeline paging through an API could send login credentials to whatever host the API's responses pointed at."
+      },
+      "children": []
+    },
+    "link-security": {
+      "type": "Link",
+      "props": {
+        "label": "link",
+        "href": "https://x.com/aeonframework/status/2118372467072737701"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "theme-skills": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: New skills",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "tweet-skills": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "New Flovia skill lets an Aeon agent answer 'is smart money accumulating token X/Y on Base?' by combining Nansen, CoinGecko, Zerion and chain reads in one connection."
+      },
+      "children": []
+    },
+    "link-skills": {
+      "type": "Link",
+      "props": {
+        "label": "link",
+        "href": "https://x.com/aeonframework/status/2118230726005174381"
+      },
+      "children": []
+    }
+  }
+}

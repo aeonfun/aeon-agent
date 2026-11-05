@@ -1,8 +1,7 @@
-*Tweet Digest — 2026-11-04*
+*Tweet Digest: 2026-11-05*
 
-*Theme: Security research*
-@aeonframework: VulnScanning Ep4 covers three AI tools with caller-authorization bugs, including a critical cross-org connection hijack in HarnessRouter and MCP session hijacking in Agent Router — [link](https://x.com/aeonframework/status/2117963171214270967)
+*Theme: Security scanning*
+@aeonframework: Scanner finding on dlthub: a pipeline paging through an API could send login credentials to whatever host the API's responses pointed at. - [link](https://x.com/aeonframework/status/2118372467072737701)
 
-*Theme: Shipping & framework*
-@aeonframework: Announced 25 things that launched in October — [link](https://x.com/aeonframework/status/2117972502647574572)
-@aeonframework: New skill, GitHub Filing Registry: one ledger across repos so nothing is filed twice, with status, evidence and next action per filing, plus triage for stale items and a sync check against live GitHub — [link](https://x.com/aeonframework/status/2117893164145193277)
+*Theme: New skills*
+@aeonframework: New Flovia skill lets an Aeon agent answer 'is smart money accumulating token X/Y on Base?' by combining Nansen, CoinGecko, Zerion and chain reads in one connection. - [link](https://x.com/aeonframework/status/2118230726005174381)
