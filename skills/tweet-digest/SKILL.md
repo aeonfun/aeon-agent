@@ -92,11 +92,11 @@ The take states **what the tweet says**, not your opinion of it. Voice per the V
 Send via `./notify` (under 4000 chars):
 
 ```
-*Tweet Digest — ${today}*
+*Tweet Digest: ${today}*
 
 *Theme: <theme>*
-@handle: <one-sentence summary> — [link](url)
-@handle: <one-sentence summary> — [link](url)
+@handle: <one-sentence summary> - [link](url)
+@handle: <one-sentence summary> - [link](url)
 
 *Theme: <theme>*
 ...

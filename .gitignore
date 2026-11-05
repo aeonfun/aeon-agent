@@ -78,6 +78,10 @@ skills/remotion/project/props.json
 /.pending-xai-td*.json
 /digest-*.md
 /output-tweet-digest-*.md
+# Notify bodies and digests a run left at the root (cleanup 2026-11-05).
+/notify-*.md
+/*-notify.md
+/tweet-digest-*.md
 
 # Run scratch cleanup 2026-10-21: skills stage payloads, parsers and notify bodies
 # repo-locally (the sandbox blocks reads of /tmp) and the run's `git add -A` then
