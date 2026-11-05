@@ -1,8 +1,8 @@
-*$AEON — CONSOLIDATING (table label; price +33.8%)*
+*$AEON — SLIDING*
 
-Price jumped a third on 1.57× the 7d volume, short of the 2.0× breakout bar. 13 of 18 whale trades were buys; buy volume $51.1K vs $18.8K sells, though sell count (113) beat buys (104).
+Price −5.5% from yesterday's $0.00002469 reading on 1.6× the 7d average volume; sellers outnumber buyers 158 to 82 (ratio 0.52).
 
-Price $0.00002469 (+33.8% 24h) | Liq $469.9K (+18.5%) | Vol $75.1K (1.57× 7d)
-Buys/Sells 104/113 (ratio 0.92) | Whales: 18
+Price $0.00002332 (−5.5% 24h) | Liq $464.0K (−1.3%) | Vol $68.7K (1.6× 7d)
+Buys/Sells 82/158 (ratio 0.52) | Whales: 8
 
 Chart: https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4
