@@ -150,7 +150,7 @@ skills:
   secured-watch: { enabled: false, schedule: "0 12 * * *", var: "" } # daily 12:00 UTC = 08:00 ET (summer/EDT; 07:00 ET in winter/EST) — watch the public "Secured by Aeon" leaderboard (aeon.fun/security) and report only newly secured repos + changed fix/severity since last run (state in memory/state/secured-repos.json). var: empty=diff | full=whole board | dry-run. No API key.
 
   # --- Fallback (must be last) ---
-  heartbeat: { enabled: true, schedule: "0 19 * * *", var: "" } # ambient fleet-health check (default) — surfaces anything worth attention. var: empty=ambient check | <area>=ambient focused on that area | brief[:<area>]=priority brief (3 things to focus on, why now, what moved; folds in priority-brief)
+  heartbeat: { enabled: true, schedule: "0 19 * * *", var: "", model: "claude-haiku-5-5" } # ambient fleet-health check (default) — surfaces anything worth attention. var: empty=ambient check | <area>=ambient focused on that area | brief[:<area>]=priority brief (3 things to focus on, why now, what moved; folds in priority-brief)
 
 # Reactive triggers — event-driven skill dispatch based on cron-state.json conditions.
 # Skills with schedule: "reactive" are never cron-matched. Instead, the scheduler
