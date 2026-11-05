@@ -188,9 +188,9 @@ Do not freelance labels. The verdict drives the lede, the TL;DR, and the notific
 Save to `output/articles/token-report-${today}.md`:
 
 ```markdown
-# $TOKEN — ${today}
+# $TOKEN: ${today}
 
-**Verdict:** [LABEL] — [≤18 words, citing the 1–2 numbers that drove the label]
+**Verdict:** [LABEL] - [≤18 words, citing the 1-2 numbers that drove the label]
 
 ## 24h at a glance
 
@@ -218,7 +218,7 @@ Write the real hour count in the header (`Since last report (19h)`). With no pri
 | 0x6797…e3a2 | deployer | X.XXXX | ±Y.YY |
 
 ## What changed
-[2–4 sentences. Name the specific deltas that matter and the verdict they produced. If whale trades exist, list the top 3 as `buy $1.2K @ $0.0042 · 11:03 UTC`. If liquidity moved >5%, name the pool and the $ amount. Tie every sentence back to the verdict. No filler.]
+[2-4 sentences. Name the specific deltas that matter and the verdict they produced. If whale trades exist, list the top 3 as `buy $1.2K @ $0.0042 · 11:03 UTC`. If liquidity moved >5%, name the pool and the $ amount. Tie every sentence back to the verdict. No filler.]
 
 ## Social Pulse
 [Only include if the social fetch (Step 6) returns >=2 tweets with >=10 engagement (step 6 sets `xai=ok`). Lead with a one-line read of the conversation shape, then quote 1-3 tweets with @handle + engagement counts + the tweet link from that response. Otherwise OMIT this section entirely.]
@@ -312,7 +312,7 @@ The `TOKEN_REPORT_STATE:` line is a contract — step 3 of the next run parses i
 Lead with the verdict, not raw numbers. One short paragraph plus metrics.
 
 ```
-*$TOKEN — [LABEL]*
+*$TOKEN: [LABEL]*
 
 [One sentence citing the driving number(s).]
 
@@ -327,13 +327,13 @@ The `Treasury:` line is included ONLY when step 2b populated treasury_eth_total 
 
 **Skip rules:**
 - `TOKEN_REPORT_NO_DATA` (step 1 bailout): log only, **no notification, no article**.
-- `QUIET` verdict with whales=0 AND abs(Δprice 24h) <1%: send a single-line notification `$TOKEN quiet — $X.XXXX flat, vol $X.XK.` (no table). This confirms the skill ran without pinging channels with filler on dead days. **Exception:** if `treasury_low_alert` is true, override QUIET and send the full notification with a leading `*Treasury gas reserve low — X.XXXX ETH on treasury, floor 0.01 ETH.*` line. A token going quiet on a day when the agent can no longer pay for gas is the exact regime where the operator needs to see it.
+- `QUIET` verdict with whales=0 AND abs(Δprice 24h) <1%: send a single-line notification `$TOKEN quiet: $X.XXXX flat, vol $X.XK.` (no table). This confirms the skill ran without pinging channels with filler on dead days. **Exception:** if `treasury_low_alert` is true, override QUIET and send the full notification with a leading `*Treasury gas reserve low: X.XXXX ETH on treasury, floor 0.01 ETH.*` line. A token going quiet on a day when the agent can no longer pay for gas is the exact regime where the operator needs to see it.
 - Any other verdict: full notification above.
 
 **Treasury alert (independent of verdict):** if `treasury_low_alert` is true on any run, prepend this line to the notification body — even on QUIET, even on CONSOLIDATING:
 
 ```
-⚠️ *Treasury gas reserve low — X.XXXX ETH on treasury (floor 0.01 ETH).*
+⚠️ *Treasury gas reserve low: X.XXXX ETH on treasury (floor 0.01 ETH).*
 ```
 
 ## Sandbox note
