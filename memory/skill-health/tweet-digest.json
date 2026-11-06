@@ -1,18 +1,14 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-11-05T21:27:25Z",
-  "quality_score": 1,
-  "assessment": "Output is not a digest of tracked accounts' tweets: it contains only two self-authored @aeonframework posts with links, no tracked-account activity, and no evidence the run fetched a timeline.",
+  "last_analyzed": "2026-11-06T21:36:17Z",
+  "quality_score": 2,
+  "assessment": "Only three tweets, all self-promotional from the operator's own account, with no digest of tracked accounts, no engagement data, and no visible sourcing beyond the links; the specific claims (NEAR AI Red acceptance, episode title, week-thread content) cannot be verified from the output alone.",
   "flags": [
-    "unverifiable_claim",
-    "low_quality"
+    "generic_content",
+    "unverifiable_claim"
   ],
-  "avg_score": 2.4,
+  "avg_score": 2.33,
   "history": [
-    {
-      "date": "2026-10-03",
-      "score": 4
-    },
     {
       "date": "2026-10-04",
       "score": 4
@@ -183,6 +179,12 @@
       "date": "2026-11-05",
       "score": 1,
       "ts": "2026-11-05T21:27:25Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-06",
+      "score": 2,
+      "ts": "2026-11-06T21:36:17Z",
       "harness": "claude"
     }
   ]

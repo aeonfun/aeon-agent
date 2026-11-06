@@ -1,0 +1,127 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest: 2026-11-06"
+      },
+      "children": [
+        "theme-security",
+        "tweet-1",
+        "tweet-2",
+        "sep-1",
+        "theme-recap",
+        "tweet-3"
+      ]
+    },
+    "theme-security": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Security / NEAR AI Red",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "tweet-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-1-card",
+        "tweet-1-link"
+      ]
+    },
+    "tweet-1-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "aeonframework",
+        "text": "Aeon accepted into NEAR AI Red, NEAR's cybersecurity program, with private uncensored models in hardware enclaves driving the vuln scanner"
+      },
+      "children": []
+    },
+    "tweet-1-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2118654782986445283"
+      },
+      "children": []
+    },
+    "tweet-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-2-card",
+        "tweet-2-link"
+      ]
+    },
+    "tweet-2-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "aeonframework",
+        "text": "VulnScanning Ep4 video, \"Is This Caller Allowed?\", covers three AI tools that never checked the caller"
+      },
+      "children": []
+    },
+    "tweet-2-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2118693320943911261"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "theme-recap": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Weekly recap",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "tweet-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tweet-3-card",
+        "tweet-3-link"
+      ]
+    },
+    "tweet-3-card": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "aeonframework",
+        "text": "Week thread (Oct 30 - Nov 6): NEAR RED acceptance, founder takes, October recap"
+      },
+      "children": []
+    },
+    "tweet-3-link": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2118687821485510695"
+      },
+      "children": []
+    }
+  }
+}

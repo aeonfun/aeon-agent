@@ -1,7 +1,8 @@
-*Tweet Digest: 2026-11-05*
+*Tweet Digest: 2026-11-06*
 
-*Theme: Security scanning*
-@aeonframework: Scanner finding on dlthub: a pipeline paging through an API could send login credentials to whatever host the API's responses pointed at. - [link](https://x.com/aeonframework/status/2118372467072737701)
+*Theme: Security / NEAR AI Red*
+@aeonframework: Aeon accepted into NEAR AI Red, NEAR's cybersecurity program, with private uncensored models in hardware enclaves driving the vuln scanner - [link](https://x.com/aeonframework/status/2118654782986445283)
+@aeonframework: VulnScanning Ep4 video, "Is This Caller Allowed?", covers three AI tools that never checked the caller - [link](https://x.com/aeonframework/status/2118693320943911261)
 
-*Theme: New skills*
-@aeonframework: New Flovia skill lets an Aeon agent answer 'is smart money accumulating token X/Y on Base?' by combining Nansen, CoinGecko, Zerion and chain reads in one connection. - [link](https://x.com/aeonframework/status/2118230726005174381)
+*Theme: Weekly recap*
+@aeonframework: Week thread (Oct 30 - Nov 6): NEAR RED acceptance, founder takes, October recap - [link](https://x.com/aeonframework/status/2118687821485510695)
