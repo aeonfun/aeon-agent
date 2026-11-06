@@ -1,8 +1,8 @@
-*$AEON — SLIDING*
+*$AEON: SLIDING*
 
-Price −5.5% from yesterday's $0.00002469 reading on 1.6× the 7d average volume; sellers outnumber buyers 158 to 82 (ratio 0.52).
+Price -12.4% over 24h on 1.49× the 7d average volume, giving back the 11-04 spike.
 
-Price $0.00002332 (−5.5% 24h) | Liq $464.0K (−1.3%) | Vol $68.7K (1.6× 7d)
-Buys/Sells 82/158 (ratio 0.52) | Whales: 8
+Price $0.00002043 (-12.4% 24h) | Liq $415.1K (-10.5% since last report) | Vol $55.4K (1.49× 7d)
+Buys/Sells 63/70 (ratio 0.90) | Whales: 9 (6 sells, 3 buys)
 
 Chart: https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4
