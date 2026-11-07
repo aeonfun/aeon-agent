@@ -1,0 +1,121 @@
+{
+  "root": "card-root",
+  "state": {},
+  "elements": {
+    "card-root": {
+      "type": "Card",
+      "props": {
+        "title": "token-report",
+        "description": "Skill output"
+      },
+      "children": [
+        "status",
+        "summary",
+        "sep-1",
+        "stats-grid",
+        "sep-2",
+        "chart-link"
+      ]
+    },
+    "status": {
+      "type": "Badge",
+      "props": {
+        "text": "$AEON: CONSOLIDATING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "+1.7% in 24h on 0.33× the 7-day volume. Buy/sell ratio is 1.60, but the only whale trade was a sell, so there is no accumulation signal.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat-price",
+        "stat-liq",
+        "stat-vol",
+        "stat-buys-sells",
+        "stat-whales"
+      ]
+    },
+    "stat-price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00002029",
+        "delta": "+1.7% 24h",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liq",
+        "value": "$415.4K",
+        "delta": "+0.1% since last report",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Vol",
+        "value": "$12.8K",
+        "delta": "0.33× 7d",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat-buys-sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "40/25",
+        "delta": "ratio 1.60",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat-whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "1"
+      },
+      "children": []
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart-link": {
+      "type": "Link",
+      "props": {
+        "label": "Chart: GeckoTerminal pool",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}

@@ -1,8 +1,8 @@
-*$AEON: SLIDING*
+*$AEON: CONSOLIDATING*
 
-Price -12.4% over 24h on 1.49× the 7d average volume, giving back the 11-04 spike.
++1.7% in 24h on 0.33× the 7-day volume. Buy/sell ratio is 1.60, but the only whale trade was a sell, so there is no accumulation signal.
 
-Price $0.00002043 (-12.4% 24h) | Liq $415.1K (-10.5% since last report) | Vol $55.4K (1.49× 7d)
-Buys/Sells 63/70 (ratio 0.90) | Whales: 9 (6 sells, 3 buys)
+Price $0.00002029 (+1.7% 24h) | Liq $415.4K (+0.1% since last report) | Vol $12.8K (0.33× 7d)
+Buys/Sells 40/25 (ratio 1.60) | Whales: 1
 
 Chart: https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4
