@@ -1,0 +1,261 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest: 2026-11-07"
+      },
+      "children": [
+        "main"
+      ]
+    },
+    "main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "h_vuln",
+        "item_1",
+        "item_2",
+        "item_3",
+        "sep_1",
+        "h_new",
+        "item_4",
+        "item_5",
+        "item_6",
+        "sep_2",
+        "h_eco",
+        "item_7"
+      ]
+    },
+    "h_vuln": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Vuln scanner findings",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw_1",
+        "lk_1"
+      ]
+    },
+    "tw_1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Scanner found Absurd's Habitat dashboard had no login and listened on the whole network, exposing tasks to nearby machines or web pages"
+      },
+      "children": []
+    },
+    "lk_1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2119098804817244554"
+      },
+      "children": []
+    },
+    "item_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw_2",
+        "lk_2"
+      ]
+    },
+    "tw_2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Scanner found a dlthub pipeline could send login credentials to whatever host API responses pointed at"
+      },
+      "children": []
+    },
+    "lk_2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2118372467072737701"
+      },
+      "children": []
+    },
+    "item_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw_3",
+        "lk_3"
+      ]
+    },
+    "tw_3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "VulnScanning Ep4 \"Is This Caller Allowed?\" covers HarnessRouter, Agent Router and CubeSand auth bugs"
+      },
+      "children": []
+    },
+    "lk_3": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2117963171214270967"
+      },
+      "children": []
+    },
+    "sep_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_new": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: New skills and shipping",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw_4",
+        "lk_4"
+      ]
+    },
+    "tw_4": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "New Flovia skill answers on-chain questions like smart-money accumulation by combining Nansen, CoinGecko, Zerion and chain reads"
+      },
+      "children": []
+    },
+    "lk_4": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2118230726005174381"
+      },
+      "children": []
+    },
+    "item_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw_5",
+        "lk_5"
+      ]
+    },
+    "tw_5": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "New GitHub Filing Registry skill keeps one ledger across repos with status, evidence, next action and stale triage"
+      },
+      "children": []
+    },
+    "lk_5": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2117893164145193277"
+      },
+      "children": []
+    },
+    "item_6": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw_6",
+        "lk_6"
+      ]
+    },
+    "tw_6": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "25 things launched in October"
+      },
+      "children": []
+    },
+    "lk_6": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2117972502647574572"
+      },
+      "children": []
+    },
+    "sep_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_eco": {
+      "type": "Heading",
+      "props": {
+        "text": "Theme: Ecosystem",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "item_7": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw_7"
+      ]
+    },
+    "tw_7": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Aeon accepted into NEAR AI Red, with its vuln scanner hunting using private models in hardware enclaves (reported earlier)"
+      },
+      "children": []
+    }
+  }
+}

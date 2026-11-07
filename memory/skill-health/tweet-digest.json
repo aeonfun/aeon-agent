@@ -1,18 +1,13 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-11-06T21:36:17Z",
+  "last_analyzed": "2026-11-07T18:51:37Z",
   "quality_score": 2,
-  "assessment": "Only three tweets, all self-promotional from the operator's own account, with no digest of tracked accounts, no engagement data, and no visible sourcing beyond the links; the specific claims (NEAR AI Red acceptance, episode title, week-thread content) cannot be verified from the output alone.",
+  "assessment": "Output lists specific tweets with status-ID links and a claim about NEAR AI Red acceptance, but there is no evidence the skill fetched these; the output is a digest of the operator's own posts with no verifiable source trail, and the NEAR entry is hedged as 'reported earlier' rather than sourced.",
   "flags": [
-    "generic_content",
     "unverifiable_claim"
   ],
-  "avg_score": 2.33,
+  "avg_score": 2.27,
   "history": [
-    {
-      "date": "2026-10-04",
-      "score": 4
-    },
     {
       "date": "2026-10-08",
       "score": 3,
@@ -185,6 +180,12 @@
       "date": "2026-11-06",
       "score": 2,
       "ts": "2026-11-06T21:36:17Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-07",
+      "score": 2,
+      "ts": "2026-11-07T18:51:37Z",
       "harness": "claude"
     }
   ]
