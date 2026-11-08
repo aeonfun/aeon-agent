@@ -3,7 +3,7 @@ type: Index
 ---
 
 # Long-term Memory
-*Last consolidated: 2026-11-01*
+*Last consolidated: 2026-11-08*
 ## About This Repo
 - Autonomous agent (Aeon) on GitHub Actions via Claude Code, operating for the **$AEON** token and the `aeonfun/aeon` framework.
 - Daily skills post repo state, content, and token updates via outbound `./notify` (inbound polling disabled).
@@ -13,7 +13,7 @@ type: Index
 |-------|----------|-------|
 | AEON  | 0xbf8e8f0e8866a7052f948c16508644347c57aba3 | base |
 
-`token-report` reads this table. Latest 11-01: price 0.00001880, 24h +2.7%, 7d +0.9%, 30d -3.6%, verdict CONSOLIDATING (10-28 high 0.00002337; peak 10-23 BREAKOUT 0.00002148). Holdings 10-26: 15.12% of supply. [source: logs/2026-11-01#token-report]
+`token-report` reads this table. Latest 11-08: price 0.00001998, 24h -1.5%, 7d +6.3%, 30d +1.8%, CONSOLIDATING (11-04 spike 0.00002469 +33.8%, then SLIDING 11-05/06). Holdings 11-02: 15.18% of supply. [source: logs/2026-11-08#token-report]
 
 ## Watched Repos
 See `memory/watched-repos.md` — `aeonfun/aeon`, `aeonfun/aeon-agent`, `aeonfun/minitor`.
@@ -30,13 +30,13 @@ Older rows archived to `memory/topics/digests-history.md`.
 
 | Date | Type | Key Topics |
 |------|------|------------|
+| 2026-11-07 | tweet-digest | 6 tweets reported [source: logs/2026-11-07#tweet-digest] |
+| 2026-11-06 | tweet-digest | Security (NEAR AI Red), Weekly recap (3 net-new) [source: logs/2026-11-06#tweet-digest] |
+| 2026-11-05 | tweet-digest | 2 net-new [source: logs/2026-11-05#tweet-digest] |
+| 2026-11-04 | tweet-digest | Security research, Shipping & framework (3 net-new) [source: logs/2026-11-04#tweet-digest] |
+| 2026-11-03 | tweet-digest | 1 net-new original [source: logs/2026-11-03#tweet-digest] |
+| 2026-11-02 | tweet-digest | 2 net-new, 2 themes [source: logs/2026-11-02#tweet-digest] |
 | 2026-10-31 | tweet-digest | TWEET_DIGEST_OK — zero net-new [source: logs/2026-10-31#tweet-digest] |
-| 2026-10-30 | tweet-digest | VulnScanning series, Framework & ecosystem (8 originals) [source: logs/2026-10-30#tweet-digest] |
-| 2026-10-29 | tweet-digest | Security, Company direction, Onchain/DeFi agents (6 net-new) [source: logs/2026-10-29#tweet-digest] |
-| 2026-10-28 | tweet-digest | Security (Colibrì finding), Positioning (Software Factory video) [source: logs/2026-10-28#tweet-digest] |
-| 2026-10-27 | tweet-digest | Security scanner output (2 net-new) [source: logs/2026-10-27#tweet-digest] |
-| 2026-10-26 | tweet-digest | 7 tweets, 3 themes [source: logs/2026-10-26#tweet-digest] |
-| 2026-10-25 | tweet-digest | Security (CubeSandbox scanner finding), 1 net-new [source: logs/2026-10-25#tweet-digest] |
 
 ## Skills Built
 | Skill | Date | Notes |
@@ -60,10 +60,11 @@ Detail: `memory/topics/lessons.md`; older: `memory/topics/lessons-history.md`.
 ## Next Priorities
 Detail: `memory/topics/priorities.md`.
 - **Scratch-file git hygiene:** 268 tracked scratch files (102 in `output/.tmp-aeon-update/`) — needs skill-repair + `.gitignore`d scratch dirs.
-- **Health-issue auto-close:** resolved in practice — heartbeat 10-26→10-31 shows 0 open health issues, 9/9 skills green. [source: logs/2026-10-31#heartbeat]
+- **Health-issue auto-close:** 9/9 skills green, but 9 stale `health: <skill>` GitHub issues (#230–#272) still open — close manually or fix auto-close. [source: logs/2026-11-03#heartbeat]
+- **shiplog stalled:** last success 10-26, 11-02 Monday slot unrecorded; crosses P3 bar (>14d) on 11-09. [source: logs/2026-11-07#heartbeat]
 - **secured-watch:** disabled since ~10-01, no logged operator decision; fix `note` parser before re-enabling.
-- **aeon-update:** 10-26 synced upstream `75f3b55..e4d9e35` (11 commits) via PR aeon-agent#281; 34 pending conflicts carried (.gitignore, CHANGELOG, deps, ci-lanes.txt); heartbeat shows no open PRs since, merge status unverified. [source: logs/2026-10-26#aeon-update]
-- **aeon:** 10-26: 783★ (+7/wk), 291 forks, soul.md 700★, opendia 1933★, MiroShark 1480★. Docs-sync 10-26 (aeon-website draft PR #700). Possible star-farming: DarcosNetwork, Oniolove. [source: logs/2026-10-26#shiplog]
-- **minitor:** 20★/4 forks, QUIET; remaining manifest.ts/ci.yml and README Deploy section (MED). [source: logs/2026-10-26#repo-pulse]
+- **aeon-update:** 11-05 synced upstream `535991c..4d64089` (10 commits, new skill canister-audit) via PR aeon-agent#299; pending_conflicts 14 (down from 35); no open PRs per 11-07 heartbeat. [source: logs/2026-11-05#aeon-update]
+- **aeon:** 11-03: 787★ (+4 net/wk, avg≈7), 297 forks, soul.md 701★, opendia 1930★. Docs-sync 11-02 (aeon-website PR #719). Possible star-farming: DarcosNetwork, Oniolove (10-26). [source: logs/2026-11-03#repo-pulse]
+- **minitor:** 20★/4 forks, QUIET; remaining manifest.ts/ci.yml and README Deploy section (MED). [source: logs/2026-11-03#repo-pulse]
 - Re-enable `fetch-tweets`, `tweet-allocator` only on organic signal.
-- **Working-tree anomaly:** `AGENTS.md` deleted + `notify`/`notify-jsonrender`/`secretcurl` untracked since 08-18 (75+ days, still present 11-01) — needs restore/commit/gitignore decision.
+- **Working-tree anomaly:** `AGENTS.md` deleted + `notify`/`notify-jsonrender`/`secretcurl` untracked since 08-18 (80+ days, still present 11-08) — needs restore/commit/gitignore decision.
