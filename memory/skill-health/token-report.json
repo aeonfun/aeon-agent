@@ -1,17 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-11-07T07:17:33Z",
+  "last_analyzed": "2026-11-08T07:55:08Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-sourced token report covering price, liquidity, volume, buy/sell flow, whale trades, and trend context, with timestamped API sources. The derived figures I checked are arithmetically consistent (0.33× volume, 1.60 buy/sell ratio, +10.8% 7d, -18% from the 11-04 spike), though the 30d baseline is not shown.",
+  "assessment": "Substantive, well-sourced token report: timestamped API endpoints, and the derived figures check out (24/32 = 0.75 ratio, +6.3% 7d and +1.8% 30d from the stated prior prices). Minor gap: the 'Since last report' price change duplicates the 24h figure without showing the prior price used.",
   "flags": [],
   "avg_score": 2.83,
   "history": [
-    {
-      "date": "2026-10-07",
-      "score": 4,
-      "ts": "2026-10-07T06:07:49Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-08",
       "score": 3,
@@ -184,6 +178,12 @@
       "date": "2026-11-07",
       "score": 4,
       "ts": "2026-11-07T07:17:33Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-08",
+      "score": 4,
+      "ts": "2026-11-08T07:55:08Z",
       "harness": "claude"
     }
   ]

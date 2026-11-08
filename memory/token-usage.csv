@@ -702,3 +702,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-11-07,token-report,claude-sonnet-5-5,22,7606,511857,46096
 2026-11-07,tweet-digest,claude-sonnet-5-5,16,2802,224539,21917
 2026-11-07,heartbeat,claude-haiku-5-5,14,9228,324748,70435
+2026-11-08,token-report,claude-sonnet-5-5,18,6389,389018,43427
