@@ -141,13 +141,14 @@
   },
   "memory-flush": {
     "last_dispatch": "2026-11-08T19:29:02Z",
-    "last_status": "dispatched",
-    "last_success": "2026-11-01T18:09:05Z",
-    "total_runs": 22,
-    "total_successes": 22,
+    "last_status": "success",
+    "last_success": "2026-11-08T19:30:18Z",
+    "total_runs": 23,
+    "total_successes": 23,
     "total_failures": 0,
     "consecutive_failures": 0,
-    "success_rate": 1
+    "success_rate": 1,
+    "last_error": null
   },
   "shiplog": {
     "last_dispatch": "2026-10-26T09:04:12Z",
