@@ -1,20 +1,21 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-Ambient fleet check, run at 2026-11-07 22:22 UTC. The selector was empty, so this is the scheduled-path check, not the priority brief.
+The ambient fleet check ran with an empty selector. Nothing crossed a notification threshold, so I sent no notification. I regenerated `docs/status.md` and appended a `### heartbeat` entry to `memory/logs/2026-11-08.md`.
 
-**Fleet state (9 enabled skills)**
-- **P0 (failed and stuck skills): clean.** No skill is `failed` or `dispatched` past 45 minutes. Every `consecutive_failures` is 0. No success rate is below 0.5. Heartbeat's last success was 2026-11-06 21:36 UTC, about 24.7h ago, which is inside the 36h self-check.
-- **P1 (stalled PRs, urgent issues): clean.** `gh pr list` and `gh issue list --label urgent` both returned nothing open. The issue index has 0 open rows.
-- **P2 (flagged memory items): carry-over only.** The working-tree anomaly (`AGENTS.md` deleted; `notify`, `notify-jsonrender`, `secretcurl` untracked) was already reported in the 11-05 and 11-06 logs, so I did not re-notify it.
-- **P3 (missing or overdue scheduled skills): clean.** No enabled skill is past 2× its interval. Shiplog is the closest: its last success was 2026-10-26, 12 days ago, and the 11-02 Monday slot was never recorded. The bar is >14 days, so it crosses on the 11-09 run if no success lands.
+**Checks (2026-11-08 19:29 UTC)**
+- **P0 failed/stuck skills:** none. No enabled skill is `failed` or stuck, and none has consecutive failures. Heartbeat's last success was 11-07 22:23, about 21h ago, inside the 36h self-check.
+- **P1 stalled PRs / urgent issues:** none. `gh pr list` and `gh issue list --label urgent` both returned empty.
+- **P2 flagged memory:** the working-tree anomaly (AGENTS.md deleted; notify, notify-jsonrender, secretcurl untracked) is still open. It was already reported in the 11-07 log, so it is deduped and not re-notified. This flag is why the verdict is WATCH.
+- **P3 missing/overdue skills:** none past 2× interval. Shiplog's last success (10-26) is 13 days old, so it crosses the 14-day bar on the 11-09 09:00 slot if no success lands. Its 11-02 Monday slot never dispatched.
+- **Open issues:** 0.
 
-**Why WATCH and not OK:** the open memory follow-ups in P2 keep the page at WATCH, as on 11-06. Nothing is currently broken, so I sent no notification.
+**Things I noticed but did not flag**
+- The 11-08 tweet-digest (17:00) and memory-flush (18:00) outcomes are not yet in cron-state. At 19:29 that's too soon to call them missing.
+- The status page's "Next scheduled run" is token-report at 06:00 UTC on 2026-11-09.
 
-**Files changed**
-- `docs/status.md`: regenerated. Updated line is 2026-11-07 22:22 UTC. Token pulse is AEON at $0.00002029, +1.7% over 24h, verdict CONSOLIDATING, taken from the 11-07 token report. Next scheduled run is token-report at 06:00 UTC on 2026-11-08.
-- `memory/logs/2026-11-07.md`: appended a `### heartbeat` entry in `mode: ambient` form.
+**Token pulse:** AEON $0.00001998, −1.5% over 24h, liquidity $412.1K, 24h volume $26.2K, FDV $2.00M. Verdict CONSOLIDATING, from `output/articles/token-report-2026-11-08.md`.
 
 ## Summary
-- **Did:** ran the ambient fleet check (P0–P3), regenerated the public status page, and logged the run.
-- **Notifications:** none, because nothing new needed attention.
-- **Follow-ups:** shiplog's 11-02 miss needs checking if it still has no success by the 11-09 run. The working-tree anomaly still needs a restore, commit, or gitignore decision.
+- **Created/modified:** `docs/status.md` (overwritten), `memory/logs/2026-11-08.md` (appended `### heartbeat`).
+- **Notification:** none sent. The WATCH items are below thresholds.
+- **Follow-up:** check shiplog on 11-09. If its Monday slot doesn't record a success, the P3 flag fires on that run. The working-tree anomaly still needs an operator decision.
