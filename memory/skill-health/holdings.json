@@ -1,10 +1,10 @@
 {
   "skill": "holdings",
-  "last_analyzed": "2026-11-02T08:12:48Z",
-  "quality_score": 3,
-  "assessment": "Compact, internally consistent snapshot: the 7d and 30d percentages check out against the stated balances, and sources and the comparison date are named. It is thin, with no wallet breakdown or links to the underlying RPC and GeckoTerminal data, so the figures can't be independently checked from the output alone.",
+  "last_analyzed": "2026-11-09T10:17:10Z",
+  "quality_score": 4,
+  "assessment": "Reports balance, % of supply, and 7d/30d change per the skill spec, with sources and baseline dates stated; the arithmetic is internally consistent (wallets sum to 15.22B, percentages check out). Figures can't be independently verified from the output, and the '30d' window is actually 28 days, which the footer discloses.",
   "flags": [],
-  "avg_score": 3.65,
+  "avg_score": 3.67,
   "history": [
     {
       "date": "2026-07-30",
@@ -80,6 +80,12 @@
       "date": "2026-11-02",
       "score": 3,
       "ts": "2026-11-02T08:12:48Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 4,
+      "ts": "2026-11-09T10:17:10Z",
       "harness": "claude"
     }
   ]
