@@ -1,0 +1,210 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "aeon + miroshark shiplog ⭐🦈",
+        "description": "Skill: shiplog · Oct 26 → Nov 9"
+      },
+      "children": [
+        "summary",
+        "stats_top",
+        "sep1",
+        "bytes_heading",
+        "byte_canister_audit",
+        "byte_scheduler_fix",
+        "byte_token_movers",
+        "byte_vuln_verify",
+        "byte_pwn_bench",
+        "byte_near_accept",
+        "sep2",
+        "traction_heading",
+        "stats_traction",
+        "listing_text",
+        "sep3",
+        "article_link"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "two weeks. 23 merged PRs on aeon, 100+ across the stack.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "stats_top": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat_merged_aeon",
+        "stat_stack"
+      ]
+    },
+    "stat_merged_aeon": {
+      "type": "Stat",
+      "props": {
+        "label": "Merged PRs on aeon",
+        "value": "23"
+      },
+      "children": []
+    },
+    "stat_stack": {
+      "type": "Stat",
+      "props": {
+        "label": "Merged PRs across the stack",
+        "value": "100+"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "bytes_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "The bytes",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "byte_canister_audit": {
+      "type": "Text",
+      "props": {
+        "text": "canister-audit: IC Rust-canister security audits as a skill, plus an ICP monitoring + deploy-check pack @aeonframework",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "byte_scheduler_fix": {
+      "type": "Text",
+      "props": {
+        "text": "scheduler fix: catch-up window 12h → 23h so slow ticks stop dropping slots",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "byte_token_movers": {
+      "type": "Text",
+      "props": {
+        "text": "token-movers: true 24h change from hourly candles, real sources cited",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "byte_vuln_verify": {
+      "type": "Text",
+      "props": {
+        "text": "vuln-verify: Go harness + pinned-block fork proofs for EVM bugs (nimrod-quip & nimrod-audit)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "byte_pwn_bench": {
+      "type": "Text",
+      "props": {
+        "text": "pwn-bench: rejudged rarity board, full benchmark up front",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "byte_near_accept": {
+      "type": "Alert",
+      "props": {
+        "title": "Accepted into NEAR AI RED",
+        "message": "accepted into NEAR AI RED @NEARProtocol",
+        "type": "success"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "traction_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Traction",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stats_traction": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_aeon",
+        "stat_soulmd",
+        "stat_miroshark"
+      ]
+    },
+    "stat_aeon": {
+      "type": "Stat",
+      "props": {
+        "label": "aeon",
+        "value": "789 ⭐",
+        "delta": "+7",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_soulmd": {
+      "type": "Stat",
+      "props": {
+        "label": "soul.md",
+        "value": "703",
+        "delta": "+4",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_miroshark": {
+      "type": "Stat",
+      "props": {
+        "label": "MiroShark",
+        "value": "1489 🦈",
+        "delta": "+9",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "listing_text": {
+      "type": "Text",
+      "props": {
+        "text": "listed in @BaseHubHB's Base Ecosystem Tier List (56.8k) + 4 recaps",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "article_link": {
+      "type": "Link",
+      "props": {
+        "label": "Read the full shiplog (shiplog-2026-11-09.md)",
+        "href": "https://github.com/aeonfun/aeon-agent/blob/main/output/articles/shiplog-2026-11-09.md"
+      },
+      "children": []
+    }
+  }
+}

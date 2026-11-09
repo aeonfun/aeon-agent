@@ -1,20 +1,18 @@
-ℹ️ Aeon shiplog
+aeon + miroshark shiplog ⭐🦈 oct 26 → nov 9
 
-aeon shiplog ⭐ oct 21 → 26
+two weeks. 23 merged PRs on aeon, 100+ across the stack. the bytes:
 
-100+ PRs across the stack, 8 commits on the framework. the bytes:
-
-- aeon-update: sync file work moved into a script, new baseline stays off main until the PR merges. fewer stuck syncs
-- security pack: web-recon + web-pentest + native-fuzz skills, deepsec runs beside the hunters
-- community: @sentinelhood landed reorg-safe evidence replay & offline receipt verification for onchain-monitor
-- benchmarks: 4-model results on 55 tasks, Aeon OpenRouter attribution across the bench repos
-- security advisories: scanner reports on 8 popular projects went public
+- canister-audit: IC Rust-canister security audits as a skill, plus an ICP monitoring + deploy-check pack @aeonframework
+- scheduler fix: catch-up window 12h → 23h so slow ticks stop dropping slots
+- token-movers: true 24h change from hourly candles, real sources cited
+- vuln-verify: Go harness + pinned-block fork proofs for EVM bugs (nimrod-quip & nimrod-audit)
+- pwn-bench: rejudged rarity board, full benchmark up front
+- accepted into NEAR AI RED @NEARProtocol
 
 traction:
-- aeon 782 ⭐ (+4)
-- MiroShark 1480 🦈 (+5)
-- featured in @BaseHubHB's Base daily recap & tier list
+- aeon 789 ⭐ (+7) · soul.md 703 (+4)
+- MiroShark 1489 🦈 (+9)
+- listed in @BaseHubHB's Base Ecosystem Tier List (56.8k) + 4 recaps
 
 ⭐
-
-https://github.com/aeonfun/aeon-agent/blob/main/output/articles/shiplog-2026-10-26.md
+https://github.com/aeonfun/aeon-agent/blob/main/output/articles/shiplog-2026-11-09.md
