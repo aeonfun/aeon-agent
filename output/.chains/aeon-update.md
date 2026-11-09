@@ -1,10 +1,10 @@
-*aeon-update — 2026-11-05*
-Synced 10 upstream commits → PR
+*aeon-update - 2026-11-09*
+synced 4 commits → PR
 
-Upstream `aeonfun/aeon` is 10 commits ahead. Applied 46 files cleanly, 8 need review.
-New skill: `canister-audit` (IC Rust-canister security audit). Fixes: git-push-retry, vuln-scanner gitlinks, token-movers 24h change, heartbeat timestamp.
-Manual: `CHANGELOG.md`, `AGENTS.md`, `.github/README.md`, 4 docs files, `scripts/tests/ci-lanes.txt`; `aeon.yml` needs the canister-audit entry by hand.
+Upstream `aeonfun/aeon` is 4 commits ahead. Applied 87 cleanly, 7 need review.
+New skills: `canister-status`, `sns-digest`, `icp-deploy-check` (ICP pack); notify dash pass + health-issue fixes across 70 skills.
+Manual: `CHANGELOG.md`, `docs/aeon-setup.md`, `docs/skill-packs.md`, `scripts/tests/ci-lanes.txt` (local edits), `aeon.yml` (new ICP entries).
 
-PR: https://github.com/aeonfun/aeon-agent/pull/299
+PR: https://github.com/aeonfun/aeon-agent/pull/303
 
-🔗 https://github.com/aeonfun/aeon-agent/pull/299
+🔗 https://github.com/aeonfun/aeon-agent/pull/303

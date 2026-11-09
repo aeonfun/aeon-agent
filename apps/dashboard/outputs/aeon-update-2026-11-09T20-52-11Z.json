@@ -1,0 +1,196 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "aeon-update",
+        "description": "2026-11-09"
+      },
+      "children": [
+        "header",
+        "sync",
+        "upstream",
+        "sep1",
+        "stats",
+        "alert_review",
+        "sep2",
+        "new_skills_label",
+        "new_skills_badges",
+        "notify",
+        "manual_table",
+        "sep3",
+        "pr_story",
+        "pr_link"
+      ]
+    },
+    "header": {
+      "type": "Heading",
+      "props": {
+        "text": "aeon-update - 2026-11-09",
+        "level": "h2"
+      }
+    },
+    "sync": {
+      "type": "Text",
+      "props": {
+        "text": "synced 4 commits → PR",
+        "variant": "lead"
+      }
+    },
+    "upstream": {
+      "type": "Text",
+      "props": {
+        "text": "Upstream aeonfun/aeon is 4 commits ahead. Applied 87 cleanly, 7 need review.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_applied",
+        "stat_review"
+      ]
+    },
+    "stat_applied": {
+      "type": "Stat",
+      "props": {
+        "label": "Applied cleanly",
+        "value": "87",
+        "trend": "neutral"
+      }
+    },
+    "stat_review": {
+      "type": "Stat",
+      "props": {
+        "label": "Need review",
+        "value": "7",
+        "trend": "neutral"
+      }
+    },
+    "alert_review": {
+      "type": "Alert",
+      "props": {
+        "title": "7 changes need review",
+        "message": "7 upstream changes could not be applied cleanly and require manual review.",
+        "type": "warning"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "new_skills_label": {
+      "type": "Text",
+      "props": {
+        "text": "New skills (ICP pack):",
+        "variant": "body"
+      }
+    },
+    "new_skills_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_canister",
+        "badge_sns",
+        "badge_icp"
+      ]
+    },
+    "badge_canister": {
+      "type": "Badge",
+      "props": {
+        "text": "canister-status",
+        "variant": "secondary"
+      }
+    },
+    "badge_sns": {
+      "type": "Badge",
+      "props": {
+        "text": "sns-digest",
+        "variant": "secondary"
+      }
+    },
+    "badge_icp": {
+      "type": "Badge",
+      "props": {
+        "text": "icp-deploy-check",
+        "variant": "secondary"
+      }
+    },
+    "notify": {
+      "type": "Text",
+      "props": {
+        "text": "Notify dash pass + health-issue fixes across 70 skills.",
+        "variant": "body"
+      }
+    },
+    "manual_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "File",
+          "Status"
+        ],
+        "rows": [
+          [
+            "CHANGELOG.md",
+            "Manual"
+          ],
+          [
+            "docs/aeon-setup.md",
+            "Manual"
+          ],
+          [
+            "docs/skill-packs.md",
+            "Manual"
+          ],
+          [
+            "scripts/tests/ci-lanes.txt",
+            "Manual (local edits)"
+          ],
+          [
+            "aeon.yml",
+            "Manual (new ICP entries)"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pr_story": {
+      "type": "StoryLink",
+      "props": {
+        "title": "PR #303: aeon-update sync",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/303",
+        "source": "aeonfun/aeon-agent"
+      }
+    },
+    "pr_link": {
+      "type": "Link",
+      "props": {
+        "label": "🔗 Pull request #303",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/303"
+      }
+    }
+  }
+}

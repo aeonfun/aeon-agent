@@ -713,3 +713,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-11-09,repo-pulse,claude-sonnet-5-5,18,7446,327826,34896
 2026-11-09,heartbeat,claude-haiku-5-5,18,11302,471152,62265
 2026-11-09,tweet-digest,claude-sonnet-5-5,18,3252,272046,24444
+2026-11-09,aeon-update,claude-sonnet-5-5,38,5563,869088,43335
