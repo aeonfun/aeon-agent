@@ -152,16 +152,16 @@
   },
   "shiplog": {
     "last_dispatch": "2026-11-09T10:15:48Z",
-    "last_status": "dispatched",
-    "last_success": "2026-10-26T09:06:39Z",
-    "total_runs": 28,
-    "total_successes": 23,
+    "last_status": "success",
+    "last_success": "2026-11-09T10:18:06Z",
+    "total_runs": 29,
+    "total_successes": 24,
     "total_failures": 5,
     "consecutive_failures": 0,
-    "success_rate": 0.82,
-    "last_quality_score": 2,
+    "success_rate": 0.83,
+    "last_quality_score": 4,
     "last_failed": "2026-10-19T19:17:01Z",
-    "last_error": "background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safe"
+    "last_error": null
   },
   "operator-scorecard": {
     "last_dispatch": "2026-06-15T12:43:52Z",
