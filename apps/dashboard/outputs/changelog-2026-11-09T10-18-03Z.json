@@ -1,0 +1,85 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Changelog",
+        "description": "Skill output: changelog"
+      },
+      "children": [
+        "heading",
+        "push",
+        "repos",
+        "separator",
+        "prs",
+        "entry",
+        "separator2",
+        "link"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Changelog (push-to) - 2026-11-09",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "push": {
+      "type": "Badge",
+      "props": {
+        "text": "push-to",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "repos": {
+      "type": "Text",
+      "props": {
+        "text": "aeonfun/aeon -> aeonfun/aeon-website",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "prs": {
+      "type": "Stat",
+      "props": {
+        "label": "New PRs",
+        "value": "20"
+      },
+      "children": []
+    },
+    "entry": {
+      "type": "Text",
+      "props": {
+        "text": "20 new PRs -> changelog entry \"ICP skill packs, trace-driven reliability fixes\"",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link": {
+      "type": "Link",
+      "props": {
+        "label": "https://github.com/aeonfun/aeon-website/pull/742",
+        "href": "https://github.com/aeonfun/aeon-website/pull/742"
+      },
+      "children": []
+    }
+  }
+}

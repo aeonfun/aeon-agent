@@ -1,12 +1,10 @@
 {
   "skill": "changelog",
-  "last_analyzed": "2026-11-02T08:13:36Z",
-  "quality_score": 2,
-  "assessment": "Terse push-to summary that states a count (21 PRs), a changelog title, and a draft PR URL with no list of the PRs or changelog content, so the substance can't be checked or used.",
-  "flags": [
-    "low_quality"
-  ],
-  "avg_score": 3.31,
+  "last_analyzed": "2026-11-09T10:18:03Z",
+  "quality_score": 3,
+  "assessment": "Completes the changelog job with specific, checkable references (draft PR #742, branch, 20 PRs, named highlight PRs), but the changelog text itself isn't in the output, and the website build is explicitly unverified.",
+  "flags": [],
+  "avg_score": 3.29,
   "history": [
     {
       "date": "2026-07-27",
@@ -80,6 +78,12 @@
       "date": "2026-11-02",
       "score": 2,
       "ts": "2026-11-02T08:13:36Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 3,
+      "ts": "2026-11-09T10:18:03Z",
       "harness": "claude"
     }
   ]

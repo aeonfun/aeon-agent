@@ -1,3 +1,4 @@
-*Changelog (push-to) — 2026-11-02*
-aeonfun/aeon → aeonfun/aeon-website
-21 new PRs → changelog entry "Ecosystem cleanup, pinned scanners, leaner CI" (draft PR: https://github.com/aeonfun/aeon-website/pull/719)
+*Changelog (push-to) - 2026-11-09*
+aeonfun/aeon -> aeonfun/aeon-website
+20 new PRs -> changelog entry "ICP skill packs, trace-driven reliability fixes"
+https://github.com/aeonfun/aeon-website/pull/742
