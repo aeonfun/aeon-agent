@@ -1,17 +1,11 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-11-08T19:30:02Z",
+  "last_analyzed": "2026-11-09T20:51:15Z",
   "quality_score": 3,
-  "assessment": "Completed no-op run: it fetched the one tracked account, deduplicated against recent logs, and explained why nothing was sent. Terse, and it names no specific tweets, but the reasoning is consistent with the run's state and no invented specifics appear.",
+  "assessment": "Completed, correctly formatted digest with a link per tweet, but it covers only @aeonframework, states no time window, and adds no analysis; the specific claims are relayed from linked tweets rather than independently checked.",
   "flags": [],
-  "avg_score": 2.27,
+  "avg_score": 2.3,
   "history": [
-    {
-      "date": "2026-10-09",
-      "score": 2,
-      "ts": "2026-10-09T17:03:44Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-10",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-08",
       "score": 3,
       "ts": "2026-11-08T19:30:02Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 3,
+      "ts": "2026-11-09T20:51:15Z",
       "harness": "claude"
     }
   ]

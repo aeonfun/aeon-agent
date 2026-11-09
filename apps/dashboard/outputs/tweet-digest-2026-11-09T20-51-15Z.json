@@ -1,0 +1,261 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest: 2026-11-09"
+      },
+      "children": [
+        "theme1",
+        "sep1",
+        "theme2",
+        "sep2",
+        "theme3"
+      ]
+    },
+    "theme1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h1",
+        "t1",
+        "t2"
+      ]
+    },
+    "h1": {
+      "type": "Heading",
+      "props": {
+        "text": "Vuln scanner output",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "t1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw1",
+        "l1"
+      ]
+    },
+    "tw1": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Aeon VulnScanning Ep.5 covers secrets leaking sideways: Kaneo's Gitea token exposed to every workspace member, ds2api's keys in logs plus path traversal, and fumadocs-openapi as an open proxy by default. The takeaway is to rotate, not just upgrade."
+      },
+      "children": []
+    },
+    "l1": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2119783169679368425"
+      },
+      "children": []
+    },
+    "t2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw2",
+        "l2"
+      ]
+    },
+    "tw2": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "The scanner found that a booby-trapped base image on QAwithIto's M()() could delete files on your machine when you ran `moo new`."
+      },
+      "children": []
+    },
+    "l2": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2119701535424917876"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "theme2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h2",
+        "t3",
+        "t4"
+      ]
+    },
+    "h2": {
+      "type": "Heading",
+      "props": {
+        "text": "Ecosystem and programs",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "t3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw3",
+        "l3"
+      ]
+    },
+    "tw3": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Aeon was accepted into NEAR AI Red, NEAR's cybersecurity program, so the vuln scanner gets to hunt with private security models running in hardware enclaves."
+      },
+      "children": []
+    },
+    "l3": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2118654782986445283"
+      },
+      "children": []
+    },
+    "t4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw4",
+        "l4"
+      ]
+    },
+    "tw4": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Weekly thread for 30 Oct to 6 Nov: the NEAR RED acceptance, founder takes and the October recap."
+      },
+      "children": []
+    },
+    "l4": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2118687821485510695"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "theme3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h3",
+        "t5",
+        "t6"
+      ]
+    },
+    "h3": {
+      "type": "Heading",
+      "props": {
+        "text": "Content and community",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "t5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw5",
+        "l5"
+      ]
+    },
+    "tw5": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "A video on \"Is This Caller Allowed?\", about three AI tools that never asked that question."
+      },
+      "children": []
+    },
+    "l5": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2118693320943911261"
+      },
+      "children": []
+    },
+    "t6": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tw6",
+        "l6"
+      ]
+    },
+    "tw6": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Reposted aaronjmars on the 9,000 holders milestone."
+      },
+      "children": []
+    },
+    "l6": {
+      "type": "Link",
+      "props": {
+        "label": "View tweet",
+        "href": "https://x.com/aeonframework/status/2119804065206976604"
+      },
+      "children": []
+    }
+  }
+}
