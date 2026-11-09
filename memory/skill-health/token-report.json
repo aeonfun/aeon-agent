@@ -1,17 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-11-08T07:55:08Z",
+  "last_analyzed": "2026-11-09T10:17:42Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-sourced token report: timestamped API endpoints, and the derived figures check out (24/32 = 0.75 ratio, +6.3% 7d and +1.8% 30d from the stated prior prices). Minor gap: the 'Since last report' price change duplicates the 24h figure without showing the prior price used.",
+  "assessment": "Substantive, well-structured price report with dated sources and endpoints; the arithmetic checks out (-9.8%, 0.57× volume, -8.5% liquidity, 0.76 ratio), though the 7d trend line is ambiguous and the figures were not independently re-fetched here.",
   "flags": [],
-  "avg_score": 2.83,
+  "avg_score": 2.87,
   "history": [
-    {
-      "date": "2026-10-08",
-      "score": 3,
-      "ts": "2026-10-08T06:08:32Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-09",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-08",
       "score": 4,
       "ts": "2026-11-08T07:55:08Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 4,
+      "ts": "2026-11-09T10:17:42Z",
       "harness": "claude"
     }
   ]

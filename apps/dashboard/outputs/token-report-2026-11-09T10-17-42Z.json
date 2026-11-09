@@ -1,0 +1,122 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "token-report"
+      },
+      "children": [
+        "status",
+        "summary",
+        "sep1",
+        "stats",
+        "sep2",
+        "chart"
+      ]
+    },
+    "status": {
+      "type": "Badge",
+      "props": {
+        "text": "$AEON: CONSOLIDATING",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price fell 9.8% in 24h, but volume is only 0.57× the 7d average, so it stays under the SLIDING bar. 4 of 5 whale trades were sells; top-pool liquidity is down 8.5% since the last report (about $35K).",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "price",
+        "liq",
+        "vol",
+        "buysells",
+        "whales"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001804",
+        "delta": "-9.8% 24h",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liq",
+        "value": "$377.1K",
+        "delta": "-8.5% since last report (about $35K)",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Vol",
+        "value": "$21.3K",
+        "delta": "0.57× 7d",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "buysells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "31/41",
+        "delta": "ratio 0.76",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "5",
+        "delta": "4 of 5 trades were sells",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}
