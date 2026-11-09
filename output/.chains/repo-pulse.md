@@ -1,43 +1,42 @@
-*Repo Pulse — 2026-11-02* — [STEADY]
+ℹ️ Repo Pulse
+
+*Repo Pulse - 2026-11-09* - [ACTIVE]
 
 | Repo | Stars | Forks | Rel | Verdict |
 |---|---|---|---|---|
-| aeon | 787 (+4) | 297 (+6) | — | STEADY |
-| opendia | 1930 (—) | 157 (−2) | — | STEADY |
-| soul.md | 701 (+1) | 77 (—) | — | STEADY |
-| minitor | 20 (—) | 4 (—) | — | QUIET |
+| aeon | 789 (+2) | 302 (+5) | - | STEADY |
+| opendia | 1933 (+3) | 155 (-) | - | ACTIVE |
+| soul.md | 703 (+2) | 77 (-) | - | STEADY |
+| minitor | 21 (+1) | 4 (-) | - | STEADY |
 
-Deltas are vs the 10-26 run. aeon saw 9 star and 10 fork events; net counts are lower because of unstars and deleted forks.
-
-**aeonfun/aeon** — STEADY (avg4w ≈ 7)
-Notable new stargazers (enriched 9 of 9):
-github.com/rzyns — Janusz Dziurzyński · 📍 New Haven, CT · 🏢 Corechain Technologies · 140 repos · 🌐 corechain.tech · 50 followers
-github.com/TReinaCOM — thewolverine · 171 repos (also forked)
-github.com/CrystalArchitect — Crystal E Arena-Turner · 91 repos
-github.com/kpodemski — Krystian Podemski · 📍 Bydgoszcz, Poland · 🏢 @PrestaShop · 76 repos · 🐦 @podemski · 89 followers
-  "VP Technology & Community at @PrestaShop, working across technology, product, and the open-source ecosystem"
-Other new stargazers:
-github.com/Oniolove | github.com/cvvpapi | github.com/Gonzoponics | github.com/raju-thapa-au | github.com/aafrancis
+**aeonfun/aeon** - STEADY (4 new stargazers, avg4w ≈ 5.5; net +2 after unstars)
 New forks:
-github.com/shubu258/aeon — Shivansh Nigam · 📍 Delhi NCR · 41 repos · 🌐 shivanshnigam0.netlify.app · 🐦 @shivanshnigam0
-  "Blockchain Developer | Security Researcher | Building secure dApps & Defi"
-github.com/vaubandev/aeon — Vauban · 🌐 vauban.works
+github.com/wtfsayo - Sayo · 🏢 Freelancer · 64 repos · 🐦 @sayodotfun · 282 followers
+  "The ticker is $ETH"
+github.com/yusasecurity - YUSA · 3 repos · 🌐 yusasecurity.xyz
+  "Prompt-injection firewall for AI agents. What you read is not what your agent reads."
+github.com/SorenMoussavian - Soren Moussavian · 📍 Stockholm, Sweden · 5 repos
+New stargazers (none cross the notable bar; enriched 4 of 4):
+github.com/vaubandev - Vauban · 2 repos · 🌐 vauban.works
   "The fort you build around an agent before you hand it a key. Spend caps, allowlist, time-lock, kill switch. On Robinhood Chain."
-github.com/ardy03851-bit/aeon — Ardy · 13 repos
-  "I’m Ardy, I am a robot <3"
-github.com/caigen18/aeon — caigen · 📍 xiamen · 64 repos
-github.com/airdropia/aeon — 47 repos
-Other forks: github.com/duan521127 | github.com/Tunn3l | github.com/njfyanf9-a11y | github.com/o8613844-cpu | github.com/TReinaCOM
-
-**aeonfun/opendia** — STEADY (avg4w ≈ 3.5)
-Notable new stargazers (enriched 3 of 5):
-github.com/masesas — Khesa Alvandi Sembodo · 📍 Bogor · 62 repos · 🌐 otomotives.com · 7 followers
-  "trust me it's works!"
+github.com/Oniolove - Onio · 2 repos · 🐦 @onioVRTLmchn · 22 followers
 Other new stargazers:
-github.com/n7eonard | github.com/1kiNopal | github.com/Rain-dev-187 | github.com/VerhanCao
+github.com/Subb7 | github.com/cvvpapi
 
-**aeonfun/soul.md** — STEADY
+**aeonfun/opendia** - ACTIVE (3 new stars vs avg4w ≈ 1.0)
+Notable new stargazers (enriched 3 of 3):
+github.com/ImBIOS - Imamuzzaki Abu Salam · 📍 Indonesia · 491 repos · 🌐 https://imbios.dev · 🐦 @ImBIOS_Dev · 224 followers
+  "Building random things."
+github.com/CommanderTurtle - 87 repos · 🌐 shel.sh · 13 followers
 Other new stargazers:
-github.com/jt851113
+github.com/FFFergie
 
-Source: events (aeon: window reached 10-26, not truncated) · minitor QUIET (no activity)
+**aeonfun/soul.md** - STEADY (3 new stargazers, net +2; avg4w ≈ 4.5)
+Other new stargazers:
+github.com/maddixmhn | github.com/Anoesi98 | github.com/mrjthethird
+
+**aeonfun/minitor** - STEADY
+Other new stargazers:
+github.com/CommanderTurtle
+
+Source: events

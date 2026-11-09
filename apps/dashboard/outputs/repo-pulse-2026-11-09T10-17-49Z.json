@@ -1,0 +1,662 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "ℹ️ Repo Pulse"
+      },
+      "children": [
+        "main"
+      ]
+    },
+    "main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "dateRow",
+        "table",
+        "sep1",
+        "aeon",
+        "sep2",
+        "opendia",
+        "sep3",
+        "soul",
+        "sep4",
+        "minitor",
+        "sep5",
+        "source"
+      ]
+    },
+    "dateRow": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "dateText",
+        "activeBadge"
+      ]
+    },
+    "dateText": {
+      "type": "Text",
+      "props": {
+        "text": "Repo Pulse - 2026-11-09",
+        "variant": "lead"
+      }
+    },
+    "activeBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "ACTIVE",
+        "variant": "default"
+      }
+    },
+    "table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Repo",
+          "Stars",
+          "Forks",
+          "Rel",
+          "Verdict"
+        ],
+        "rows": [
+          [
+            "aeon",
+            "789 (+2)",
+            "302 (+5)",
+            "-",
+            "STEADY"
+          ],
+          [
+            "opendia",
+            "1933 (+3)",
+            "155 (-)",
+            "-",
+            "ACTIVE"
+          ],
+          [
+            "soul.md",
+            "703 (+2)",
+            "77 (-)",
+            "-",
+            "STEADY"
+          ],
+          [
+            "minitor",
+            "21 (+1)",
+            "4 (-)",
+            "-",
+            "STEADY"
+          ]
+        ]
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "aeon": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aeonHead",
+        "aeonBadge",
+        "aeonStat",
+        "aeonMeta",
+        "aeonLbl1",
+        "sayo",
+        "yusa",
+        "soren",
+        "aeonLbl2",
+        "vauban",
+        "onio",
+        "aeonLbl3",
+        "subb7",
+        "cvvpapi"
+      ]
+    },
+    "aeonHead": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/aeon",
+        "level": "h3"
+      }
+    },
+    "aeonBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "STEADY",
+        "variant": "secondary"
+      }
+    },
+    "aeonStat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "789",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "aeonMeta": {
+      "type": "Text",
+      "props": {
+        "text": "4 new stargazers, avg4w ≈ 5.5; net +2 after unstars",
+        "variant": "caption"
+      }
+    },
+    "aeonLbl1": {
+      "type": "Text",
+      "props": {
+        "text": "New forks:",
+        "variant": "lead"
+      }
+    },
+    "sayo": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sayoLink",
+        "sayoInfo",
+        "sayoQuote"
+      ]
+    },
+    "sayoLink": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/wtfsayo",
+        "href": "https://github.com/wtfsayo"
+      }
+    },
+    "sayoInfo": {
+      "type": "Text",
+      "props": {
+        "text": "Sayo · 🏢 Freelancer · 64 repos · 🐦 @sayodotfun · 282 followers",
+        "variant": "muted"
+      }
+    },
+    "sayoQuote": {
+      "type": "Text",
+      "props": {
+        "text": "\"The ticker is $ETH\"",
+        "variant": "body"
+      }
+    },
+    "yusa": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "yusaLink",
+        "yusaInfo",
+        "yusaSite",
+        "yusaQuote"
+      ]
+    },
+    "yusaLink": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/yusasecurity",
+        "href": "https://github.com/yusasecurity"
+      }
+    },
+    "yusaInfo": {
+      "type": "Text",
+      "props": {
+        "text": "YUSA · 3 repos",
+        "variant": "muted"
+      }
+    },
+    "yusaSite": {
+      "type": "Link",
+      "props": {
+        "label": "yusasecurity.xyz",
+        "href": "https://yusasecurity.xyz"
+      }
+    },
+    "yusaQuote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Prompt-injection firewall for AI agents. What you read is not what your agent reads.\"",
+        "variant": "body"
+      }
+    },
+    "soren": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sorenLink",
+        "sorenInfo"
+      ]
+    },
+    "sorenLink": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/SorenMoussavian",
+        "href": "https://github.com/SorenMoussavian"
+      }
+    },
+    "sorenInfo": {
+      "type": "Text",
+      "props": {
+        "text": "Soren Moussavian · 📍 Stockholm, Sweden · 5 repos",
+        "variant": "muted"
+      }
+    },
+    "aeonLbl2": {
+      "type": "Text",
+      "props": {
+        "text": "New stargazers (none cross the notable bar; enriched 4 of 4):",
+        "variant": "lead"
+      }
+    },
+    "vauban": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "vaubanLink",
+        "vaubanInfo",
+        "vaubanSite",
+        "vaubanQuote"
+      ]
+    },
+    "vaubanLink": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/vaubandev",
+        "href": "https://github.com/vaubandev"
+      }
+    },
+    "vaubanInfo": {
+      "type": "Text",
+      "props": {
+        "text": "Vauban · 2 repos",
+        "variant": "muted"
+      }
+    },
+    "vaubanSite": {
+      "type": "Link",
+      "props": {
+        "label": "vauban.works",
+        "href": "https://vauban.works"
+      }
+    },
+    "vaubanQuote": {
+      "type": "Text",
+      "props": {
+        "text": "\"The fort you build around an agent before you hand it a key. Spend caps, allowlist, time-lock, kill switch. On Robinhood Chain.\"",
+        "variant": "body"
+      }
+    },
+    "onio": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "onioLink",
+        "onioInfo"
+      ]
+    },
+    "onioLink": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Oniolove",
+        "href": "https://github.com/Oniolove"
+      }
+    },
+    "onioInfo": {
+      "type": "Text",
+      "props": {
+        "text": "Onio · 2 repos · 🐦 @onioVRTLmchn · 22 followers",
+        "variant": "muted"
+      }
+    },
+    "aeonLbl3": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "lead"
+      }
+    },
+    "subb7": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Subb7",
+        "href": "https://github.com/Subb7"
+      }
+    },
+    "cvvpapi": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/cvvpapi",
+        "href": "https://github.com/cvvpapi"
+      }
+    },
+    "opendia": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "opHead",
+        "opBadge",
+        "opStat",
+        "opMeta",
+        "opLbl1",
+        "imbios",
+        "commander",
+        "opLbl2",
+        "fffergie"
+      ]
+    },
+    "opHead": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/opendia",
+        "level": "h3"
+      }
+    },
+    "opBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "ACTIVE",
+        "variant": "default"
+      }
+    },
+    "opStat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "1933",
+        "delta": "+3",
+        "trend": "up"
+      }
+    },
+    "opMeta": {
+      "type": "Text",
+      "props": {
+        "text": "3 new stars vs avg4w ≈ 1.0",
+        "variant": "caption"
+      }
+    },
+    "opLbl1": {
+      "type": "Text",
+      "props": {
+        "text": "Notable new stargazers (enriched 3 of 3):",
+        "variant": "lead"
+      }
+    },
+    "imbios": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "imbiosLink",
+        "imbiosInfo",
+        "imbiosSite",
+        "imbiosQuote"
+      ]
+    },
+    "imbiosLink": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/ImBIOS",
+        "href": "https://github.com/ImBIOS"
+      }
+    },
+    "imbiosInfo": {
+      "type": "Text",
+      "props": {
+        "text": "Imamuzzaki Abu Salam · 📍 Indonesia · 491 repos · 🐦 @ImBIOS_Dev · 224 followers",
+        "variant": "muted"
+      }
+    },
+    "imbiosSite": {
+      "type": "Link",
+      "props": {
+        "label": "https://imbios.dev",
+        "href": "https://imbios.dev"
+      }
+    },
+    "imbiosQuote": {
+      "type": "Text",
+      "props": {
+        "text": "\"Building random things.\"",
+        "variant": "body"
+      }
+    },
+    "commander": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "cmdLink",
+        "cmdInfo",
+        "cmdSite"
+      ]
+    },
+    "cmdLink": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/CommanderTurtle",
+        "href": "https://github.com/CommanderTurtle"
+      }
+    },
+    "cmdInfo": {
+      "type": "Text",
+      "props": {
+        "text": "87 repos · 13 followers",
+        "variant": "muted"
+      }
+    },
+    "cmdSite": {
+      "type": "Link",
+      "props": {
+        "label": "shel.sh",
+        "href": "https://shel.sh"
+      }
+    },
+    "opLbl2": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "lead"
+      }
+    },
+    "fffergie": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/FFFergie",
+        "href": "https://github.com/FFFergie"
+      }
+    },
+    "soul": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "soulHead",
+        "soulBadge",
+        "soulStat",
+        "soulMeta",
+        "soulLbl",
+        "maddix",
+        "anoesi",
+        "mrj"
+      ]
+    },
+    "soulHead": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/soul.md",
+        "level": "h3"
+      }
+    },
+    "soulBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "STEADY",
+        "variant": "secondary"
+      }
+    },
+    "soulStat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "703",
+        "delta": "+2",
+        "trend": "up"
+      }
+    },
+    "soulMeta": {
+      "type": "Text",
+      "props": {
+        "text": "3 new stargazers, net +2; avg4w ≈ 4.5",
+        "variant": "caption"
+      }
+    },
+    "soulLbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "lead"
+      }
+    },
+    "maddix": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/maddixmhn",
+        "href": "https://github.com/maddixmhn"
+      }
+    },
+    "anoesi": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/Anoesi98",
+        "href": "https://github.com/Anoesi98"
+      }
+    },
+    "mrj": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/mrjthethird",
+        "href": "https://github.com/mrjthethird"
+      }
+    },
+    "minitor": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "minHead",
+        "minBadge",
+        "minStat",
+        "minLbl",
+        "minCmdr"
+      ]
+    },
+    "minHead": {
+      "type": "Heading",
+      "props": {
+        "text": "aeonfun/minitor",
+        "level": "h3"
+      }
+    },
+    "minBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "STEADY",
+        "variant": "secondary"
+      }
+    },
+    "minStat": {
+      "type": "Stat",
+      "props": {
+        "label": "Stars",
+        "value": "21",
+        "delta": "+1",
+        "trend": "up"
+      }
+    },
+    "minLbl": {
+      "type": "Text",
+      "props": {
+        "text": "Other new stargazers:",
+        "variant": "lead"
+      }
+    },
+    "minCmdr": {
+      "type": "Link",
+      "props": {
+        "label": "github.com/CommanderTurtle",
+        "href": "https://github.com/CommanderTurtle"
+      }
+    },
+    "source": {
+      "type": "Text",
+      "props": {
+        "text": "Source: events",
+        "variant": "caption"
+      }
+    }
+  }
+}
