@@ -68,8 +68,8 @@
     "last_failed": "2026-06-17T18:39:44Z"
   },
   "token-report": {
-    "last_dispatch": "2026-11-08T07:53:47Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-09T10:15:48Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-08T07:55:22Z",
     "total_runs": 161,
     "total_successes": 143,
@@ -81,8 +81,8 @@
     "last_error": null
   },
   "repo-pulse": {
-    "last_dispatch": "2026-11-02T22:42:51Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-09T10:15:48Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-02T22:45:40Z",
     "total_runs": 50,
     "total_successes": 44,
@@ -151,8 +151,8 @@
     "last_error": null
   },
   "shiplog": {
-    "last_dispatch": "2026-10-26T09:04:12Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-09T10:15:48Z",
+    "last_status": "dispatched",
     "last_success": "2026-10-26T09:06:39Z",
     "total_runs": 28,
     "total_successes": 23,
@@ -212,8 +212,8 @@
     "last_error": "2b8fd3\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"s"
   },
   "changelog": {
-    "last_dispatch": "2026-11-02T08:11:21Z",
-    "last_status": "success",
+    "last_dispatch": "2026-11-09T10:15:48Z",
+    "last_status": "dispatched",
     "last_success": "2026-11-02T08:13:48Z",
     "total_runs": 21,
     "total_successes": 16,
@@ -225,7 +225,7 @@
     "last_error": "background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safe"
   },
   "holdings": {
-    "last_status": "success",
+    "last_status": "dispatched",
     "last_success": "2026-11-02T08:12:59Z",
     "total_runs": 23,
     "total_successes": 17,
@@ -233,7 +233,7 @@
     "consecutive_failures": 0,
     "success_rate": 0.74,
     "last_quality_score": 3,
-    "last_dispatch": "2026-11-02T08:11:21Z",
+    "last_dispatch": "2026-11-09T10:15:48Z",
     "last_failed": "2026-10-19T19:16:59Z",
     "last_error": "background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safe"
   },
