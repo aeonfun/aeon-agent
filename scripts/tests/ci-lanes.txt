@@ -90,6 +90,7 @@
 6 | dev-loop live proof gate tests | bash scripts/tests/test_dev_loop_proof.sh
 4 | feature open-PR and closing-issue checks | bash scripts/tests/test_feature_open_pr.sh
 4 | skill-scan calibration (fires on sinks, not benign syntax) | bash scripts/tests/test_skill_scan_calibration.sh
+2 | injection screen for untrusted issue/PR bodies (exfil/runbook/env-dump bait) | bash scripts/tests/test_screen_injection.sh
 1 | audit-log redaction tests | bash scripts/tests/test_audit.sh
 4 | dry-run gate (synthetic secrets, no real leak, pass criteria) | bash scripts/tests/test_dry_run.sh
 5 | dry-run harness/model dispatch boundary tests | bash scripts/tests/test_dry_run_dispatch.sh
