@@ -1,17 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-11-09T10:17:42Z",
+  "last_analyzed": "2026-11-10T18:38:17Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-structured price report with dated sources and endpoints; the arithmetic checks out (-9.8%, 0.57× volume, -8.5% liquidity, 0.76 ratio), though the 7d trend line is ambiguous and the figures were not independently re-fetched here.",
+  "assessment": "Substantive, well-structured price report with timestamped endpoint sources, internally consistent math (-6.5% from $0.00001888 to $0.00001764; 35/60 = 0.58), and explicit prior-state comparisons; the figures can't be independently confirmed here, and some table cells are empty.",
   "flags": [],
   "avg_score": 2.87,
   "history": [
-    {
-      "date": "2026-10-09",
-      "score": 4,
-      "ts": "2026-10-09T06:07:43Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-10",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-09",
       "score": 4,
       "ts": "2026-11-09T10:17:42Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-10",
+      "score": 4,
+      "ts": "2026-11-10T18:38:17Z",
       "harness": "claude"
     }
   ]

@@ -1,0 +1,130 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "token-report"
+      },
+      "children": [
+        "title",
+        "status",
+        "summary",
+        "sep1",
+        "stats",
+        "sep2",
+        "chart"
+      ]
+    },
+    "title": {
+      "type": "Heading",
+      "props": {
+        "text": "$AEON: SLIDING",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "status": {
+      "type": "Badge",
+      "props": {
+        "text": "SLIDING",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price down 6.5% over 24h on 1.3× the 7-day average volume; sells outpaced buys 60 to 35.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "price",
+        "liq",
+        "vol",
+        "buys",
+        "whales"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001764",
+        "delta": "-6.5% (24h)",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liq",
+        "value": "$369.5K",
+        "delta": "-2.0% since last report",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Vol",
+        "value": "$41.3K",
+        "delta": "1.3× 7d",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "35/60",
+        "delta": "ratio 0.58",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "10",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart: GeckoTerminal pool",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}
