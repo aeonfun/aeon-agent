@@ -1,29 +1,25 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH
+## Heartbeat: ambient fleet check, 2026-11-10 23:42 UTC
 
-Ambient fleet check, run 2026-11-09 20:50 UTC. Nothing new needs a notification, so I sent none.
+**Overall: 🟡 WATCH.** Nothing new needs attention, so no notification was sent. The WATCH comes from carry-over memory follow-ups that were already reported and deduped.
 
 **Checks**
-- **P0 (failed/stuck skills):** clean. No skill is `failed` or `dispatched` past 45 minutes, none has 3+ consecutive failures, and none is below a 50% success rate. The lowest lifetime rates are aeon-update at 71% and holdings at 75%, both with zero consecutive failures.
-- **P1 (PRs and issues):** clean. There are no open PRs and no open issues labelled `urgent`.
-- **P2 (memory follow-ups):** carried over from 11-08 and deduped, so not re-notified. The items are stale `health:` issues (#230–#272), scratch-file hygiene, AGENTS.md deleted with notify, notify-jsonrender and secretcurl untracked, and secured-watch disabled.
-- **P3 (missing or overdue skills):** clean. No enabled skill is past 2× its interval. shiplog's stall has cleared, with a success at 11-09 10:18.
-- **Self-check:** heartbeat last succeeded 11-08 19:30, about 25h ago, inside the 36h window.
+- **P0 (failed and stuck skills): clean.** All 9 enabled skills have 0 consecutive failures, none are stuck, and none are below a 50% success rate. The lowest is aeon-update at 74%. Heartbeat's last success was 2026-11-09 20:51 UTC, inside the 36-hour self-check.
+- **P1 (stalled PRs, urgent issues): clean.** There are no open PRs. The aeon-update PR #303 from the 11-10 log merged at 17:26 UTC. No open issues carry an urgent label.
+- **P2 (memory follow-ups): carry-over, deduped.**
+  - Nine stale `health:` issues (#230–#272) are still open on GitHub, while `memory/issues/INDEX.md` shows 0 open.
+  - `AGENTS.md` is deleted and `notify`, `notify-jsonrender` and `secretcurl` are untracked.
+  - `secured-watch` is disabled.
+  - Scratch-file hygiene is still open.
+  - All of these appeared in the 11-08 and 11-09 logs, so I did not re-notify.
+- **P3 (missing or overdue scheduled skills): clean.** Every enabled skill is within twice its interval, and none are still warming up.
 
-**New watch item (not notified, below the P3 bar)**
-aeon-update's Monday 13:00 UTC slot for today is not recorded in cron-state. Its last dispatch was 11-02 22:42. The 10:15 weekly batch dispatched normally. I'll flag it if it is still missing at next Monday's slot.
+**Token pulse:** AEON at $0.00001764, down 6.5% over 24h, verdict SLIDING, from the 11-10 token report.
 
-**Discrepancy**
-`gh issue list` shows 11 open, unlabelled issues: nine `health:` issues plus #301 and #302. `memory/issues/INDEX.md` shows 0 open. The status page follows INDEX.md, as the skill specifies.
-
-**Status page (`docs/status.md`)**
-- Overall: 🟡 WATCH, updated 2026-11-09 20:50 UTC.
-- Token pulse: AEON at $0.00001804, −9.8% over 24h, liquidity $377.1K, volume $21.3K, FDV $1.80M, verdict CONSOLIDATING. Source is `output/articles/token-report-2026-11-09.md`.
-- Next scheduled run: token-report at 06:00 UTC on 2026-11-10.
+**Files changed**
+- `docs/status.md`: rewritten. Overall WATCH, Updated 2026-11-10 23:42 UTC, next scheduled run token-report at 06:00 UTC on 11-11.
+- `memory/logs/2026-11-10.md`: appended a `### heartbeat` entry (`mode: ambient`, `STATUS_PAGE=WATCH`).
 
 ## Summary
-- **Created/modified:** `docs/status.md` (overwritten), `memory/logs/2026-11-09.md` (appended a `### heartbeat` entry in ambient mode).
-- **Notifications:** none sent.
-- **Follow-up:**
-  - Operator: decide on the P2 carry-overs, which are stale health issues, the untracked working-tree files, and secured-watch.
-  - Operator: reconcile the 11 GitHub issues with `memory/issues/INDEX.md`.
-  - Next Monday: check whether aeon-update dispatches at its 13:00 UTC slot.
+- **Did:** ran the ambient fleet check (no `var` set), rewrote the public status page, and logged the run.
+- **Notified:** no. There was no new signal.
+- **Follow-up for the operator:** close or fix the nine stale `health:` issues, and decide on the `AGENTS.md` deletion and the untracked `notify`/`notify-jsonrender`/`secretcurl` files. Both are standing items in MEMORY.md.
