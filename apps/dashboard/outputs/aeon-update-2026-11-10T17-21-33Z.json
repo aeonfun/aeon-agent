@@ -1,0 +1,61 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "aeon-update"
+      },
+      "children": [
+        "stack"
+      ]
+    },
+    "stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "status",
+        "action",
+        "sep",
+        "link"
+      ]
+    },
+    "status": {
+      "type": "Alert",
+      "props": {
+        "title": "PR #303 still open",
+        "message": "Upstream is 3 commits past it.",
+        "type": "warning"
+      },
+      "children": []
+    },
+    "action": {
+      "type": "Text",
+      "props": {
+        "text": "Merge or close it and the next run syncs the rest.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "aeonfun/aeon-agent PR #303",
+        "href": "https://github.com/aeonfun/aeon-agent/pull/303",
+        "source": "GitHub"
+      },
+      "children": []
+    }
+  }
+}
