@@ -1,17 +1,13 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-11-09T20:51:15Z",
-  "quality_score": 3,
-  "assessment": "Completed, correctly formatted digest with a link per tweet, but it covers only @aeonframework, states no time window, and adds no analysis; the specific claims are relayed from linked tweets rather than independently checked.",
-  "flags": [],
-  "avg_score": 2.3,
+  "last_analyzed": "2026-11-10T18:37:32Z",
+  "quality_score": 2,
+  "assessment": "Output is a no-op report with no digest content; it asserts the twitterapi.io fetch returned five tweets and cites dedup against earlier logs, none of which is shown or checkable here, so the claimed verification is unverifiable.",
+  "flags": [
+    "unverifiable_claim"
+  ],
+  "avg_score": 2.23,
   "history": [
-    {
-      "date": "2026-10-10",
-      "score": 4,
-      "ts": "2026-10-10T17:02:59Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-11",
       "score": 2,
@@ -184,6 +180,12 @@
       "date": "2026-11-09",
       "score": 3,
       "ts": "2026-11-09T20:51:15Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-10",
+      "score": 2,
+      "ts": "2026-11-10T18:37:32Z",
       "harness": "claude"
     }
   ]

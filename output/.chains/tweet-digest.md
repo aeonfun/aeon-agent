@@ -1,13 +1,10 @@
-*Tweet Digest: 2026-11-09*
+Tweet Digest found nothing new today, so I sent no notification and logged `TWEET_DIGEST_OK`.
 
-*Theme: Vuln scanner output*
-@aeonframework: Aeon VulnScanning Ep.5 covers secrets leaking sideways: Kaneo's Gitea token exposed to every workspace member, ds2api's keys in logs plus path traversal, and fumadocs-openapi as an open proxy by default. The takeaway is to rotate, not just upgrade. - [link](https://x.com/aeonframework/status/2119783169679368425)
-@aeonframework: The scanner found that a booby-trapped base image on QAwithIto's M()() could delete files on your machine when you ran `moo new`. - [link](https://x.com/aeonframework/status/2119701535424917876)
+The only tracked account is `aeonframework`. The twitterapi.io fetch returned HTTP 200 with five tweets from the last three days:
+- **Already reported (4):** the VulnScanning Ep.5 video, the QAwithIto `moo new` finding, the mitsuhiko Absurd finding, and the 9,000 holders retweet. Their URLs are in earlier logs, so I dropped them as duplicates.
+- **Skipped (1):** a retweet of `dev0xx_` about a swarm of portfolio manager agents. The skill skips retweets of other accounts.
 
-*Theme: Ecosystem and programs*
-@aeonframework: Aeon was accepted into NEAR AI Red, NEAR's cybersecurity program, so the vuln scanner gets to hunt with private security models running in hardware enclaves. - [link](https://x.com/aeonframework/status/2118654782986445283)
-@aeonframework: Weekly thread for 30 Oct to 6 Nov: the NEAR RED acceptance, founder takes and the October recap. - [link](https://x.com/aeonframework/status/2118687821485510695)
-
-*Theme: Content and community*
-@aeonframework: A video on "Is This Caller Allowed?", about three AI tools that never asked that question. - [link](https://x.com/aeonframework/status/2118693320943911261)
-@aeonframework: Reposted aaronjmars on the 9,000 holders milestone. - [link](https://x.com/aeonframework/status/2119804065206976604)
+## Summary
+- Fetched `aeonframework` via twitterapi.io (Path A) and checked the results against the URLs in `memory/logs/`.
+- Modified `memory/logs/2026-11-10.md`, adding a `### tweet-digest` entry.
+- No follow-up needed.

@@ -715,3 +715,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-11-09,tweet-digest,claude-sonnet-5-5,18,3252,272046,24444
 2026-11-09,aeon-update,claude-sonnet-5-5,38,5563,869088,43335
 2026-11-10,aeon-update,claude-sonnet-5-5,16,2073,287626,31377
+2026-11-10,tweet-digest,claude-sonnet-5-5,14,1846,204289,30306
