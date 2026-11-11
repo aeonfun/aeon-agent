@@ -1,0 +1,121 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$AEON: BREAKDOWN"
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "stats",
+        "sep2",
+        "chart_label",
+        "chart_link"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price fell 10.4% over 24h on 2.15× the 7-day average volume. The three biggest whale trades were sells, but buys outnumbered sells 95 to 55.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "stats": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_price",
+        "stat_liq",
+        "stat_vol",
+        "stat_buys_sells",
+        "stat_whales"
+      ]
+    },
+    "stat_price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001653",
+        "delta": "-10.4% 24h",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat_liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liq",
+        "value": "$354.8K",
+        "delta": "-4.0% since last report",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "stat_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Vol",
+        "value": "$72.9K",
+        "delta": "2.15× 7d",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_buys_sells": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "95/55",
+        "delta": "ratio 1.73",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "stat_whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "15",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart_label": {
+      "type": "Text",
+      "props": {
+        "text": "Chart",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "chart_link": {
+      "type": "Link",
+      "props": {
+        "label": "View pool chart on GeckoTerminal",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}
