@@ -1,19 +1,11 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-11-10T18:37:32Z",
-  "quality_score": 2,
-  "assessment": "Output is a no-op report with no digest content; it asserts the twitterapi.io fetch returned five tweets and cites dedup against earlier logs, none of which is shown or checkable here, so the claimed verification is unverifiable.",
-  "flags": [
-    "unverifiable_claim"
-  ],
-  "avg_score": 2.23,
+  "last_analyzed": "2026-11-11T18:45:57Z",
+  "quality_score": 3,
+  "assessment": "Completed the digest job with dated, themed entries and tweet links for one tracked account, but coverage is thin (4 tweets, one account, no window or account list stated). The specifics look plausibly sourced, though I could not verify the links.",
+  "flags": [],
+  "avg_score": 2.27,
   "history": [
-    {
-      "date": "2026-10-11",
-      "score": 2,
-      "ts": "2026-10-11T17:04:17Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-12",
       "score": 2,
@@ -186,6 +178,12 @@
       "date": "2026-11-10",
       "score": 2,
       "ts": "2026-11-10T18:37:32Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-11",
+      "score": 3,
+      "ts": "2026-11-11T18:45:57Z",
       "harness": "claude"
     }
   ]

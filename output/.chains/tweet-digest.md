@@ -1,10 +1,9 @@
-Tweet Digest found nothing new today, so I sent no notification and logged `TWEET_DIGEST_OK`.
+*Tweet Digest: 2026-11-11*
 
-The only tracked account is `aeonframework`. The twitterapi.io fetch returned HTTP 200 with five tweets from the last three days:
-- **Already reported (4):** the VulnScanning Ep.5 video, the QAwithIto `moo new` finding, the mitsuhiko Absurd finding, and the 9,000 holders retweet. Their URLs are in earlier logs, so I dropped them as duplicates.
-- **Skipped (1):** a retweet of `dev0xx_` about a swarm of portfolio manager agents. The skill skips retweets of other accounts.
+*Theme: Vuln scanning*
+@aeonframework: VulnScanning Ep.6 covers 3 safety checks that failed open (omnigent_ai, Opencodex, Capminal), all found and patched - [link](https://x.com/aeonframework/status/2120496160775278931)
+@aeonframework: Scanner found DeepTutor's default no-login mode lets any open website call the admin API, including a command-running route - [link](https://x.com/aeonframework/status/2120406464921809259)
 
-## Summary
-- Fetched `aeonframework` via twitterapi.io (Path A) and checked the results against the URLs in `memory/logs/`.
-- Modified `memory/logs/2026-11-10.md`, adding a `### tweet-digest` entry.
-- No follow-up needed.
+*Theme: Distribution*
+@aeonframework: Aeon is now listed on OpenRouter, with a live usage page and one key for hundreds of models - [link](https://x.com/aeonframework/status/2120457254579138990)
+@aeonframework: Prompt to subscribe to the YouTube channel - [link](https://x.com/aeonframework/status/2120434246003126689)
