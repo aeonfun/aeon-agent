@@ -1,17 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-11-11T11:10:00Z",
+  "last_analyzed": "2026-11-12T08:12:38Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-sourced token report with timestamped API endpoints, a clear verdict against stated thresholds, and internally consistent arithmetic (7d -30.4%, liquidity -4.0%, buy/sell ratio 1.73). Figures could not be independently re-fetched here, and the '(~7d)' label and the unexplained FDV are minor weaknesses.",
+  "assessment": "Substantive, well-sourced token report with timestamped API sources; the percentages, ratios and 7d/30d deltas recompute correctly from the stated prices, but the figures can't be checked against live data and the 'context' part of the job is thin.",
   "flags": [],
   "avg_score": 2.87,
   "history": [
-    {
-      "date": "2026-10-11",
-      "score": 4,
-      "ts": "2026-10-11T06:07:36Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-12",
       "score": 3,
@@ -184,6 +178,12 @@
       "date": "2026-11-11",
       "score": 4,
       "ts": "2026-11-11T11:10:00Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-12",
+      "score": 4,
+      "ts": "2026-11-12T08:12:38Z",
       "harness": "claude"
     }
   ]

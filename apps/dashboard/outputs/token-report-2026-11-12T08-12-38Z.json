@@ -1,0 +1,122 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$AEON: RALLYING"
+      },
+      "children": [
+        "summary",
+        "sep1",
+        "grid",
+        "sep2",
+        "alert",
+        "chart"
+      ]
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "+12.0% over 24h on 1.09× the 7d average volume. A bounce off yesterday's low, not a breakout (2.0× volume needed).",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "price",
+        "liq",
+        "vol",
+        "buys",
+        "whales"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001786",
+        "delta": "+12.0% 24h",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liq",
+        "value": "$371.8K",
+        "delta": "+4.8% since last report",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Vol",
+        "value": "$32.3K",
+        "delta": "1.09× 7d",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "524/349",
+        "delta": "ratio 1.50",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "0",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Not a breakout",
+        "message": "Bounce off yesterday's low. 2.0× volume needed for a breakout.",
+        "type": "info"
+      },
+      "children": []
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart (GeckoTerminal)",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}
