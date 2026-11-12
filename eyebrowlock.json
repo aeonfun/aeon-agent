@@ -1020,10 +1020,10 @@
       "files": [
         {
           "path": "SKILL.md",
-          "hash": "97a3deb669167c6dfca0f8bf988842f358f0f8726be17bc30ed7f1722af92461"
+          "hash": "3e30ae9ed109938e79f0aeca9172276dd64710e6f678da8be3b17ca91d5b3413"
         }
       ],
-      "contentHash": "sha256-8341b5831e9c27f784302567445651d72163b4ed23da751fc5686443e3b9c6fb",
+      "contentHash": "sha256-4e7edadb9f0d53a0f67a446379168bab8248e2fb7118a27b09f6af3c8fa633a0",
       "discoveredFrom": "skills/token-report/SKILL.md"
     },
     {
