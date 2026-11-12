@@ -1,0 +1,60 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Tweet Digest: 2026-11-12"
+      },
+      "children": [
+        "theme",
+        "sep",
+        "feed"
+      ]
+    },
+    "theme": {
+      "type": "Badge",
+      "props": {
+        "text": "Theme: Vulnerability scanning",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "feed": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tweet",
+        "tweet_link"
+      ]
+    },
+    "tweet": {
+      "type": "TweetCard",
+      "props": {
+        "author": "aeonframework",
+        "handle": "@aeonframework",
+        "text": "Scanner report on code-review-graph: a connected AI agent could be steered into reading any file on the machine, outside the repo -"
+      },
+      "children": []
+    },
+    "tweet_link": {
+      "type": "Link",
+      "props": {
+        "label": "link",
+        "href": "https://x.com/aeonframework/status/2120845702884458939"
+      },
+      "children": []
+    }
+  }
+}

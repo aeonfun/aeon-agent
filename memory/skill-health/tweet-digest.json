@@ -1,17 +1,13 @@
 {
   "skill": "tweet-digest",
-  "last_analyzed": "2026-11-11T18:45:57Z",
-  "quality_score": 3,
-  "assessment": "Completed the digest job with dated, themed entries and tweet links for one tracked account, but coverage is thin (4 tweets, one account, no window or account list stated). The specifics look plausibly sourced, though I could not verify the links.",
-  "flags": [],
-  "avg_score": 2.27,
+  "last_analyzed": "2026-11-12T22:29:14Z",
+  "quality_score": 1,
+  "assessment": "Output is a two-line stub that links one self-authored tweet and names a theme; it contains no digest of tracked accounts' recent tweets, no account list, and no substantive content.",
+  "flags": [
+    "low_quality"
+  ],
+  "avg_score": 2.23,
   "history": [
-    {
-      "date": "2026-10-12",
-      "score": 2,
-      "ts": "2026-10-12T17:03:24Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-13",
       "score": 3,
@@ -184,6 +180,12 @@
       "date": "2026-11-11",
       "score": 3,
       "ts": "2026-11-11T18:45:57Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-12",
+      "score": 1,
+      "ts": "2026-11-12T22:29:14Z",
       "harness": "claude"
     }
   ]
