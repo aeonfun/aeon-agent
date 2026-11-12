@@ -121,5 +121,15 @@
     "eyebrowlock.json",
     "AGENTS.md (regenerated locally)"
   ],
-  "notes": "Run could not execute bin/generate-* or eyebrow (bash scripts need approval in this headless run), so the new anatomy skill was held back rather than shipping a red CI PR. langfuse-score.sh landed but is unused until the aeon.yml workflow is reconciled."
+  "notes": "Run could not execute bin/generate-* or eyebrow (bash scripts need approval in this headless run), so the new anatomy skill was held back rather than shipping a red CI PR. langfuse-score.sh landed but is unused until the aeon.yml workflow is reconciled.",
+  "keep_local": [
+    "AGENTS.md",
+    ".github/README.md",
+    "CHANGELOG.md",
+    "llms.txt",
+    "docs/aeon-setup.md",
+    "docs/assets/hero-animated.svg",
+    "docs/examples/README.md",
+    "docs/skill-packs.md"
+  ]
 }
