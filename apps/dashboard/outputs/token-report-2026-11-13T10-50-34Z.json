@@ -1,0 +1,130 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "$AEON: SLIDING",
+        "description": "token-report"
+      },
+      "children": [
+        "badge",
+        "summary",
+        "sep1",
+        "grid",
+        "whaleText",
+        "sep2",
+        "chart"
+      ]
+    },
+    "badge": {
+      "type": "Badge",
+      "props": {
+        "text": "SLIDING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "summary": {
+      "type": "Text",
+      "props": {
+        "text": "Price down 6.5% over 24h on 1.0x average volume; whales 6 buys / 4 sells.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "price",
+        "liq",
+        "vol",
+        "buys",
+        "whales"
+      ]
+    },
+    "price": {
+      "type": "Stat",
+      "props": {
+        "label": "Price",
+        "value": "$0.00001696",
+        "delta": "-6.5% 24h",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "liq": {
+      "type": "Stat",
+      "props": {
+        "label": "Liquidity",
+        "value": "$353.4K",
+        "delta": "-4.9% since last report",
+        "trend": "down"
+      },
+      "children": []
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "Volume",
+        "value": "$27.2K",
+        "delta": "0.93× 7d",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "buys": {
+      "type": "Stat",
+      "props": {
+        "label": "Buys/Sells",
+        "value": "81/81",
+        "delta": "ratio 1.00",
+        "trend": "neutral"
+      },
+      "children": []
+    },
+    "whales": {
+      "type": "Stat",
+      "props": {
+        "label": "Whales",
+        "value": "10"
+      },
+      "children": []
+    },
+    "whaleText": {
+      "type": "Text",
+      "props": {
+        "text": "Whale activity: 6 buys / 4 sells",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "chart": {
+      "type": "Link",
+      "props": {
+        "label": "Chart",
+        "href": "https://www.geckoterminal.com/base/pools/0x4a9b9e13975d26f4e3e17c655593bb82145dd4452aedafb826d856b817c9cfd4"
+      },
+      "children": []
+    }
+  }
+}

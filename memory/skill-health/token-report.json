@@ -1,17 +1,11 @@
 {
   "skill": "token-report",
-  "last_analyzed": "2026-11-12T08:12:38Z",
+  "last_analyzed": "2026-11-13T10:50:34Z",
   "quality_score": 4,
-  "assessment": "Substantive, well-sourced token report with timestamped API sources; the percentages, ratios and 7d/30d deltas recompute correctly from the stated prices, but the figures can't be checked against live data and the 'context' part of the job is thin.",
+  "assessment": "Substantive, sourced report with internally consistent math (the -6.5% 24h move checks against the stated prior price, and the liquidity drop matches the -4.9% figure), specific endpoints and timestamps, and a clear verdict tied to stated thresholds. Minor gap: the verdict says 1.0x average volume while the table says 0.93x, and the 'since last report' baseline is not shown in the output itself.",
   "flags": [],
-  "avg_score": 2.87,
+  "avg_score": 2.9,
   "history": [
-    {
-      "date": "2026-10-12",
-      "score": 3,
-      "ts": "2026-10-12T06:27:17Z",
-      "harness": "claude"
-    },
     {
       "date": "2026-10-13",
       "score": 4,
@@ -184,6 +178,12 @@
       "date": "2026-11-12",
       "score": 4,
       "ts": "2026-11-12T08:12:38Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-13",
+      "score": 4,
+      "ts": "2026-11-13T10:50:34Z",
       "harness": "claude"
     }
   ]
