@@ -4,11 +4,11 @@
 
 <p align="center">
   <strong>Star us&nbsp;❤️&nbsp;→</strong>&nbsp;&nbsp;
-  <a href="https://github.com/aeonfun/aeon/stargazers"><img src="../docs/assets/btn-star.svg" alt="Star Aeon on GitHub" height="34" align="absmiddle"></a>&nbsp;&nbsp;
+  <a href="https://github.com/aeonfun/aeon-agent/stargazers"><img src="../docs/assets/btn-star.svg" alt="Star aeon-agent on GitHub" height="34" align="absmiddle"></a>&nbsp;&nbsp;
   <a href="https://www.aeon.fun"><img src="../docs/assets/btn-site.svg" alt="aeon.fun" height="34" align="absmiddle"></a>&nbsp;&nbsp;
   <a href="https://www.aeon.fun/docs"><img src="../docs/assets/btn-docs.svg" alt="Aeon docs" height="34" align="absmiddle"></a>&nbsp;&nbsp;
   <a href="https://x.com/aeonframework"><img src="../docs/assets/btn-x.svg" alt="@aeonframework on X" height="34" align="absmiddle"></a>&nbsp;&nbsp;
-  <a href="https://bankr.bot/discover/0xbf8e8f0e8866a7052f948c16508644347c57aba3"><img src="../docs/assets/btn-bankr.svg" alt="$aeon on Bankr" height="34" align="absmiddle"></a>
+  <a href="https://bankr.bot/discover/0xbf8e8f0e8866a7052f948c16508644347c57aba3"><img src="../docs/assets/btn-bankr.svg" alt="$AEON on Bankr" height="34" align="absmiddle"></a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 </div>
 
 <p align="center">
-  <img src="../docs/assets/aeon-demo.gif" alt="Aeon live demo — the dashboard configures skills, schedules them on cron, and Aeon runs unattended: shipping PRs, disclosing vulnerabilities, and reporting back to your channels." />
+  <img src="../docs/assets/aeon-demo.gif" alt="Aeon live demo - the dashboard configures skills, schedules them on cron, and Aeon runs unattended: shipping PRs, disclosing vulnerabilities, and reporting back to your channels." />
 </p>
 
 ---
