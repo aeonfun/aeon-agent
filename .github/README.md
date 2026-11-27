@@ -12,7 +12,6 @@
 </p>
 
 <p align="center">
-  Give it a direction and it ships the work: features, vulnerability disclosures, live apps, deep research - and new skills for itself.<br/><br/>
   <strong>Multiply yourself ⭐<br/>Give every idea its own swarm, 24/7.<br/>Outwork any company.</strong>
 </p>
 
@@ -80,7 +79,7 @@ mode: write
 The prompt *is* the skill. You schedule it, hand it a `var`, chain it into others, and Haiku rates every run. How packs work: [`docs/skill-packs.md`](../docs/skill-packs.md).
 
 <p align="center">
-  <img src="../docs/assets/packs-aeon.jpg" alt="Six skill packs, 93 skills total: Core (fleet coordination, self-config, liveness), Evolution (authors and heals its own skills), Basics (simple runnable skills), Dev & Code, Crypto & Markets, and Productivity." width="100%" />
+  <img src="../docs/assets/packs-aeon.jpg" alt="Six skill packs, 97 skills total: Core (fleet coordination, self-config, liveness), Evolution (authors and heals its own skills), Basics (simple runnable skills), Dev & Code, Crypto & Markets, and Productivity." width="100%" />
 </p>
 
 <p align="center"><a href="../docs/skill-packs.md#full-catalog-all-97-skills-by-pack"><b>Full catalog - all 97 skills by pack →</b></a></p>
