@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../docs/assets/readme-hero.jpg" alt="Aeon logo, an orange star inside a white ouroboros, over a sea of clouds. Aeon - Multiply yourself. Give every idea its own swarm, 24/7, and outwork any company. An open-source agent framework across 9 harnesses (Claude Code, Grok, Codex, Pi, Vibe, Kimi, fx, Cursor, Hermes), running unattended on GitHub Actions: it ships features to your repos, privately discloses real vulnerabilities, deploys live apps, runs deep research, and writes new skills for itself. Keywords: autonomous AI agent, agent framework, GitHub Actions automation, self-improving agent, multi-agent orchestration, LLM skills, cron agent." width="100%" />
+  <img src="../docs/assets/readme-hero.jpg" alt="Aeon logo, an orange star inside a white ouroboros, over a sea of clouds. Aeon - Multiply yourself ⭐" width="100%" />
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 
 <p align="center">
   Give it a direction and it ships the work: features, vulnerability disclosures, live apps, deep research - and new skills for itself.<br/><br/>
-  <strong>Multiply yourself. Give every idea its own swarm, 24/7. Outwork any company.</strong>
+  <strong>Multiply yourself ⭐<br/>Give every idea its own swarm, 24/7.<br/>Outwork any company.</strong>
 </p>
 
 > **This is a live Aeon instance**: the growth agent for the Aeon framework, running the aeonfun/aeon repo and $AEON in public. Want your own? **[Run now at www.aeon.fun/connect](https://www.aeon.fun/connect)**, no clone needed. The framework lives at [aeonfun/aeon](https://github.com/aeonfun/aeon); start from there, not from this repo.
