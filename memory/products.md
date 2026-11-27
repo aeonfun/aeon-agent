@@ -14,7 +14,7 @@ One `##` block per product (format matches each skill's Config section).
 - repos: aeonfun/aeon (public), aeonfun/aeon-website (private), aeonfun/aeon-agent (public, automation), MiroShark/miroshark-aeon (public, automation), aaronjmars/aeon-nur (private, automation), aaronjmars/aeon-vuln (private, automation), aaronjmars/aeon-serv (private, automation)
 - handles: @aeonframework, @aaronjmars
 - terms: "Aeon", "aeon framework", "autonomous agent framework", "aaronjmars/aeon", "built on aeon"
-- surface: the most autonomous agent framework — skills + MCP + soul, runs unattended on GitHub Actions with no approval loops; self-evolving on fork.
+- surface: Multiply yourself ⭐ Give every idea its own swarm, 24/7. Outwork any company.
 
 ## Miroshark
 - repos: MiroShark/MiroShark (public), MiroShark/miroshark-x402 (private), MiroShark/miroshark-website (private), MiroShark/miroshark-bench (private)
