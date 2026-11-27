@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>Star us&nbsp;❤️&nbsp;→</strong>&nbsp;&nbsp;
-  <a href="https://github.com/aeonfun/aeon-agent/stargazers"><img src="../docs/assets/btn-star.svg" alt="Star aeon-agent on GitHub" height="34" align="absmiddle"></a>&nbsp;&nbsp;
+  <a href="https://github.com/aeonfun/aeon-agent/stargazers"><img src="../docs/assets/btn-star.svg" alt="Star Aeon on GitHub" height="34" align="absmiddle"></a>&nbsp;&nbsp;
   <a href="https://www.aeon.fun"><img src="../docs/assets/btn-site.svg" alt="aeon.fun" height="34" align="absmiddle"></a>&nbsp;&nbsp;
   <a href="https://www.aeon.fun/docs"><img src="../docs/assets/btn-docs.svg" alt="Aeon docs" height="34" align="absmiddle"></a>&nbsp;&nbsp;
   <a href="https://x.com/aeonframework"><img src="../docs/assets/btn-x.svg" alt="@aeonframework on X" height="34" align="absmiddle"></a>&nbsp;&nbsp;
@@ -38,7 +38,7 @@
 ## Quick start
 
 <p align="center">
-  <img src="../docs/assets/quickstart-aeon.jpg" alt="Quick start in four steps: 1 Sign in - sign in with GitHub at www.aeon.fun/connect and create your aeon. 2 Connect a model - paste your Claude subscription token or another key; it is saved as an encrypted secret in your own repo. 3 Pick skills - toggle skills on and set their schedule. 4 Runs itself - Aeon runs unattended on your GitHub Actions." width="100%" />
+  <img src="../docs/assets/quickstart-aeon.jpg" alt="Quick start in four steps: Sign in, Connect, Pick, Run. 1 Sign in - log in with GitHub at www.aeon.fun/connect and get your own repo. 2 Connect - connect a model, such as your Claude subscription. 3 Pick skills - toggle skills on and set their schedule. 4 Runs itself - Aeon runs unattended on GitHub Actions." width="100%" />
 </p>
 
 Make your own agent from the framework repo, [aeonfun/aeon](https://github.com/aeonfun/aeon), not from this instance. Three ways in:
@@ -60,7 +60,7 @@ Full guide: [www.aeon.fun/docs](https://www.aeon.fun/docs).
 ## What Aeon can do
 
 <p align="center">
-  <img src="../docs/assets/what-aeon-does.jpg" alt="A skill is just a file — an Aeon skill is a single SKILL.md: a small frontmatter block (title, category, status) then a plain-language prompt. That one file fans out into real capabilities: launch, deploy, web fetch, and search." width="100%" />
+  <img src="../docs/assets/what-aeon-does.jpg" alt="A skill is just a file - an Aeon skill is a single SKILL.md: a small frontmatter block (title, category, status) then a plain-language prompt. That one file fans out into real capabilities: launch, deploy, web fetch, and search." width="100%" />
 </p>
 
 **A skill is a Markdown file: some frontmatter, then a prompt.** Here's a real one, trimmed:
@@ -80,7 +80,7 @@ mode: write
 The prompt *is* the skill. You schedule it, hand it a `var`, chain it into others, and Haiku rates every run. How packs work: [`docs/skill-packs.md`](../docs/skill-packs.md).
 
 <p align="center">
-  <img src="../docs/assets/packs-aeon.jpg" alt="Six skill packs, 97 skills total: Core (fleet coordination, self-config, liveness), Evolution (authors and heals its own skills), Basics (simple runnable skills), Dev & Code, Crypto & Markets, and Productivity." width="100%" />
+  <img src="../docs/assets/packs-aeon.jpg" alt="Six skill packs, 93 skills total: Core (fleet coordination, self-config, liveness), Evolution (authors and heals its own skills), Basics (simple runnable skills), Dev & Code, Crypto & Markets, and Productivity." width="100%" />
 </p>
 
 <p align="center"><a href="../docs/skill-packs.md#full-catalog-all-97-skills-by-pack"><b>Full catalog - all 97 skills by pack →</b></a></p>
@@ -90,7 +90,7 @@ The prompt *is* the skill. You schedule it, hand it a `var`, chain it into other
 ## Support six harnesses: Claude, Grok, Codex, Pi, Vibe, Kimi
 
 <p align="center">
-  <img src="../docs/assets/harnesses-aeon.jpg" alt="Six engines, one socket - a SKILL.md flows through run-harness into any of six agent CLIs: Claude, Grok, Codex, Pi, Vibe, and Kimi. Every harness honors the same contract: result, usage, session." width="100%" />
+  <img src="../docs/assets/harnesses-aeon.jpg" alt="Ten engines, one socket - a SKILL.md flows through run-harness into any of ten agent CLIs: Claude, Grok, Codex, Pi, Vibe, Kimi, fx, Cursor, Hermes, Droid. Every harness honors the same contract: result, usage, session." width="100%" />
 </p>
 
 The same `SKILL.md` runs on any of six agent CLIs - **Claude**, **Grok**, **Codex**, **Pi**, **Vibe**, **Kimi** - behind one `run-harness` contract (same result, usage, and session shape). Swap the harness; nothing else changes. How the contract works: [`docs/harnesses.md`](../docs/harnesses.md).
@@ -106,7 +106,7 @@ Full comparison vs Claude Code, Hermes, and OpenClaw: [`SHOWCASE.md`](../docs/SH
 ## Proof of work
 
 <p align="center">
-  <img src="../docs/assets/proof-aeon.jpg" alt="Proof of work, live at aeon.fun: 2M GitHub stars secured across 69 open-source repos, 68 products and agents built on Aeon, and 12 community skill packs." width="100%" />
+  <img src="../docs/assets/proof-aeon.jpg" alt="Proof of work, live at aeon.fun: 4.7M GitHub stars secured across 100+ open-source repos, 70+ products and agents built on Aeon, and 20 community skill packs." width="100%" />
 </p>
 
 Live at **[aeon.fun](https://www.aeon.fun)**: **2M GitHub stars secured** - real vulnerabilities found, patched, and responsibly disclosed across 69 open-source repos (**Alibaba**, **Tencent**, **Vercel**, and more), many rated High or Critical. **68 products built on top of Aeon.**
@@ -116,7 +116,7 @@ Live at **[aeon.fun](https://www.aeon.fun)**: **2M GitHub stars secured** - real
 ### It ships real work
 
 <p align="center">
-  <img src="../docs/assets/ships-work-aeon.jpg" alt="It ships real work — four things Aeon does end to end: ships code (PRs to your repos), deploys apps (live to Vercel), finds bugs (real vulnerabilities, privately disclosed), and writes skills (new capabilities from a sentence)." width="100%" />
+  <img src="../docs/assets/ships-work-aeon.jpg" alt="It ships real work - four things Aeon does end to end: ships code (PRs to your repos), deploys apps (live to Vercel), finds bugs (real vulnerabilities, privately disclosed), and writes skills (new capabilities from a sentence)." width="100%" />
 </p>
 
 `feature` ships code to your repos, `deploy-prototype` ships live apps to Vercel, `vuln-scanner` finds and privately discloses real vulnerabilities, `create-skill` writes new skills from a sentence. How each works: [`CORE.md`](../docs/CORE.md).
@@ -130,7 +130,7 @@ A model scores every run 1–5; `heartbeat` → `skill-health` → `skill-repair
 ### It replicates
 
 <p align="center">
-  <img src="../docs/assets/replicates-aeon.jpg" alt="It spawns itself — one Aeon forks into a fleet of specialized instances (crypto, security, research), each its own node with isolated billing and no propagated secrets." width="100%" />
+  <img src="../docs/assets/replicates-aeon.jpg" alt="It spawns itself - one Aeon forks into a fleet of specialized instances (crypto, security, research), each its own node with isolated billing and no propagated secrets." width="100%" />
 </p>
 
 `spawn-instance` forks Aeon into a new specialized instance (`var: "crypto-tracker: monitor DeFi protocols"`), picks relevant skills, and registers it - no secrets propagated, billing isolated. `fleet-control` health-checks and dispatches across the fleet.
@@ -140,7 +140,7 @@ A model scores every run 1–5; `heartbeat` → `skill-health` → `skill-repair
 ## Guardrails
 
 <p align="center">
-  <img src="../docs/assets/guardrails-aeon.jpg" alt="Autonomy needs brakes — four safety brakes on by default or one flag away: read-only skills can't touch the repo, irreversible actions fail closed, an optional auth gate approves every run, and secrets stay off the command line." width="100%" />
+  <img src="../docs/assets/guardrails-aeon.jpg" alt="Autonomy needs brakes - four safety brakes on by default or one flag away: read-only skills can't touch the repo, irreversible actions fail closed, an optional auth gate approves every run, and secrets stay off the command line." width="100%" />
 </p>
 
 Read-only skills can't touch the repo, irreversible actions fail closed, an optional [Fleet Watcher](../docs/CONFIGURATION.md#fleet-watcher-authorization-layer) gates every run, and secrets stay off the command line. Details: [Configuration](../docs/CONFIGURATION.md#capability-tiers-read-only-skills).
@@ -149,7 +149,7 @@ Read-only skills can't touch the repo, irreversible actions fail closed, an opti
 
 ## Configure
 
-<a href="../docs/CONFIGURATION.md"><img src="../docs/assets/never-sleeps-aeon.jpg" alt="Aeon never sleeps - a full day of autonomous runs from one config file" width="100%" /></a>
+<a href="../docs/CONFIGURATION.md"><img src="../docs/assets/never-sleeps-aeon.jpg" alt="Aeon never sleeps - one config, a full day of autonomous runs (UTC): morning aggregation, dev and repo, crypto, content, repo intel, security, social, and evening meta skills on a 24-hour dial" width="100%" /></a>
 
 Everything lives in `aeon.yml` - schedules (standard UTC cron), the per-skill `var` input, model, auth, notification channels, and API keys:
 
@@ -185,13 +185,13 @@ The deep reference lives in [`docs/`](../docs) - jump in:
 
 <p align="center">
   <a href="../docs/CONFIGURATION.md"><img src="../docs/assets/doc-config.svg" alt="Configuration - chaining, triggers, scheduler, capability modes, gateways, Fleet Watcher" height="30" align="absmiddle"></a>&nbsp;
-  <a href="../docs/harnesses.md"><img src="../docs/assets/doc-harnesses.svg" alt="Harnesses - run skills on any of six agent CLIs behind one contract" height="30" align="absmiddle"></a>&nbsp;
+  <a href="../docs/harnesses.md"><img src="../docs/assets/doc-harnesses.svg" alt="Harnesses - run skills on any of ten agent CLIs behind one contract" height="30" align="absmiddle"></a>&nbsp;
   <a href="../docs/skill-packs.md"><img src="../docs/assets/doc-packs.svg" alt="Skill Packs - how packs work and how to build your own" height="30" align="absmiddle"></a>&nbsp;
   <a href="../docs/CORE.md"><img src="../docs/assets/doc-core.svg" alt="Core - the self-healing health and repair loop" height="30" align="absmiddle"></a>
 </p>
 <p align="center">
   <a href="../apps/cli/README.md"><img src="../docs/assets/doc-cli.svg" alt="CLI - the whole dashboard as scriptable ./aeon commands" height="30" align="absmiddle"></a>&nbsp;
-  <a href="../apps/mcp-server/README.md"><img src="../docs/assets/doc-mcp.svg" alt="MCP server - every skill as an aeon MCP tool in Claude" height="30" align="absmiddle"></a>&nbsp;
+  <a href="../apps/mcp-server/README.md"><img src="../docs/assets/doc-mcp.svg" alt="MCP server - run Aeon from ChatGPT, Claude or Cursor (hosted at www.aeon.fun/connect/mcp) or every skill as a local MCP tool" height="30" align="absmiddle"></a>&nbsp;
   <a href="../apps/webhook/README.md"><img src="../docs/assets/doc-webhooks.svg" alt="Webhooks - ~1s Telegram instant mode via a self-hosted worker" height="30" align="absmiddle"></a>&nbsp;
   <a href="../docs/ADK.md"><img src="../docs/assets/doc-adk.svg" alt="ADK - build products on top of Aeon over the GitHub API" height="30" align="absmiddle"></a>&nbsp;
   <a href="../docs/ECOSYSTEM.md"><img src="../docs/assets/doc-ecosystem.svg" alt="Ecosystem - products and agents built on Aeon" height="30" align="absmiddle"></a>
@@ -210,7 +210,7 @@ The deep reference lives in [`docs/`](../docs) - jump in:
       <a href="https://www.aeon.fun/docs" title="Read the Aeon docs"><img src="../docs/assets/comm-docs-aeon.jpg" alt="Read the Aeon documentation - guides and reference." width="100%"/></a>
     </td>
     <td align="center" valign="middle" width="33%">
-      <a href="https://bankr.bot/discover/0xbf8e8f0e8866a7052f948c16508644347c57aba3" title="$aeon on Bankr"><img src="../docs/assets/comm-bankr-aeon.jpg" alt="$aeon token on Bankr." width="100%"/></a>
+      <a href="https://bankr.bot/discover/0xbf8e8f0e8866a7052f948c16508644347c57aba3" title="$AEON on Bankr"><img src="../docs/assets/comm-bankr-aeon.jpg" alt="$AEON token on Bankr." width="100%"/></a>
     </td>
   </tr>
 </table>
@@ -220,7 +220,7 @@ The deep reference lives in [`docs/`](../docs) - jump in:
 ## We love contributors
 
 <p align="center">
-  <img src="../docs/assets/we-love-contributors-aeon.jpg" alt="We love contributors — every bug fix, new skill, and doc tweak makes Aeon better. Big PRs and small ones, both welcome." width="100%" />
+  <img src="../docs/assets/we-love-contributors-aeon.jpg" alt="We love contributors - every bug fix, new skill, and doc tweak makes Aeon better. Big PRs and small ones, both welcome." width="100%" />
 </p>
 
 <p align="center">
